@@ -70,7 +70,7 @@ options.set_num_trials(5)
 options.set_verbose(False)
 options.set_cluster_method('kmeans')
 
-data = Data('cardiacData.csv', options)
+data = Data('../data/cardiacData.csv', options)
 data.read()
 
 seed = 0
