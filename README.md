@@ -20,13 +20,13 @@
 * **Semi-Structured** - JSON, YAML, CSV, etc.
 * **Unstructured** - Most common type - no structure - Logs, video content, etc.
 
-## Types of Machine Learning
+### Types of Machine Learning
 
 * **Supervised Machine Learning** - Outcomes, or Lables, are not known. Given a set of Feature/Label pairs, find a rule that predicts the label associated with a previously unseen input.
 * **Unsupervised Machine Learning** - Outcomes, or Lables, are known. Given a set of Feature vectors (without Labels) group them into “natural clusters”.
 * **Reinforcement Learning** - The algorithm is rewarded based on choices it makes while learning.
 
-## Machine Learning Models
+### Machine Learning Models
 
 * **Cluster** - Grouping of similar Examples or Feature Vectors.
 * **Centroid** -Defines a cluster. This is a point (either imaginary or real) at the center of a cluster. Every point in a data set is part of the cluster whose centroid is most closely located.
