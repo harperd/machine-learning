@@ -10,7 +10,7 @@
 * **Feature Vector or Example** - The distinct values of a single feature.
 * **Feature Engineering** -The process of using domain knowledge of the data to create Features that make machine learning algorithms work.
 
-!()[https://github.com/harperd/machine-learning/blob/master/images/dataparts.gif]
+![](https://github.com/harperd/machine-learning/blob/master/images/dataparts.gif)
 
 ### Data Classification
 
@@ -33,7 +33,7 @@
 * **Overfitting** - A model where the training data is modeled too well. Overfitting happens when a model learns the detail and noise in the training data to the extent that it negatively impacts the performance of the model on new data.
 * **Underfitting** - A model that can neither model the training data nor generalize to new data. An underfit machine learning model is not a suitable model and will be obvious as it will have poor performance on the training data. 
 
-!()[https://github.com/harperd/machine-learning/blob/master/images/fit.jpg]
+![](https://github.com/harperd/machine-learning/blob/master/images/fit.jpg)
 
 
 
