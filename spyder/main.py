@@ -63,7 +63,7 @@ def test_clustering(data, options, seed = 0):
 
 
 options = Options()
-options.set_scale(True)
+options.set_scale(False)
 options.set_distance(2)
 options.set_num_clusters(4)
 options.set_num_trials(5)
