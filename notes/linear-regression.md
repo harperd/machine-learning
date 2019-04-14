@@ -6,7 +6,7 @@ When given labeled data (target) we need identify the mathematical service that 
 
 ## Regression
 
-We use regression when the target is not labeled but a range of possible values. When representing these data sets, X often denotes the features of the data set and Y denotes the target. This is then represented as:
+Unlike _classification_, we use regression when the target is a range of possible values. When representing these data sets, _x_ denotes the features of the data set and _y_ denotes the target, or predicted value. This is then represented as:
 
 > y = f(x)
 
@@ -16,7 +16,7 @@ The machine learning algorithm *h()* can be based on a *linear* or more complica
 
 ### Univariate Linear Regression
 
-This is the simplest form of Supervised machine learning when we have a single *feature* which basically just chooses the best *line* that divides our data.
+This is the simplest form of supervised machine learning when we have a single *feature* which basically just chooses the best *line* that divides our data.
 
 ![Linear Regression](https://github.com/harperd/machine-learning/raw/master/images/linear-regression.png)
 
@@ -32,15 +32,15 @@ In machine learning, this is called our *hypothesis* function where we represent
 
 In supervised learning we have a *training set* of data that is used to train our model. Our goal is to train our model to predict values for our function *h(x)* that are close to *y* (targets) from our training examples. In other words, given the *y* values in your training set (our known good answers), what is the closest *y* values we can predict using our machine learning linear regression algorithm *h(x)*? We want a good *fit* of the model where the difference between *h(x)* and our training set, *y* values, are minimized. 
 
-We measure this by using the *Cost function* *J(θ0, θ1)* where *θ0* is a point on the *x* axis and *θ1* is a point on the *y* axis and the result of *J(θ0, θ1)* is *z*. This is also called the *Squared Error Function* which is the most commonly used for linear regression problems. Here, we want to get the results of our cost function *J()* as close to zero as possible.
+We measure this by using the *Cost function* *J(θ0, θ1)* where *θ0* is a point on the *x* axis and *θ1* is a point on the *y* axis and the result of *J(θ<sub>0</sub>, θ<sub>1</sub>)* is *z*. This is also called the *Squared Error Function* which is the most commonly used for linear regression problems. Here, we want to get the results of our cost function *J()* as close to zero as possible.
 
-> $\huge J( \theta _{0} ,\ \theta _{1}) =\frac{1}{2m}\sum\limits ^{m}_{i=1}\left( h_{\theta }\left( x^{( i)}\right) -y^{( i)}\right)^{2}$
+> $\huge J( \theta _{0} ,\ \theta _{1}) =\frac{1}{2m}\sum\limits ^{m}_{i=1}\left( h_{\theta }\left( x^{( i)}\right) -y^{( i)}\right)^{2}​$
 
 > **NOTE:** Multiplying the result by 1/2m is purely for aesthetics. See: https://datascience.stackexchange.com/questions/10188/why-do-cost-functions-use-the-square-error
 
 > **NOTE:** You will notice the *Sum of Squared Errors* used in many other equations used to measure cost or optimization. This is the part of the equation that measures the difference between your predicted *y* and the *y* of your training set as denoted by (y<sub>1</sub> - y<sub>2</sub>)<index>2</index> Squaring the value just makes it easier to work with.
 
-When trying a range of values for *θ0* and *θ1* you will get a 3-D plot similar to the below where the optimal theta values are at the bottom of the bow. Again, *θ0* is a point on the *x* axis and *θ1* is a point on the *y* axis and the result of *J(θ0, θ1)* is *z*.
+When trying a range of values for *θ<sub>0</sub>* and *θ<sub>1</sub>* you will get a 3-D plot similar to the below where the optimal theta values are at the bottom of the bow. Again, *θ0* is a point on the *x* axis and *θ1* is a point on the *y* axis and the result of *J(θ0, θ1)* is *z*.
 
 ![](https://github.com/harperd/machine-learning/raw/master/images/cost-function-plot.jpg)
 
