@@ -74,7 +74,7 @@ The cost function can be more easily understood by using a 2-D *Contour Plot* wh
 
 Here, $\alpha$ (alpha) is the learning rate or step. The smaller the step the slower the algorithm will run. The larger, the faster. However, if alpha is too large you may not get the lowest theta values. $\frac{\partial}{\partial\theta_{j}}j(\theta_{0},\theta_{1})$ is a derivative function, or rate of change. $\partial$ ([partial derivative](https://www.youtube.com/watch?v=rnoToCoEK48)) is a just a mathematical term that means that it the function works with multiple variables contrasted to $d$ (derivative) which is used with single variable functions. A *derivative* just measures the *slope* of a line that is *tangent* to or next to a point on a graph. It can be sloped in a positive direction on the $x,y$ axis (going from lower left to upper right) which is a *positive derivative*.
 
-![Finding the Derivative](https://github.com/harperd/machine-learning/raw/master/images/derivative.png)
+![](https://github.com/harperd/machine-learning/raw/master/images/derivative.png)
 
 What *Gradient Descent* algorithm does is *simultaneously* compute values for $\theta_{0}$ and $\theta_{1}$. What is meant by *simultaneously* is represented in the pseudo code below where $\theta_{0}$ and $\theta_{1}$ are assigned new values at the same time. In other words, if $\theta_{0}$ was set ($\theta_{0} :=$ *temp0*) *before* temp1 was set (*temp1* $:= \theta_{1}-\alpha\frac{\partial}{\partial\theta_{1}}j(\theta_{0},\theta_{1})$) then it would affect the results of temp1 and yield incorrect results.
 
