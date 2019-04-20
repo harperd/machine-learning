@@ -18,7 +18,7 @@ Linear regression is just finding $y$ using slope-intercept form where *b* is th
 
 > $\large y\ =\ mx\ +\ b$
 
-In machine learning, this is called our *hypothesis* function as shown below where theta $\theta$ can represent any two numbers. We just have to figure out what those two numbers are.
+In machine learning, this is called our *hypothesis* function as shown below where theta $\theta$ can represent any two numbers. We just have to figure out what those two numbers are that allow the function to best intersect our data or features.
 
 > $\large h_{\theta }( x) =\theta _{0} \ +\ \theta _{1} x$
 
