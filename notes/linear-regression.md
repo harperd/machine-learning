@@ -50,7 +50,9 @@ In the _Cost Function_ above you will notice the result of our *hypothesis* func
 
 When you plot the values for $\theta_{0}$, $\theta_{1}$ and $J(\theta_{0}, \theta_{1})$ (*x*, $y$ and *z* respectively) you will get a 3-D plot similar to the below where the optimal values for $\theta_{0}$ and $\theta_{1}$ are at the bottom of the bow.
 
-![](https://github.com/harperd/machine-learning/raw/master/images/cost-function-plot.jpg)
+![](https://github.com/harperd/machine-learning/raw/master/images/cost-function-plot1.jpg)
+
+![](https://github.com/harperd/machine-learning/raw/master/images/cost-function-plot2.jpg)
 
 > **See Also:** [mplot3d Toolkit](https://matplotlib.org/tutorials/toolkits/mplot3d.html)
 
