@@ -6,9 +6,9 @@ When given labeled data (target) we need identify the mathematical service that 
 
 ## Regression
 
-Unlike _classification_, we use regression when the target is a range of possible values. When representing these data sets, _x_ denotes the features of the data set and _y_ denotes the target, or predicted value. This is then represented as:
+Unlike _classification_, we use *regression* when the target is a range of possible values. When representing these data sets, _x_ denotes the features of the data set and _y_ denotes the target, or predicted value. This is then represented as:
 
-> y = f(x)
+> $\huge y\ =\ f(\ x\ )$
 
 Here, *f()* is a trained data set and machine learning algorithm that takes certain features *x* and predicts *y* values. However, in machine learning *f()* is known as the *hypothesis* or *h()* which has stuck from the earlier days of machine learning.
 
@@ -18,11 +18,11 @@ The machine learning algorithm *h()* can be based on a *linear* or more complica
 
 Linear regression just finding *y* using slope-intercept form where *b* is the y-intercept and *m* is the slope of the line.
 
-> $\huge y\ =\ mx\ +\ b​$
+> $\huge y\ =\ mx\ +\ b$
 
 In machine learning, this is called our *hypothesis* function as shown below where theta *θ* is a weight associated with some feature *x*.
 
-> $\huge h_{\theta }( x) =\theta _{0} \ +\ \theta _{1} x​$
+> $\huge h_{\theta }( x) =\theta _{0} \ +\ \theta _{1} x$
 
 ### Univariate Linear Regression
 
@@ -38,9 +38,9 @@ We measure this _fit_ by using the *Cost Function* denoted as *J(θ<sub>0</sub>,
 
 In the _Cost Function_ below you will notice the result of our hypothesis function, $h_{\theta }\left( x^{( i)}\right)$, subtracted by our training set $y^{( i)}$. This is the heart of the function where want to minimize the distance between our hypothesis and training values. We do this for the entire set of data, $\sum\limits ^{m}_{i=1}$.
 
-> $\huge J( \theta _{0} ,\ \theta _{1}) =\frac{1}{2m}\sum\limits ^{m}_{i=1}\left( h_{\theta }\left( x^{( i)}\right) -y^{( i)}\right)^{2}​$
+> $\huge J( \theta _{0} ,\ \theta _{1}) =\frac{1}{2m}\sum\limits ^{m}_{i=1}\left( h_{\theta }\left( x^{( i)}\right) -y^{( i)}\right)^{2}$
 
-> **NOTE:** Multiplying the result by $\frac{1}{2m}​$ is purely for aesthetics. See: https://datascience.stackexchange.com/questions/10188/why-do-cost-functions-use-the-square-error
+> **NOTE:** Multiplying the result by $\frac{1}{2m}$ is purely for aesthetics. See: https://datascience.stackexchange.com/questions/10188/why-do-cost-functions-use-the-square-error
 
 > **NOTE:** You will notice the *Sum of Squared Errors* used in many other equations used to measure cost or optimization. This is the part of the equation that measures the difference between your predicted *y* and the *y* of your training set as denoted by (y<sub>1</sub> - y<sub>2</sub>)$^2$ Squaring the value just makes it easier to work with.
 
