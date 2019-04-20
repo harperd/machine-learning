@@ -38,7 +38,7 @@ In the illustration below, our hypothesis function $h_{\theta }( x)$ is plotted 
 
 ![Measuring Fit of a Model](https://github.com/harperd/machine-learning/raw/master/images/model-fit.jpg)
 
-We can choose good theta values by using the *Cost Function* denoted as $J(\theta_{0}, \theta_{1})$ where  $\theta_{0}$ is a point on the $x$ axis, $\theta_{1}$ is a point on the $y$ axis and the result of $J(\theta_{0}, \theta_{1})$ is *z*. This is also called the *Squared Error Function* which is the most commonly used for linear regression problems. Here, we want to get the results of our cost function , how $J(\theta_{0}, \theta_{1})$ fit our model is, as close to zero as possible by trying different values for $\theta _{0}$ and $\theta _{1}$.
+We can choose good theta values by using the *Cost Function* denoted as $J(\theta_{0}, \theta_{1})$ where  $\theta_{0}$ is a point on the $y$ axis, $\theta_{1}$ is a point on the $x$ axis and the result of $J(\theta_{0}, \theta_{1})$ is *z*. This is also called the *Squared Error Function* which is the most commonly used for linear regression problems. Here, we want to get the results of our cost function as close to zero as possible by trying different values for $\theta _{0}$ and $\theta _{1}$.
 
 > $\large J( \theta _{0} ,\ \theta _{1}) =\frac{1}{2m}\sum\limits ^{m}_{i=1}\left( h_{\theta }\left( x^{( i)}\right) -y^{( i)}\right)^{2}$
 
@@ -48,7 +48,7 @@ We can choose good theta values by using the *Cost Function* denoted as $J(\thet
 
 In the _Cost Function_ above you will notice the result of our *hypothesis* function, $h_{\theta }\left( x^{( i)}\right)$, subtracted by our training set $y^{( i)}$. This is the heart of the cost function where want to minimize the distance between our hypothesis and training values. We do this for the entire set of data, $\sum\limits ^{m}_{i=1}$.
 
-When you plot the values for $\theta_{0}$, $\theta_{1}$ and $J(\theta_{0}, \theta_{1})$ (*x*, $y$ and *z* respectively) you will get a 3-D plot similar to the below where the optimal values for $\theta_{0}$ and $\theta_{1}$ are at the lowest point on the graph.
+When you plot the values for $\theta_{0}$, $\theta_{1}$ and $J(\theta_{0}, \theta_{1})$ ($x$, $y$ and *z* respectively) you will get a 3-D plot similar to the below where the optimal values for $\theta_{0}$ and $\theta_{1}$ are at the lowest point on the graph.
 
 ![Cost Function 3D Plot](https://github.com/harperd/machine-learning/raw/master/images/cost-function-plot1.jpg)
 
@@ -64,17 +64,21 @@ The cost function can be more easily understood by using a 2-D *Contour Plot* wh
 
 > **See Also:** [Contour Plot demo with Matplotlib](https://matplotlib.org/gallery/images_contours_and_fields/contour_demo.html)
 
-#### Gradient Descent Algorithm: Automate Finding Theta Values
+#### Gradient Descent: Automate Finding Theta Values
 
-*Gradient Descent* is an algorithm, shown below, is used to find the optimal or minimized $J(\theta_{0}, \theta_{1})$.
+*Gradient Descent* is an algorithm used to find the optimal or minimized $J(\theta_{0}, \theta_{1})$.
 
 > $\large\theta_{j}\ := \theta_{j}-\alpha\frac{\partial}{\partial\theta_{j}}j(\theta_{0},\theta_{1})$
 
 > **Note:** The function uses an *assignment* operator $:=$ instead of an *equality* operator $=$ which means that $\theta_{j}$ is not *equal* to the right hand side of the equation but *set* to the result of the equation.
 
-Here, $\alpha$ (alpha) is the learning rate or step. The smaller the step the slower the algorithm will run. The larger, the faster. However, if alpha is too large you may not get the lowest theta values. $\frac{\partial}{\partial\theta_{j}}j(\theta_{0},\theta_{1})$ is a derivative function, or rate of change. $\partial$ ([partial derivative](https://www.youtube.com/watch?v=rnoToCoEK48)) is a just a mathematical term that means that it the function works with multiple variables contrasted to $d$ (derivative) which is used with single variable functions. A *derivative* just measures the *slope* of a line that is *tangent* to or next to a point on a graph. It can be sloped in a positive direction on the $x,y$ axis (going from lower left to upper right) which is a *positive derivative*.
+Here, $\alpha$ (alpha) is the learning rate or step. The smaller the step the slower the algorithm will run. The larger, the faster. However, if alpha is too large you may not get to the lowest theta values. $\frac{\partial}{\partial\theta_{j}}j(\theta_{0},\theta_{1})$ is a derivative or rate of change (division). A *derivative* just measures the *slope* of a line (rise over run or x over y) that is *tangent* to or next to a point within of a graphed function. Here, $\partial$ (partial derivative) is a just a mathematical term which means that it the function works with multiple variables contrasted to $d$ (derivative) which is used with single variable functions. The derivative can be sloped in a positive direction on the $x,y$ axis (going from lower left to upper right) which denotes a *positive derivative* as shown in the illustration below. This derivative (positive, negative, or zero) tells the Gradient Descent algorithm which way to move (step next) with respect to the graphed function (shown as the green line in the graph below) in order to seek the minimum of $J(\theta_{0},\theta_{1})$.
 
 ![](https://github.com/harperd/machine-learning/raw/master/images/derivative.png)
+
+If the result of the derivative, $\frac{\partial}{\partial\theta_{j}}j(\theta_{0},\theta_{1})$, is a *positive number* then the equation looks like the below which moves the Gradient Decent algorithm to the *left* on the graph moving it closer to the minimum. Here $\theta_{1}$ is on the $x$ axis and the result would yield an $x$ value to the left of the starting $x$ value which moves closer to the minimum of our function $h_{\theta}(x)$.
+
+> $\theta_{1} := \theta_{1} - \alpha(+\partial)$
 
 What *Gradient Descent* algorithm does is *simultaneously* compute values for $\theta_{0}$ and $\theta_{1}$. What is meant by *simultaneously* is represented in the pseudo code below where $\theta_{0}$ and $\theta_{1}$ are assigned new values at the same time. In other words, if $\theta_{0}$ was set ($\theta_{0} :=$ *temp0*) *before* temp1 was set (*temp1* $:= \theta_{1}-\alpha\frac{\partial}{\partial\theta_{1}}j(\theta_{0},\theta_{1})$) then it would affect the results of temp1 and yield incorrect results.
 
