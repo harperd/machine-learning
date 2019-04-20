@@ -42,24 +42,52 @@ We can choose good theta values by using the *Cost Function* denoted as $J(\thet
 
 > $\large J( \theta _{0} ,\ \theta _{1}) =\frac{1}{2m}\sum\limits ^{m}_{i=1}\left( h_{\theta }\left( x^{( i)}\right) -y^{( i)}\right)^{2}$
 
-> **NOTE:** Multiplying the result by $\frac{1}{2m}$ is purely for aesthetics. See: https://datascience.stackexchange.com/questions/10188/why-do-cost-functions-use-the-square-error
+> **Note:** Multiplying the result by $\frac{1}{2m}$ is purely for aesthetics. See: https://datascience.stackexchange.com/questions/10188/why-do-cost-functions-use-the-square-error
 
-> **NOTE:** You will notice the *Sum of Squared Errors* used in many other equations used to measure cost or optimization. This is the part of the equation that measures the difference between your predicted $y$ and the $y$ of your training set as denoted by $(y_{1} - y_{2})^2$ Squaring the value just makes it easier to work with.
+> **Note:** You will notice the *Sum of Squared Errors* used in many other equations used to measure cost or optimization. This is the part of the equation that measures the difference between your predicted $y$ and the $y$ of your training set as denoted by $(y_{1} - y_{2})^2$ Squaring the value just makes it easier to work with.
 
 In the _Cost Function_ above you will notice the result of our *hypothesis* function, $h_{\theta }\left( x^{( i)}\right)$, subtracted by our training set $y^{( i)}$. This is the heart of the cost function where want to minimize the distance between our hypothesis and training values. We do this for the entire set of data, $\sum\limits ^{m}_{i=1}$.
 
-When you plot the values for $\theta_{0}$, $\theta_{1}$ and $J(\theta_{0}, \theta_{1})$ (*x*, $y$ and *z* respectively) you will get a 3-D plot similar to the below where the optimal values for $\theta_{0}$ and $\theta_{1}$ are at the bottom of the bow.
+When you plot the values for $\theta_{0}$, $\theta_{1}$ and $J(\theta_{0}, \theta_{1})$ (*x*, $y$ and *z* respectively) you will get a 3-D plot similar to the below where the optimal values for $\theta_{0}$ and $\theta_{1}$ are at the lowest point on the graph.
 
-![](https://github.com/harperd/machine-learning/raw/master/images/cost-function-plot1.jpg)
+![Cost Function 3D Plot](https://github.com/harperd/machine-learning/raw/master/images/cost-function-plot1.jpg)
 
-![](https://github.com/harperd/machine-learning/raw/master/images/cost-function-plot2.jpg)
+![Cost Function 3D Plot](https://github.com/harperd/machine-learning/raw/master/images/cost-function-plot2.jpg)
 
 > **See Also:** [mplot3d Toolkit](https://matplotlib.org/tutorials/toolkits/mplot3d.html)
 
 The cost function can be more easily understood by using a 2-D *Contour Plot* where the minimal theta values would lie somewhere near the center circle.
 
-![](https://github.com/harperd/machine-learning/raw/master/images/cost-function-contour-plot.jpg)
+![Cost Function Contour Plot](https://github.com/harperd/machine-learning/raw/master/images/cost-function-contour-plot.jpg)
 
 > **See Also:** [Contour Plot with Matplotlib](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.contour.html)
 
 > **See Also:** [Contour Plot demo with Matplotlib](https://matplotlib.org/gallery/images_contours_and_fields/contour_demo.html)
+
+#### Gradient Descent Algorithm: Automate Finding Theta Values
+
+*Gradient Descent* is an algorithm, shown below, is used to find the optimal or minimized $J(\theta_{0}, \theta_{1})$.
+
+> $\large\theta_{j}\ := \theta_{j}-\alpha\frac{\partial}{\partial\theta_{j}}j(\theta_{0},\theta_{1})$
+
+> **Note:** The function uses an *assignment* operator $:=$ instead of an *equality* operator $=$ which means that $\theta_{j}$ is not *equal* to the right hand side of the equation but *set* to the result of the equation.
+
+Here, $\alpha$ (alpha) is the learning rate or step. The smaller the step the slower the algorithm will run. The larger, the faster. However, if alpha is too large you may not get the lowest theta values. $\frac{\partial}{\partial\theta_{j}}j(\theta_{0},\theta_{1})$ is a derivative function, or rate of change. $\partial$ ([partial derivative](https://www.youtube.com/watch?v=rnoToCoEK48)) is a just a mathematical term that means that it the function works with multiple variables contrasted to $d$ (derivative) which is used with single variable functions. A *derivative* just measures the *slope* of a line that is *tangent* to or next to a point on a graph. It can be sloped in a positive direction on the $x,y$ axis (going from lower left to upper right) which is a *positive derivative*.
+
+![Find the Derivative](https://github.com/harperd/machine-learning/raw/master/images/derivative.png)
+
+What *Gradient Descent* algorithm does is *simultaneously* compute values for $\theta_{0}$ and $\theta_{1}$. What is meant by *simultaneously* is represented in the pseudo code below where $\theta_{0}$ and $\theta_{1}$ are assigned new values at the same time. In other words, if $\theta_{0}$ was set ($\theta_{0} :=$ *temp0*) *before* temp1 was set (*temp1* $:= \theta_{1}-\alpha\frac{\partial}{\partial\theta_{1}}j(\theta_{0},\theta_{1})$) then it would affect the results of temp1 and yield incorrect results.
+
+>  *repeat until convergence {*
+>
+> ​	*temp0* $:= \theta_{0}-\alpha\frac{\partial}{\partial\theta_{0}}j(\theta_{0},\theta_{1})$
+>
+> ​	*temp1* $:= \theta_{1}-\alpha\frac{\partial}{\partial\theta_{1}}j(\theta_{0},\theta_{1})$
+>
+> ​	$\theta_{0} :=$ *temp0*
+>
+> ​	$\theta_{1} :=$ *temp1*
+>
+> *}*
+
+We want to repeat this series of steps until we reach *convergence* or $\theta_{0}$ and $\theta_{1}$ are at their minimum.
