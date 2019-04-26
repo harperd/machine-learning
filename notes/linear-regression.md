@@ -12,23 +12,19 @@ Unlike _classification_, we use *regression* when the target is a range of possi
 
 Here, the function $f()$ is a trained data set and machine learning algorithm that takes certain features $x$ and predicts $y$ values. However, in machine learning $f()$ is known as the *hypothesis* or $h()$ which has stuck from the earlier days of machine learning. The machine learning algorithm $h()$ can be based on a *linear* or more complicated *non-linear* types of algorithms.
 
-### Linear Regression
+### Univariate Linear Regression
 
-Linear regression is just finding $y$ using slope-intercept form where *b* is the y-intercept and *m* is the slope of the line.
+Unlike *multivariate* linear regression, *univariate* is when we are only working with a single feature. This is the simplest form of supervised machine learning where we only have a single *feature*, or $x$ value. Linear regression is about finding a line that best intersects a set of data (features). 
+
+![Linear Regression](https://github.com/harperd/machine-learning/raw/master/images/linear-regression.png)
+
+We will graph our line by using the very simple slope-intercept function shown below where *b* is the y-intercept and *m* is the slope of the line.
 
 > $\large y\ =\ mx\ +\ b$
 
-In machine learning, this is called our *hypothesis* function as shown below where theta $\theta$ can represent any two numbers. We just have to figure out what those two numbers are that allow the function to best intersect our data or features.
+In machine learning, this is called our *hypothesis* function as shown below where theta $\theta$ can represent any two numbers. We just have to figure out what those two numbers are that allow the function to best intersect our data or features. Below is how our hypothesis is formally written. It's a simple linear equation but finding the best theta values is where the challenge lies.
 
 > $\large h_{\theta }( x) =\theta _{0} \ +\ \theta _{1} x$
-
-If we only have a single feature $x$ then we call the algorithm *Univariate*, meaning, one variable and *Multivariate* refers to an algorithm that accepts multiple $x$ values or features.
-
-### Univariate Linear Regression
-
-This is the simplest form of supervised machine learning. When we have a single *feature* which basically just chooses the best line that divides our data.
-
-![Linear Regression](https://github.com/harperd/machine-learning/raw/master/images/linear-regression.png)
 
 #### Cost Function: Choosing Theta
 
