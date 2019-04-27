@@ -60,7 +60,7 @@ Here, $\alpha$ (alpha) is the learning rate or step. The smaller the step the sl
 
 ![Gradient Descent Learning Rate](../images/gradient-descent-alpha.png)
 
-The derivative, $\frac{\partial}{\partial\theta_{j}}J(\theta_{0},\theta_{1})$, measures the rate of change. A *derivative* just measures the *slope* of a line (rise over run or x over y) that is *tangent* to or next to a point within of a graphed function. Here, $\partial$ (partial derivative) is a just a mathematical term which means that it the function works with multiple variables contrasted to $d$ (derivative) which is used with single variable functions. 
+The derivative expression, $\frac{\partial}{\partial\theta_{j}}J(\theta_{0},\theta_{1})$, measures the rate of change. A *derivative* just measures the *slope* of a line (rise over run or x over y) that is *tangent* to or next to a point within of a graphed function. Here, $\partial$ (partial derivative) is a just a mathematical term which means that it the function works with multiple variables contrasted to $d$ (derivative) which is used with single variable functions. 
 
 ### Moving Toward Minimum
 
@@ -90,7 +90,7 @@ What *Gradient Descent* algorithm does is *simultaneously* compute values for $\
 >
 > *}* 
 
-Finding the partial derivatives of $\alpha\frac{\partial}{\partial\theta_{1}}J(\theta_{0},\theta_{1})$ with respect to $\theta_{0}$ and $\theta_{1}$ yields the below:
+Finding the partial derivatives of the expression $\alpha\frac{\partial}{\partial\theta_{1}}J(\theta_{0},\theta_{1})$ with respect to $\theta_{0}$ and $\theta_{1}$ yields the below:
 
 > *repeat until convergence {* 
 >
