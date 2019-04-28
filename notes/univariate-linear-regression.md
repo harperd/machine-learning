@@ -6,11 +6,11 @@ Unlike *multivariate* linear regression, *univariate* is when we are only workin
 
 We will graph our line by using the very simple slope-intercept function shown below where *b* is the y-intercept and *m* is the slope of the line.
 
-> $\large y\ =\ mx\ +\ b$
+> $y\ =\ mx\ +\ b$
 
 In machine learning, this is called our *hypothesis* function as shown below where theta $\theta$ can represent any two numbers. We just have to figure out what those two numbers are that allow the function to best intersect our data or features. Below is how our hypothesis is formally written. It's a simple linear equation but finding the best theta values is where the challenge lies.
 
-> $\large h_{\theta }( x) =\theta _{0} \ +\ \theta _{1} x$
+> $h_{\theta }( x) =\theta _{0} \ +\ \theta _{1} x$
 
 ## Cost Function: Choosing Theta
 
@@ -52,7 +52,7 @@ The Cost Function can be more easily understood by using a 2-D *Contour Plot*, s
 
 *Gradient Descent* is an algorithm used to find the optimal or minimized $J(\theta_{0}, \theta_{1})$. Sometimes it is referred to as *Batch Gradient Descent* because it is iterating over all training examples.
 
-> $\large\theta_{j}\ := \theta_{j}-\alpha\frac{\partial}{\partial\theta_{j}}J(\theta_{0},\theta_{1})$
+> $\large \theta_{j}\ := \theta_{j}-\alpha\frac{\partial}{\partial\theta_{j}}J(\theta_{0},\theta_{1})$
 
 > **Note:** The function uses an *assignment* operator $:=$ instead of an *equality* operator $=$ which means that $\theta_{j}$ is not *equal* to the right hand side of the equation but *set* to the result of the equation.
 
@@ -70,7 +70,7 @@ The derivative can be sloped in a positive direction on the $x,y$ axis (going fr
 
 If the result of the derivative, $\frac{\partial}{\partial\theta_{j}}J(\theta_{0},\theta_{1})$, is a *positive number* then the equation looks like the below which moves the Gradient Decent algorithm to the *left* on the graph moving it closer to the minimum. Here $\theta_{1}$ is on the $x$ axis and the result would yield an $x$ value to the left of the starting $x$ value which moves closer to the minimum of our function $h_{\theta}(x)$.
 
-> $\theta_{1} := \theta_{1} - \alpha(+\partial)$
+> $\large \theta_{1} := \theta_{1} - \alpha(+\partial)$
 
 As Gradient Descent approaches the minimum, the rate of change will become increasingly smaller. Hence, the algorithm will slow as it approaches the local minimum and ultimately stop changing once it has reached the minimum so there is not need to decrease the value of alpha.
 
@@ -96,10 +96,38 @@ Finding the partial derivatives of the expression $\alpha\frac{\partial}{\partia
 >
 > ​	$temp 0:= \theta_{0}-\alpha\frac{1}{m}\sum\limits ^{m}_{i=1}\left( h_{\theta }\left( x^{(i)}\right) -y^{( i)}\right)$
 >
-> ​	$temp1 := \theta_{0}-\alpha\frac{1}{m}\sum\limits ^{m}_{i=1}\left( h_{\theta }\left( x^{(i)}\right) -y^{( i)}\right)x^{(i)}$
+> ​	$temp1 := \theta_{0}-\alpha\frac{1}{m}\sum\limits ^{m}_{i=1}\left( h_{\theta }\left( x^{(i)}\right) -y^{( i)}\right)\cdot x^{(i)}$
 >
 > ​	$\theta_{0} := temp0$
 >
 > ​	$\theta_{1} := temp1$
 >
 > *}* 
+
+## Hypothesis Calculation Using Matrices
+
+When applying a large set of features to a hypothesis function it is more computationally efficient to use matrices instead of a looping construct to compute the predictions for each feature. For example, in *univariate* regression with 3 features, using matrices, a hypothesis can be computed as below.
+
+If  our values for $\theta _{0}$ and $\theta _{1}$ are $-40$ and $0.25$ respectively then our hypothesis would look like:
+
+> $h_{\theta }( x) =-40 + 0.25x$
+
+Given a set of features (5, 2 and 4) we can construct a matrix with the first column only containing the value $1$.
+
+> $\begin{bmatrix}1&5\\1&2\\1&4\end{bmatrix}$
+
+Using matrix multiplication we can then apply each feature in our matrix to our hypotheses function:
+
+> $\begin{bmatrix}1&5\\1&2\\1&4\end{bmatrix}\cdot\begin{bmatrix}-40\\0.25\end{bmatrix}=\begin{bmatrix}(1\cdot-40)+(5\cdot0.25)\\(1\cdot-40)+(2\cdot0.25)\\(1\cdot-40)+(4\cdot0.25)\end{bmatrix}=\begin{bmatrix}-38.75\\-39.50\\-40\end{bmatrix}$
+
+### Competing Hypothesis
+
+Matrix multiplication can be use to execute multiple hypothesis functions at the same time with a set of features in an efficient manner.
+
+> $h_{\theta }( x) =-40 + 0.25x$
+>
+> $h_{\theta }( x) =200 + 0.1x$
+>
+> $h_{\theta }( x) =-150 + 0.4x$
+
+> $\begin{bmatrix}1&2104\\1&1416\\1&1534\\1&852\end{bmatrix}\cdot\begin{bmatrix}-40&200&-150\\0.25&0.1&0.4\end{bmatrix}=\begin{bmatrix}486&410&692\\314&342&416\\344&353&464\end{bmatrix}$
