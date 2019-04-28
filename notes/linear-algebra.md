@@ -26,7 +26,13 @@ When adding or subtracting one matrix from another we simply add or substract ea
 
 ## Scalar Multiplication and Division
 
+Below is an example of multiplying a matrix by a scalar, in this case, the number 2:
+
 > $2\cdot\begin{bmatrix}2&3&5\\7&9&2\\3&4&1\end{bmatrix}=\begin{bmatrix}4&6&10\\14&18&4\\6&4&2\end{bmatrix}$
+
+To multiply two matrices the number of columns in one matrix must be equal to the number of rows in the other matrix. For example:
+
+> $\begin{bmatrix}2&3\\7&9\\3&4\end{bmatrix}\cdot\begin{bmatrix}2&5&1\\3&6&2\\\end{bmatrix}=\begin{bmatrix}(2\cdot2) +(3\cdot3)\\(5\cdot7)+(6\cdot9)\\(1\cdot3)+(2\cdot4)\end{bmatrix}=\begin{bmatrix}13\\89\\11\end{bmatrix}$
 
 ## Identity Matrix
 
