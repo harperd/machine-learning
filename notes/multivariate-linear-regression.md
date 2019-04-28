@@ -1,5 +1,7 @@
 # Multivariate Linear Regression
 
+## Hypothesis
+
 Below is our *hypothesis* for *univariate* linear regression with a single feature value denoted by the variable $x$.
 
 > $h_{\theta }( x) =\theta _{0} \ +\ \theta _{1} x$
@@ -62,6 +64,6 @@ Now, the hypothesis function can be re-written as simply:
 
 Having features that are not scale appropriately can cause Gradient Descent to take a longer time minimizing the cost function $J(\theta)$. The ideal range for any feature is between -1 and 1 such that $-1\leq x \leq1 $. If we have a feature that is too large or too small we will need to scale them to optimize Gradient Descent.
 
-*Z-Scaling* is typically used to scale features to get them into a range between -1 and 1. In Z-Scaling we take the sum of the features, subtract the mean and then divide by the standard deviation.
+*Z-Scaling* is used to scale features where we take the sum of the features ($x_i$), subtract the mean ($\mu_i$)  and then divide by the standard deviation ($\sigma_i$).
 
 > $\large\hat{x} = \huge\frac{x_i-\mu_i}{\sigma_i}$
