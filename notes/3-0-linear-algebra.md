@@ -6,13 +6,13 @@ A matrix is simply a rectangular array of numbers and the *dimension* of a matri
 
 > $\begin{bmatrix}1&2&3\\4&5&6 \end{bmatrix}$
 
-To reference a specific element in a matrix we would specify the row and column. For the example below, matrix $A$, $A_{1,2}$ would give us the number in the $1^{st}$ row and $2^{nd}$ column which would be the number $2$.
+To reference a specific element in a matrix we would specify the row and column. For the example below, matrix $A$, $A_{12}$ would give us the number in the $1^{st}$ row and $2^{nd}$ column which would be the number $2$.
 
-> $A = \begin{bmatrix}10&24&35\\34&15&76 \end{bmatrix}\therefore A_{1,2} = 24$
+> $A = \begin{bmatrix}10&24&35\\34&15&76 \end{bmatrix}\therefore A_{12} = 24$
 
 ## Vectors
 
-A *vector* is simply a matrix with a single column. We would express the dimensionality of the below as simply a three dimensional vector, or $\R^3$ where $y_2 = 21$.
+A *vector* is simply a matrix with a single column (an $n$ x $1$ matrix). We would express the dimensionality of the below as simply a three dimensional vector, or $\R^3$ where $y_2 = 21$.
 
 > $y =\begin{bmatrix}18\\21\\33\end{bmatrix}$
 
@@ -24,15 +24,49 @@ When adding or subtracting one matrix from another we simply add or substract ea
 
 > $\begin{bmatrix}1&3&5\\7&9&2\\3&4&1\end{bmatrix} + \begin{bmatrix}3&2&0\\3&1&4\\6&9&8\end{bmatrix} = \begin{bmatrix}4&5&5\\10&10&6\\9&13&9\end{bmatrix}$
 
+## Matrix Multiplication and Division
+
+To multiply or divide two matrices the number of columns in one matrix must be equal to the number of rows in the other matrix.
+
+To multiply matrices you will need to multiply the first number of the *multiplier* vector by the first number of in the first column of the *multiplicand* vector. Then, multiply the second number in the multiplier vector by the second number in the multiplicand vector and add the the products which becomes the first value in the product vector. Do this for each number in the multiplicand vector. For example:
+
+> $\begin{bmatrix}1&3\\4&0\\2&1\end{bmatrix}\cdot\begin{bmatrix}1\\5\end{bmatrix}=\begin{bmatrix}(1\cdot1)+(3\cdot5)\\(4\cdot1)+(0\cdot5)\\(2\cdot1)+(1\cdot5)\end{bmatrix}=\begin{bmatrix}16\\4\\7\end{bmatrix}$
+
+Here is an example with a larger multiplier matrix:
+
+> $\begin{bmatrix}2&3\\7&9\\3&4\end{bmatrix}\cdot\begin{bmatrix}2&5&1\\3&6&2\\\end{bmatrix}=\begin{bmatrix}(2\cdot2) +(3\cdot3)\\(5\cdot7)+(6\cdot9)\\(1\cdot3)+(2\cdot4)\end{bmatrix}=\begin{bmatrix}13\\89\\11\end{bmatrix}$
+
+### Example With Hypothesis Function
+
+Below is an example of using matrices to compute predictions for a hypothesis function. This is the preferred way to solve using code (such as Python) as it is more computationally efficient.
+
+Features: 
+
+> 2014, 1416, 1534, 852
+
+Hypothesis:
+
+> $h_\theta(x)=-40+0.25x$
+
+Using matrices:
+
+> $\begin{bmatrix}1&2014\\1&1416\\1&1534\\1&852\end{bmatrix}\cdot\begin{bmatrix}-40\\0.25\end{bmatrix}=\begin{bmatrix}463.50\\314.00\\343.50\\173.00\end{bmatrix}$
+
 ## Scalar Multiplication and Division
 
-Below is an example of multiplying a matrix by a scalar, in this case, the number 2:
+Scalar multiplication and division are performed the same way. Below is an example of multiplying a matrix by a scalar, in this case, the number 2:
 
 > $2\cdot\begin{bmatrix}2&3&5\\7&9&2\\3&4&1\end{bmatrix}=\begin{bmatrix}4&6&10\\14&18&4\\6&4&2\end{bmatrix}$
 
-To multiply two matrices the number of columns in one matrix must be equal to the number of rows in the other matrix. For example:
+## Combination of Operands
 
-> $\begin{bmatrix}2&3\\7&9\\3&4\end{bmatrix}\cdot\begin{bmatrix}2&5&1\\3&6&2\\\end{bmatrix}=\begin{bmatrix}(2\cdot2) +(3\cdot3)\\(5\cdot7)+(6\cdot9)\\(1\cdot3)+(2\cdot4)\end{bmatrix}=\begin{bmatrix}13\\89\\11\end{bmatrix}$
+Just as with any mathematical equation you must follow the order of operations. For example, with the below:
+
+> $3\cdot\begin{bmatrix}1\\4\\2\end{bmatrix}+\begin{bmatrix}0\\0\\5\end{bmatrix}-\begin{bmatrix}3\\0\\2\end{bmatrix}\div3$
+>
+> $=\begin{bmatrix}3\\12\\6\end{bmatrix}+\begin{bmatrix}0\\0\\5\end{bmatrix}-\begin{bmatrix}0\\1\\\frac{2}{3}\end{bmatrix}$
+>
+> $=\begin{bmatrix}2\\12\\10\frac{1}{3}\end{bmatrix}$
 
 ## Identity Matrix
 
