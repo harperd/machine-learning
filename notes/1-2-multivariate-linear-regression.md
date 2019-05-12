@@ -30,7 +30,7 @@ So, our hypothesis function can be written as the below where $\theta _0x_0 = 1\
 
 > $h_{\theta }( x) =\theta _0x_0 +\theta _1x_1+ \theta _2x_2+ \theta _3x_3+\cdot\cdot\cdot+ \theta _nx_n$
 
-In order to multiply the two vectors, $\theta$ and $x$, we need to *transpose* the theta vector which will then be labeled as $\theta^T$ which is now an (n+1) x 1 matrix or *row vector*.
+In order to multiply the two vectors, $\theta$ and $x$, we need to *transpose* the theta vector which will then be labeled as $\theta^T$ which is now an $(n$ x $1)$ x $1$ matrix or *row vector*.
 
 > $\theta^T=\begin{bmatrix}\theta_0,\theta_1,\theta_2,\theta_3,\cdot\cdot\cdot,\theta_n\end{bmatrix}$
 

@@ -8,7 +8,7 @@ We will graph our line by using the very simple slope-intercept function shown b
 
 > $y\ =\ mx\ +\ b$
 
-In machine learning, this is called our *hypothesis* function as shown below where theta $\theta$ can represent any two numbers. We just have to figure out what those two numbers are that allow the function to best intersect our data or features. Below is how our hypothesis is formally written. It's a simple linear equation but finding the best theta values is where the challenge lies.
+In machine learning, this is called our *hypothesis* function as shown below where theta $\theta$ can represent any two numbers and $h_\theta(x)$ or $y$ is our *prediction*. We just have to figure out what those two numbers are that allow the function to best intersect our data or features. Below is how our hypothesis is formally written. It's a simple linear equation but finding the best theta values is where the challenge lies.
 
 > $h_{\theta }( x) =\theta _{0} \ +\ \theta _{1} x$
 
@@ -114,7 +114,7 @@ If  our values for $\theta _{0}$ and $\theta _{1}$ are $-40$ and $0.25$ respecti
 
 > $h_{\theta }( x) =-40 + 0.25x$
 
-Given a set of features (5, 2 and 4) we can construct a matrix with the first column only containing the value $1$.
+Given a set of features (5, 2 and 4) we can construct a matrix with the first column only containing the value $1$ since it is not multiplied by a feature.
 
 > $\begin{bmatrix}1&5\\1&2\\1&4\end{bmatrix}$
 
