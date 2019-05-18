@@ -14,7 +14,7 @@ To reference a specific element in a matrix we would specify the row and column.
 
 A *vector* is simply a matrix with a single column (an $n$ x $1$ matrix). We would express the dimensionality of the below as simply a three dimensional vector, or $\R^3$ where $y_2 = 21$.
 
-> $y =\begin{bmatrix}18\\21\\33\end{bmatrix}$
+> $\overrightarrow y =\begin{bmatrix}18\\21\\33\end{bmatrix}$
 
 The indexes of matrices can be *1-indexed* or *0-indexed*, meaning, the first element (row or column) starts at either *1* or *0*. Matrices are also, by convention, referenced with *uppercase* letters and numbers and vectors with *lowercase* letters.
 
