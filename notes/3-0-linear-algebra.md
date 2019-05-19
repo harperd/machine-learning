@@ -40,15 +40,15 @@ Here is an example with a larger multiplier matrix:
 
 Below is an example of using matrices to compute predictions for a hypothesis function. This is the preferred way to solve using code (such as Python) as it is more computationally efficient.
 
-Features: 
+Given a set of features: 
 
-> 2014, 1416, 1534, 852
+> $2014, 1416, 1534, 852$
 
-Hypothesis:
+And a hypothesis:
 
 > $h_\theta(x)=-40+0.25x$
 
-Using matrices:
+Then, using matrices:
 
 > $\begin{bmatrix}1&2014\\1&1416\\1&1534\\1&852\end{bmatrix}\cdot\begin{bmatrix}-40\\0.25\end{bmatrix}=\begin{bmatrix}463.50\\314.00\\343.50\\173.00\end{bmatrix}$
 
@@ -108,7 +108,7 @@ However, some numbers, such as 0 do not have an inverse:
 
 > $0(0^{-1}) = undefined$
 
-In the same way the inverse of a matrix with all zeros is undefined. Such matrices are called *singular* or *degenerate*.
+In the same way the inverse of a matrix with all zeros is undefined. Such matrices are called *singular* or *degenerate*:
 
 > $\begin{bmatrix}0&0\\0&0\end{bmatrix}$
 
@@ -129,3 +129,15 @@ Therefore:
 For example:
 
 > $A_{2,1} = A^T_{1,2} = 4$
+
+### Logarithms
+
+A logarithm is the inverse of taking an exponent and lets you undo exponential effects. For example:
+
+> $2^3 = 8 \therefore log_28 = 3$
+
+For this example, it $2$ to what power is $8$? In this case, $3$.
+
+Natural Logarithms use the natural log $e$ which is a constant value of $2.718,281,828$.
+
+> $log_ee=1$

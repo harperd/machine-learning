@@ -36,7 +36,7 @@ When you plot a range of different values for $\theta_{0}$ and $\theta_{1}$ you 
 
 ![Cost Function 3D Plot](../images/cost-function-plot1.jpg)
 
-The graph below is indicative of a *non-linear function* with multiple, or local, minimums. In either graph, the values for $\theta_{0}$ and $\theta_{1}$ are at the lowest point on the graph. The theta values at the minimum on the graph minimize the $J(\theta_{0}, \theta_{1})$ function which achieves our goal of finding the best fit for our model.
+The graph below is indicative of a *non-linear function* with multiple, or local, minimums. In either graph, the values for $\theta$ are at the lowest point on the graph. The theta values at the minimum on the graph minimize the $J(\theta_{0}, \theta_{1})$ function which achieves our goal of finding the best fit for our model.
 
 ![Cost Function 3D Plot](../images/cost-function-plot2.jpg)
 
@@ -114,7 +114,7 @@ If  our values for $\theta _{0}$ and $\theta _{1}$ are $-40$ and $0.25$ respecti
 
 > $h_{\theta }( x) =-40 + 0.25x$
 
-Given a set of features (5, 2 and 4) we can construct a matrix with the first column only containing the value $1$ since it is not multiplied by a feature.
+Given a set of features (5, 2 and 4) we can construct a matrix with the first column only containing the value $1$ since it is not multiplied by a feature:
 
 > $\begin{bmatrix}1&5\\1&2\\1&4\end{bmatrix}$
 
