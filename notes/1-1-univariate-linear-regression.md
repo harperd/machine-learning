@@ -6,11 +6,11 @@ Unlike *multivariate* linear regression, *univariate* is when we are only workin
 
 We will graph our line by using the very simple slope-intercept function shown below where *b* is the y-intercept and *m* is the slope of the line.
 
-> $y\ =\ mx\ +\ b$
+> $\large y\ =\ mx\ +\ b$
 
 In machine learning, this is called our *hypothesis* function as shown below where theta ($\theta$) can represent any two numbers and $h_\theta(x)$ or $y$ is our *prediction*. We just have to figure out what those two numbers are that allow the function to best intersect our data or features. Below is how our hypothesis is formally written. It's a simple linear equation but finding the best theta values is where the challenge lies.
 
-> $h_{\theta }( x) =\theta _{0} \ +\ \theta _{1} x$
+> $\large h_{\theta }( x) =\theta _{0} \ +\ \theta _{1} x$
 
 ## Cost Function: Choosing Theta
 
@@ -62,7 +62,7 @@ Here, $\alpha$ (alpha) is the learning rate or step. The smaller the step the sl
 
 ![Gradient Descent Learning Rate](../images/gradient-descent-alpha.png)
 
-The derivative expression, $\frac{\partial}{\partial\theta_{j}}J(\theta_{0},\theta_{1})$, measures the rate of change. The *derivative* just measures the *slope* of a line (rise over run or x over y) that is *tangent* to or next to a point within of a graphed function. Here, $\partial$ (partial derivative) is a just a mathematical term which means that it the function works with multiple variables contrasted to $d$ (derivative) which is used with single variable functions. 
+The derivative expression, $\frac{\partial}{\partial\theta_{j}}J(\theta_{0},\theta_{1})$, measures the rate of change. The *derivative* just measures the *slope* of a line (rise over run or y over x) that is *tangent* to or next to a point within of a graphed function. Here, $\partial$ (partial derivative) is a just a mathematical term which means that it the function works with multiple variables contrasted to $d$ (derivative) which is used with single variable functions. 
 
 ### Moving Toward Minimum
 
