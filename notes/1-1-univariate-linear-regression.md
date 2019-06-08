@@ -6,11 +6,11 @@ Unlike *multivariate* linear regression, *univariate* is when we are only workin
 
 We will graph our line by using the very simple slope-intercept function shown below where *b* is the y-intercept and *m* is the slope of the line.
 
-> $\large y\ =\ mx\ +\ b$
+> $y\ =\ mx\ +\ b$
 
 In machine learning, this is called our *hypothesis* function as shown below where theta ($\theta$) can represent any two numbers and $h_\theta(x)$ or $y$ is our *prediction*. We just have to figure out what those two numbers are that allow the function to best intersect our data or features. Below is how our hypothesis is formally written. It's a simple linear equation but finding the best theta values is where the challenge lies.
 
-> $\large h_{\theta }( x) =\theta _{0} \ +\ \theta _{1} x$
+> $h_{\theta }( x) =\theta _{0} \ +\ \theta _{1} x$
 
 ## Cost Function: Choosing Theta
 
@@ -22,7 +22,7 @@ In the illustration below, our hypothesis function $h_{\theta }( x)$ is plotted 
 
 We can choose good theta values by using the *Cost Function* denoted as $J(\theta_{0}, \theta_{1})$ where  $\theta_{0}$, and $\theta_{1}$ points on the $x$,$y$ axis and $J(\theta_{0}, \theta_{1})$ is *z*. This is also called the *Squared Error Function* which is the most commonly used for linear regression problems. Here, we want to get the results of our cost function as close to zero as possible by trying different values for $\theta _{0}$ and $\theta _{1}$.
 
-> $\large J( \theta _{0} ,\ \theta _{1}) =\frac{1}{2m}\sum\limits ^{m}_{i=1}\left( h_{\theta }\left( x^{( i)}\right) -y^{( i)}\right)^{2}$
+> $J( \theta _{0} ,\ \theta _{1}) =\frac{1}{2m}\sum\limits ^{m}_{i=1}\left( h_{\theta }\left( x^{( i)}\right) -y^{( i)}\right)^{2}$
 
 > **Note:** Multiplying the result by $\frac{1}{2m}$ is purely for aesthetics.
 
@@ -54,7 +54,7 @@ The Cost Function can be more easily understood by using a 2-D *Contour Plot*, s
 
 *Gradient Descent* is an algorithm used to find the optimal or minimized $J(\theta_{0}, \theta_{1})$. Sometimes it is referred to as *Batch Gradient Descent* because it is iterating over all training examples.
 
-> $\large \theta_{j}\ := \theta_{j}-\alpha\frac{\partial}{\partial\theta_{j}}J(\theta_{0},\theta_{1})$
+> $\theta_{j}\ := \theta_{j}-\alpha\frac{\partial}{\partial\theta_{j}}J(\theta_{0},\theta_{1})$
 
 > **Note:** The function uses an *assignment* operator $:=$ instead of an *equality* operator $=$ which means that $\theta_{j}$ is not *equal* to the right hand side of the equation but *set* to the result of the equation.
 
@@ -72,7 +72,7 @@ The derivative can be sloped in a positive direction on the $x,y$ axis (going fr
 
 If the result of the derivative, $\frac{\partial}{\partial\theta_{j}}J(\theta_{0},\theta_{1})$, is a *positive number* then the equation looks like the below which moves the Gradient Decent algorithm to the *left* on the graph moving it closer to the minimum. Here $\theta_{1}$ is on the $x$ axis and the result would yield an $x$ value to the left of the starting $x$ value which moves closer to the minimum of our function $h_{\theta}(x)$.
 
-> $\large \theta_{1} := \theta_{1} - \alpha(+\partial)$
+> $\theta_{1} := \theta_{1} - \alpha(+\partial)$
 
 As Gradient Descent approaches the minimum, the rate of change will become increasingly smaller. Hence, the algorithm will slow as it approaches the local minimum and ultimately stop changing once it has reached the minimum so there is not need to decrease the value of alpha.
 
@@ -114,7 +114,7 @@ If  our values for $\theta _{0}$ and $\theta _{1}$ are $-40$ and $0.25$ respecti
 
 > $h_{\theta }( x) =-40 + 0.25x$
 
-Given a set of features (5, 2 and 4) we can construct a matrix with the first column only containing the value $1$ since it is not multiplied by a feature:
+Given a set of features (5, 2 and 4) we can construct a matrix with the first column only containing the value $1$, which is called *bias*, since it is not multiplied by a feature:
 
 > $\begin{bmatrix}1&5\\1&2\\1&4\end{bmatrix}$
 
