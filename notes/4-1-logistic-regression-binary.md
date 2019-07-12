@@ -137,7 +137,7 @@ The graph above captures the intuition that if $h_\theta(x)=0$ (Predict $P(y=1|x
 
 ## Gradient Descent
 
-The equation for Gradient Descent for Logistic Regression is the same equation with the exception of the hypothesis with implements the sigmoid function.
+The equation for Gradient Descent for Logistic Regression is the same equation with the exception of the hypothesis with implements the *Sigmoid Function*.
 
 > $\theta_{0}-\alpha\frac{1}{m}\sum\limits ^{m}_{i=1}\left( h_{\theta }\left( x^{(i)}\right) -y^{( i)}\right)\cdot x_0^{(i)}$ where $h_\theta(x)=\frac{1}{1+e^-(\theta^Tx)}$
 
