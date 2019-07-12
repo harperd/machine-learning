@@ -7,3 +7,4 @@ When given labeled data (target) we need identify the mathematical service that 
 ## Regression
 
 Unlike _classification_, we use *regression* when the target is a range of possible values. 
+
