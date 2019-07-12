@@ -22,25 +22,25 @@ To support $n$ features the hypothesis function has to change to the following.
 
 > $h_{\theta }( x) =\theta _{0} \ +\ \theta _1x_1+ \theta _2x_2+ \theta _3x_3+\cdot\cdot\cdot+ \theta _nx_n$
 
-This can be written using vectors. Note, however, that $\theta_0$ and $x_0$ will be a constant of 1. This can be thought of as adding an additional $0$ feature and our vectors are now *0-indexed*.
+This can be written using vectors. Note, however, that $x^{(i)}_0$ will be a constant of 1. This can be thought of as adding an additional $0$ feature and our vectors are now *0-indexed*. The below is an example with $3$ examples and $3$+ features in each example:
 
-> $\vec X=\begin{bmatrix}x_0\\x_1\\x_2\\x_3\\\cdot\\x_n\end{bmatrix}, \vec\theta=\begin{bmatrix}\theta_0\\\theta_1\\\theta_2\\\theta_3\\\cdot\\\theta_n\end{bmatrix}$
+> $\vec X=\begin{bmatrix}1&x^{(1)}_1&x^{(1)}_2&x^{(1)}_3&x^{(1)}_n\\1&x^{(2)}_1&x^{(2)}_2&x^{(2)}_3&x^{(2)}_n\\1&x^{(3)}_1&x^{(1)}_2&x^{(1)}_3&x^{(1)}_n\end{bmatrix}, \vec\theta=\begin{bmatrix}\theta_0\\\theta_1\\\theta_2\\\theta_3\\\theta_n\end{bmatrix}$
 
 So, our hypothesis function can be written as the below where $\theta _0x_0 = 1\cdot1=1$
 
 > $h_{\theta }( x) =\theta _0x_0 +\theta _1x_1+ \theta _2x_2+ \theta _3x_3+\cdot\cdot\cdot+ \theta _nx_n$
 
-In order to multiply the two vectors, $\theta$ and $x$, we need to *transpose* the theta vector which will then be labeled as $\theta^T$ which is now an $(n$ x $1)$ x $1$ matrix or *row vector*.
+In order to multiply the two vectors, $\theta$ and $X$, we need to *transpose* the theta vector which will then be labeled as $\theta^T$ which is now an $(n$ x $1)$ x $1$ matrix or *row vector*.
 
-> $\theta^T=\begin{bmatrix}\theta_0,\theta_1,\theta_2,\theta_3,\cdot\cdot\cdot,\theta_n\end{bmatrix}$
-
-The function below visually illustrates our new hypothesis function.
-
-> $h_{\theta }( x) =\begin{bmatrix}\theta_0,\theta_1,\theta_2,\theta_3,\cdot\cdot\cdot,\theta_n\end{bmatrix}\cdot\begin{bmatrix}x_0\\x_1\\x_2\\x_3\\\cdot\\x_n\end{bmatrix}$
+> $\theta^T=\begin{bmatrix}\theta_0&\theta_1&\theta_2&\theta_3&\theta_n\end{bmatrix}$
 
 Now, the hypothesis function can be re-written as simply:
 
 > $h_{\theta }( x) =\theta^TX$
+
+The function below visually illustrates our new hypothesis function.
+
+> $h_{\theta }( x) =\begin{bmatrix}\theta_0&\theta_1&\theta_2&\theta_3&\theta_n\end{bmatrix}\cdot\begin{bmatrix}1&x^{(1)}_1&x^{(1)}_2&x^{(1)}_3&x^{(1)}_n\\1&x^{(2)}_1&x^{(2)}_2&x^{(2)}_3&x^{(2)}_n\\1&x^{(3)}_1&x^{(1)}_2&x^{(1)}_3&x^{(1)}_n\end{bmatrix}$
 
 ## Gradient Descent
 
