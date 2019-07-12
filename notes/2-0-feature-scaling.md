@@ -14,4 +14,4 @@ Normal distributions have the following features:
 
 *Z-Scaling* is used to scale features up or down to a normal distribution range of $-1\leq x \leq1$ where we take the sum of the features ($x_i$), subtract the mean ($\mu_i$)  and then divide by the standard deviation ($\sigma_i$). A *Z-Scale* that has a range up to $-3\leq x \leq3$ could still considered to be within the normal range.
 
-> $\large\hat{x} = \huge\frac{x_i-\mu_i}{\sigma_i}$
+> $\hat{x} = \huge\frac{x_i-\mu_i}{\sigma_i}$

@@ -49,3 +49,31 @@ The Cost Function can be more easily understood by using a 2-D *Contour Plot*, s
 > **See Also:** [Contour Plot with Matplotlib](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.contour.html)
 
 > **See Also:** [Contour Plot demo with Matplotlib](https://matplotlib.org/gallery/images_contours_and_fields/contour_demo.html)
+
+## Hypothesis Calculation Using Matrices
+
+When applying a large set of features to a hypothesis function it is more computationally efficient to use matrices instead of a looping construct to compute the predictions for each feature. For example, in *univariate* regression with 3 features, using matrices, a hypothesis can be computed as below.
+
+If  our values for $\theta _{0}$ and $\theta _{1}$ are $-40$ and $0.25$ respectively then our hypothesis would look like:
+
+> $h_{\theta }( x) =-40 + 0.25x$
+
+Given a set of features (5, 2 and 4) we can construct a matrix with the first column only containing the value $1$, which is called *bias*, since it is not multiplied by a feature:
+
+> $\begin{bmatrix}1&5\\1&2\\1&4\end{bmatrix}$
+
+Using matrix multiplication we can then apply each feature in our matrix to our hypotheses function:
+
+> $\begin{bmatrix}1&5\\1&2\\1&4\end{bmatrix}\cdot\begin{bmatrix}-40\\0.25\end{bmatrix}=\begin{bmatrix}(1\cdot-40)+(5\cdot0.25)\\(1\cdot-40)+(2\cdot0.25)\\(1\cdot-40)+(4\cdot0.25)\end{bmatrix}=\begin{bmatrix}-38.75\\-39.50\\-40\end{bmatrix}$
+
+## Competing Hypothesis
+
+Matrix multiplication can be use to execute multiple hypothesis functions at the same time with a set of features in an efficient manner.
+
+> $h_{\theta }( x) =-40 + 0.25x$
+>
+> $h_{\theta }( x) =200 + 0.1x$
+>
+> $h_{\theta }( x) =-150 + 0.4x$
+
+> $\begin{bmatrix}1&2104\\1&1416\\1&1534\\1&852\end{bmatrix}\cdot\begin{bmatrix}-40&200&-150\\0.25&0.1&0.4\end{bmatrix}=\begin{bmatrix}486&410&692\\314&342&416\\344&353&464\end{bmatrix}$
