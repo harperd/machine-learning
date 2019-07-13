@@ -1,2 +1,1 @@
 # Vectorizing Logistic Regression
-
