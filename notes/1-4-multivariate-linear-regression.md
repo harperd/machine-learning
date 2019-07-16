@@ -24,7 +24,7 @@ To support $n$ features the hypothesis function has to change to the following.
 
 This can be written using vectors. Note, however, that $x^{(i)}_0$ will be a constant of 1. This can be thought of as adding an additional $0$ feature and our vectors are now *0-indexed*. The below is an example with $3$ examples and $3$+ features in each example:
 
-> $\vec X=\begin{bmatrix}1&x^{(1)}_1&x^{(1)}_2&x^{(1)}_3&x^{(1)}_n\\1&x^{(2)}_1&x^{(2)}_2&x^{(2)}_3&x^{(2)}_n\\1&x^{(3)}_1&x^{(1)}_2&x^{(1)}_3&x^{(1)}_n\end{bmatrix}, \vec\theta=\begin{bmatrix}\theta_0\\\theta_1\\\theta_2\\\theta_3\\\theta_n\end{bmatrix}$
+> $\vec X=\begin{bmatrix}1&x^{(1)}_1&x^{(1)}_2&x^{(1)}_3&x^{(1)}_n\\1&x^{(2)}_1&x^{(2)}_2&x^{(2)}_3&x^{(2)}_n\\1&x^{(3)}_1&x^{(3)}_2&x^{(3)}_3&x^{(3)}_n\end{bmatrix}, \vec\theta=\begin{bmatrix}\theta_0\\\theta_1\\\theta_2\\\theta_3\\\theta_n\end{bmatrix}$
 
 So, our hypothesis function can be written as the below where $\theta _0x_0 = 1\cdot1=1$
 
@@ -40,7 +40,7 @@ Now, the hypothesis function can be re-written as simply:
 
 The function below visually illustrates our new hypothesis function.
 
-> $h_{\theta }( x) =\begin{bmatrix}\theta_0&\theta_1&\theta_2&\theta_3&\theta_n\end{bmatrix}\cdot\begin{bmatrix}1&x^{(1)}_1&x^{(1)}_2&x^{(1)}_3&x^{(1)}_n\\1&x^{(2)}_1&x^{(2)}_2&x^{(2)}_3&x^{(2)}_n\\1&x^{(3)}_1&x^{(1)}_2&x^{(1)}_3&x^{(1)}_n\end{bmatrix}$
+> $h_{\theta }( x) =\begin{bmatrix}\theta_0&\theta_1&\theta_2&\theta_3&\theta_n\end{bmatrix}\cdot\begin{bmatrix}1&x^{(1)}_1&x^{(1)}_2&x^{(1)}_3&x^{(1)}_n\\1&x^{(2)}_1&x^{(2)}_2&x^{(2)}_3&x^{(2)}_n\\1&x^{(3)}_1&x^{(3)}_2&x^{(3)}_3&x^{(3)}_n\end{bmatrix}$
 
 ## Gradient Descent
 
