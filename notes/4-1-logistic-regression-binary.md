@@ -129,6 +129,8 @@ Exanded is:
 
 > $J(\theta)= \frac{1}{m}\sum\limits^{m}_{i=1}(-y^{(i)}\cdot log(h_\theta(x^{(i)})) - (1-y^{(i)})\cdot(log(1-h_\theta(x^{(i)}))))$
 
+**Note:** This function can be derived using the *Prinicipal Maximum Likelyhood Estimation*.
+
 When we plot this cost function we get a graph like below. The log functions where $y=0$ and $y=1$ actually continue on beyond the $z$ axis but we are only concerned with the range between 0 and 1.
 
 ![Convex Logistic Cost Function](C:/Users/Ryan/repos/machine-learning/images/logistic-regression-cost-function.png)
