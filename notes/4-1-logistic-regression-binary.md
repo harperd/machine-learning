@@ -20,9 +20,9 @@ To get our hypothesis function to scale and make predictions in this range we wi
 
 The *Sigmoid Function* ($S$) takes our hypothesis ($z$) as a parameter and returns a value between $0$ and $1$. For example:
 
-> $z = h_\theta(x) \therefore S(z) = \frac{1}{1+e^-z}$
+> $z = h_\theta(x) \therefore S(z) = \frac{1}{1+e^{-z}}$
 
-Using the *Sigmoid Function*, out hypthesis changes to the following:
+Using the *Sigmoid Function*, out hypothesis changes to the following:
 
 > $h_\theta(x) = S(\theta^Tx)$
 
@@ -108,11 +108,11 @@ When this function is graphed it results in a *non-convex* graph with multiple l
 
 ![Non-Convex Function Example](C:/Users/Ryan/repos/machine-learning/images/non-convex-function.png)
 
-It is non-liner because of the *Sigmoid Function* $ \frac{1}{1+e^-z}$. When using *Gradient Decent* using this cost function you are not guaranteed to converge at the *global* minimum. What's needed is a *convex* cost function with a single global minimum. For this to happen, our cost function has to change:
+It is non-liner because of the *Sigmoid Function* $\frac{1}{1+e^{-z}}$. When using *Gradient Decent* using this cost function you are not guaranteed to converge at the *global* minimum. What's needed is a *convex* cost function with a single global minimum. For this to happen, our cost function has to change:
 
 > $Cost(h_\theta(x),y)=\left\{\begin{array}\mbox{-}log(h_\theta(x))&\mbox{if}&y=1\\\mbox{-}log(1-h_\theta(x))&\mbox{if}&y=0\end{array}\right\}$
 
-Instead of using two conditions, the cost function can be simplified into a single equation which satisfies the above equation:
+Instead of using two conditions, the cost function for a specific feature can be simplified into a single equation which satisfies the above equation:
 
 > $Cost(h_\theta(x),y)=-y\cdot log(h_\theta(x)) - (1-y)\cdot(log(1-h_\theta(x)))$
 
@@ -120,6 +120,14 @@ In the equation there are two smaller equations, $-y\cdot log(h_\theta(x))$ and 
 
 - When $y=1$, the value for the second equation becomes $0$ leaving $-y\cdot log(h_\theta(x))$
 - When $y=0$, the value for the first equation becomes $0$ leaving $- (1-y)\cdot(log(1-h_\theta(x)))$
+
+Taking the Cost function for a feature, we can will implement our cost function across all features using a summation:
+
+> $J(\theta)=\frac{1}{m}\sum\limits^{m}_{i=1}Cost(h_\theta(x^{(i)},y^{(i)})$
+
+Exanded is:
+
+> $J(\theta)= \frac{1}{m}\sum\limits^{m}_{i=1}(-y^{(i)}\cdot log(h_\theta(x^{(i)})) - (1-y^{(i)})\cdot(log(1-h_\theta(x^{(i)}))))$
 
 When we plot this cost function we get a graph like below. The log functions where $y=0$ and $y=1$ actually continue on beyond the $z$ axis but we are only concerned with the range between 0 and 1.
 
@@ -129,7 +137,7 @@ Therefore, for the two *Cost* function parameters $h_\theta(x)$ and $y$:
 
 > $\mbox{Cost}=0\mbox{ if  }y=1\mbox{ and }h_\theta(x)=1$
 
-Likewise as $h_\theta(x)$ approaches 0, the cost will approach infinity since it asymptotes:
+Likewise as $h_\theta(x)$ approaches $0$, the cost will approach infinity since it asymptotes:
 
 > $\mbox{as }h_\theta(x)\rightarrow0\mbox{ then }Cost\rightarrow\infin$
 
@@ -139,5 +147,5 @@ The graph above captures the intuition that if $h_\theta(x)=0$ (Predict $P(y=1|x
 
 The equation for Gradient Descent for Logistic Regression is the same equation with the exception of the hypothesis with implements the *Sigmoid Function*.
 
-> $\theta_{0}-\alpha\frac{1}{m}\sum\limits ^{m}_{i=1}\left( h_{\theta }\left( x^{(i)}\right) -y^{( i)}\right)\cdot x_0^{(i)}$ where $h_\theta(x)=\frac{1}{1+e^-(\theta^Tx)}$
+> $\theta_{0}-\alpha\frac{1}{m}\sum\limits ^{m}_{i=1}\left( h_{\theta }\left( x^{(i)}\right) -y^{( i)}\right)\cdot x_0^{(i)}$ where $h_\theta(x)=\frac{1}{1+e^{-(\theta^Tx)}}$
 
