@@ -2,7 +2,7 @@
 
 Having features that are not scaled appropriately can cause Gradient Descent to take a longer time minimizing the cost function $J(\theta)$ as well as *noise* in a dataset. The ideal range for any feature is between -1 and 1 such that $-1\leq x \leq1 $. This is called a *normal* or *Gaussian* *distribution*. If we have a feature that is too large or too small we will need to scale them to optimize Gradient Descent.
 
-![Normal Distribution](C:/Users/Ryan/repos/machine-learning/images/normal-distribution.png)
+![Normal Distribution](../images/normal-distribution.png)
 
 Normal distributions have the following features:
 

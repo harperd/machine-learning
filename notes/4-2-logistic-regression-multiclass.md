@@ -10,11 +10,11 @@
 
 Multiclass Classification can be achieved using what is called *One-vs-All* (*One-vs-Rest*) where we basically make  each class a different *Binary Classification* problem. For example, in the illustration below we would produce three different *Binary Classification* problems to get three different predictions.
 
-![Binary vs. Multiclass](C:/Users/Ryan/repos/machine-learning/images/logistic-regression-multi-vs-binary.png)
+![Binary vs. Multiclass](../images/logistic-regression-multi-vs-binary.png)
 
 The below illustration depicts this concept. We pick one class and treat the other two classes as a single class and perform a single *Binary Classification* problem. This is what is meant by the term *One-vs-all*.
 
-![Binary vs. Multiclass](C:/Users/Ryan/repos/machine-learning/images/logistic-regression-one-vs-all.png)
+![Binary vs. Multiclass](../images/logistic-regression-one-vs-all.png)
 
 In the illustration above, the green triangles would be a value of $1$ and the blue circles would be a value of $0$. This is formally written as:
 
