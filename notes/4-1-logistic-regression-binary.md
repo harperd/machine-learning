@@ -30,7 +30,7 @@ This will effectively scale our hypothesis prediction ($z$) to a value between $
 
 Below shows a plot of the *Sigmoid Function* that shows the *threshold* at $0.5$ which asymptotes (continually approaches but does not meet) at $1$ and $0$ with the $z$ axis on the horizontal:
 
-![Sigmoid Regression](C:/Users/Ryan/repos/machine-learning/images/sigmoid-function.png)
+![Sigmoid Regression](../images/sigmoid-function.png)
 
 It it worth noting that the prediction returned by the hypothesis function directly corresponds to the *Sigmoid* value, such that:
 
@@ -38,7 +38,7 @@ It it worth noting that the prediction returned by the hypothesis function direc
 >
 > $h_\theta(x) \lt 0.5$ when $\theta^Tx \lt 0$
 
-![Sigmoid Regression](C:/Users/Ryan/repos/machine-learning/images/sigmoid-function-h.png)
+![Sigmoid Regression](../images/sigmoid-function-h.png)
 
 In interpreting the value returned by the *Sigmoid* function, if it returns $y = .70$ when we say there is a $70\%$ chance that $y=1$ and therefore, by deduction, a $30\%$ chance that $y=0$. In a more concrete example, if malignant tumor features  lie in the range *above* $0.5$:
 
@@ -60,7 +60,7 @@ Likewise, we can find the probability of $y$ being $0$ by subtracting the $y=1$ 
 
 The *decision boundary* divides the plotted features from a data set. This boundary is used to determine regions that determine when $y=0$ or $y=1$. The decision boundary can be any equation, linear or non-linear, that best segments the data. Below will outline how to find this boundary using the *Sigmoid Function*.
 
-![Decision Boundary](C:/Users/Ryan/repos/machine-learning/images/decision-boundary.png)
+![Decision Boundary](../images/decision-boundary.png)
 
 For example, if we have the following hypothesis function:
 
