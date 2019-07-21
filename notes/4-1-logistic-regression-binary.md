@@ -86,7 +86,7 @@ Or, rewritten as below where $3$, the y-intercept, denotes our *decision boundar
 
 Remember, that $\theta_0$ is our bias weight with a value of 1 since there are no features associated with it. So, we are basically saying that *our features lie beyond the boundary where $x_1$ or $x_2$ is 3*. Plotting the line $x_1 + x_2=3$ results in the decision boundary graphed below where both the $x_1$ axis and $x_2$ axis are intercepted at $3$. Therefore, any value on the right side of the decision boundary, where $x_1 + x_2 \ge3$, yields a $y$ value of $1$. Conversely, $x_1 + x_2 \lt3$ will result in a $y$ value of $0$.
 
-![Decision Boundary Example](C:/Users/Ryan/repos/machine-learning/images/decision-boundary-example.png)
+![Decision Boundary Example](../images/decision-boundary-example.png)
 
 It is important to note that the equation $x_1 + x_2=3$ corresponds to region where $h_\theta(x)=0.5$. Also, the decision boundary, is a property of the hypothesis and not the data set. In other words, removing all features from the graph does not impact the decision boundary or the hypothesis from determining the predicted value for $y$.
 
@@ -106,7 +106,7 @@ Therefore, for reasons described later, we can define our cost function as:
 
 When this function is graphed it results in a *non-convex* graph with multiple local minimums: 
 
-![Non-Convex Function Example](C:/Users/Ryan/repos/machine-learning/images/non-convex-function.png)
+![Non-Convex Function Example](../images/non-convex-function.png)
 
 It is non-liner because of the *Sigmoid Function* $\frac{1}{1+e^{-z}}$. When using *Gradient Decent* using this cost function you are not guaranteed to converge at the *global* minimum. What's needed is a *convex* cost function with a single global minimum. For this to happen, our cost function has to change:
 
