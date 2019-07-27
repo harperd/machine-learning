@@ -125,11 +125,11 @@ Taking the Cost function for a feature, we can will implement our cost function 
 
 > $J(\theta)=\frac{1}{m}\sum\limits^{m}_{i=1}Cost(h_\theta(x^{(i)},y^{(i)})$
 
-Exanded is:
+Expanded is:
 
 > $J(\theta)= \frac{1}{m}\sum\limits^{m}_{i=1}(-y^{(i)}\cdot log(h_\theta(x^{(i)})) - (1-y^{(i)})\cdot(log(1-h_\theta(x^{(i)}))))$
 
-**Note:** This function can be derived using the *Prinicipal Maximum Likelyhood Estimation*.
+**Note:** This function can be derived using the *Principal Maximum Likelihood Estimation*.
 
 When we plot this cost function we get a graph like below. The log functions where $y=0$ and $y=1$ actually continue on beyond the $z$ axis but we are only concerned with the range between 0 and 1.
 
