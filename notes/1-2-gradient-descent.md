@@ -62,7 +62,31 @@ SciPy optimize provides functions for minimizing (or maximizing) objective funct
 
 ### Conjugate Gradent
 
-The *Conjugate Gradient* is build on the *Truncated Newton* algorithm. In Python we can use [scipy.optimize.fmin_tnc](https://docs.scipy.org/doc/scipy-0.14.0/reference/generated/scipy.optimize.fmin_tnc.html).
+The *Conjugate Gradient* is build on the *Truncated Newton* algorithm. In Python we can use [scipy.optimize.fmin_tnc](https://docs.scipy.org/doc/scipy-0.14.0/reference/generated/scipy.optimize.fmin_tnc.html). Below is a Python example:
+
+```
+# Minimize a function with variables subject to bounds,
+# using gradient information using truncated Newton or Newton Conjugate-Gradient.
+result = opt.fmin_tnc(
+  # Initial guess.
+  x0 = theta,
+  # Objective function to be minimized.
+  func = compute_cost,
+  # Gradient of func.
+  fprime = compute_gradient,
+  # Extra arguments passed to f and fprime.
+  args = ( X, y ))
+
+theta_min = result[0]
+iterations = result[1]
+cost = compute_cost(theta_min, X, y)
+
+print(f'Minimized theta values: {theta_min}')
+print(f'Number of iterations: {iterations}')
+print(f'Cost: {cost}')
+```
+
+
 
 ### BFGS
 
