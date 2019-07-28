@@ -53,3 +53,18 @@ Finding the partial derivatives of the expression $\alpha\frac{\partial}{\partia
 > ​	$\theta_{1} := temp1$
 >
 > *}* 
+
+## Advanced Alternatives
+
+There are more advanced alternatives to Gradient Descent which negate the need to pick a learning rate and often times faster than Gradient Descent. Below are some alternatives. In Python we would use *SciPy optimize* set of functions. 
+
+SciPy optimize provides functions for minimizing (or maximizing) objective functions, possibly subject to constraints. It includes solvers for nonlinear problems (with support for both local and global optimization algorithms), linear programing, constrained and nonlinear least-squares, root finding and curve fitting.
+
+### Conjugate Gradent
+
+The *Conjugate Gradient* is build on the *Truncated Newton* algorithm. In Python we can use [scipy.optimize.fmin_tnc](https://docs.scipy.org/doc/scipy-0.14.0/reference/generated/scipy.optimize.fmin_tnc.html).
+
+### BFGS
+
+### L-BFGS
+
