@@ -86,8 +86,6 @@ print(f'Number of iterations: {iterations}')
 print(f'Cost: {cost}')
 ```
 
-
-
 ### BFGS
 
 ### L-BFGS
