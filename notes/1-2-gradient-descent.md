@@ -62,7 +62,7 @@ SciPy optimize provides functions for minimizing (or maximizing) objective funct
 
 ### Conjugate Gradent
 
-The *Conjugate Gradient* is build on the *Truncated Newton* algorithm. In Python we can use [scipy.optimize.fmin_tnc](https://docs.scipy.org/doc/scipy-0.14.0/reference/generated/scipy.optimize.fmin_tnc.html). Below is a Python example where we plug in our cost and gradient compute functions:
+The *Conjugate Gradient* algorithm is build on the *Truncated Newton* algorithm. In Python we can use the [scipy.optimize.fmin_tnc](https://docs.scipy.org/doc/scipy-0.14.0/reference/generated/scipy.optimize.fmin_tnc.html) function. Below is a Python example where we plug in our cost and gradient compute functions:
 
 ```python
 # Minimize a function with variables subject to bounds,
@@ -88,5 +88,15 @@ print(f'Cost: {cost}')
 
 ### BFGS
 
+The *Broyden, Fletcher, Goldfarb, and Shanno* (BFGS) algorithm is based on the quasi-Netwon method. In Python we can use the [scipy.optimize.fmin_bfgs](https://docs.scipy.org/doc/scipy-0.14.0/reference/generated/scipy.optimize.fmin_bfgs.html) function.
+
+The BFGS method accumulates all gradients since the given initial guess. There is two problems with this method. First, the memory can increase indefinitely. Second, for nonlinear problems, the Hessian (theta matrix) at the initial guess is often not representative of the Hessian at the solution. The approximated Hessian will thus be biased until enough gradients are accumulated close to the solution. This can slow down convergence, but should still converge with good line search algorithms that have a single local minimum.
+
 ### L-BFGS
+
+The *Limited memory BFGS* (L-BFGS) algorithm is based on the quasi-Netwon method and approximates BFGS algorithm using a limited amount of memory. In Python we can use the [scipy.optmize.l-bfgs-b](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.fmin_l_bfgs_b.html) function which is the same a L-BFGS but with bounds.
+
+L-BFGS is the same as BFGS but with a limited-memory, which means that after some time, old gradients are discarded to leave more space for freshly computed gradients. This solves the problem of the memory, and it avoids the bias of the initial gradient. However, depending on the number of gradients kept in memory, the Hessian (theta matrix) might never be precisely estimated, and can be another source of bias. This can slow down convergence, but should still converge with good line search algorithms that have a single local minimum.
+
+L-BFGS-B is the same as L-BFGS but with bound constraints on the input variables. L-BFGS-B will stop optimizing variables that are on the boundary of the domain. 
 
