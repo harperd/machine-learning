@@ -141,3 +141,8 @@ For this example, it $2$ to what power is $8$? In this case, $3$.
 Natural Logarithms use the natural log $e$ which is a constant value of $2.718,281,828$.
 
 > $log_ee=1$
+
+
+
+
+
