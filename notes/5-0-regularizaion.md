@@ -17,31 +17,43 @@ Ways to address overfitting:
 
 * Regularization
 
-  * Keep all the features, but reduce the magnitude (number of values) of parameters $\theta_j$.
+  * Keep all the features, but reduce the magnitude (size of values) of parameters $\theta_j$.
   * Works well when we have a lot of features, each of which contributes to bit to predicting $y$.
 
-  ## Regularization
+## Types of Regularization
 
-Regularization is the process of reducing the magnitude of our parameters $\theta_1$ to $\theta_{100}$. We don't want to reduce the magnitude of all theta values just those that are disproportionately higher. However, we don't reduce the magnitude (penalize) $\theta_0$.
+There are two main types of regularization that can be used with each having their own tradeoffs.
+
+*L1 Regularization*, also called *Lasso Regression* (Least Absolute Shrinkage and Selection Operator) adds an  *absolute value of magnitude* of coefficient as penalty term to the loss function. Lasso shrinks the less important feature’s coefficient to zero thereby removing some feature altogether. This works well for feature selection in case there is a huge number of features.
+
+> $\lambda\sum\limits^{n}_{j=1}|\theta_j|$
+
+*L2 Regularization*, also called *Ridge Regression* adds *squared magnitude* of coefficient as penalty term to the loss function. If lambda is zero then you get back OLS (Ordinary Least Square). However, if lambda is very large then it will add too much weight and it will lead to under-fitting. L2 works very well to avoid over-fitting issue as it scales values close to zero.
+
+> $\lambda\sum\limits^{n}_{j=1}\theta^2_j$
+
+## Cost Function Regularization
+
+Regularization is the process of reducing the magnitude of our parameters $\theta_1$ to $\theta_n$. We don't want to reduce the magnitude of all theta values just those that are disproportionately higher. Also, we don't reduce the magnitude (penalize) $\theta_0$ since it is our intercept term.
 
 Small parameter values $\theta_1,...,\theta_n$:
 
 * Makes the hypothesis *simpler*. By *simple*, we mean a line that has less variance or complexity.
 * Less prone to overfitting
 
-This is achieved through a slight variation of our cost function by adding a *regularization* term:
+This is achieved through a slight variation of the cost function by adding a *regularization* term which can be used for both linear and logistic cost functions. Below is an example using the linear cost function: 
 
 > $J(\theta)=\frac{1}{2m}[\sum\limits^{m}_{i=1}(h_\theta(x)^{(i)}-y^{(1)})^2 +\lambda\sum\limits^{n}_{j=1}\theta_j^2]$
 
-$\lambda$ is the *regularization* parameter that controls a tradeoff between two different goals. The first goal is fitting the training set well as represented by our regular cost function. The second goal is to keep our parameters small as represented by regularization term $\lambda\sum\limits^{n}_{j=1}\theta_j^2$.
+$\lambda$ is the *regularization parameter* that controls a tradeoff between two different goals. The first goal is fitting the training set well as represented by our regular cost function. The second goal is to keep our parameters small as represented by regularization term $\lambda\sum\limits^{n}_{j=1}\theta_j^2$.
 
 In regularized linear regression we *choose* which parameters to minimize. If we minimized *all* of the parameter values, all of our parameters (aside of $\theta_0$) would be at or near zero. Thus, our hypothesis function would more closely resemble a horizontal straight line where $h_\theta(x)=\theta_0$. Just as choosing which parameters to minimize, we must carefully choose a good value for lambda.
 
 ![Binary vs. Multiclass](../images/regularization_under_fit.png)
 
-## Gradient Descent with Regularization
+## Gradient Descent Regularization
 
-Below is the Gradient Descent algorithm where $m$ represents the number of examples and $i$ represents a specific example.
+Below is the Gradient Descent algorithm where $m$ represents the number of examples and $i$ represents a specific example:
 
 >*repeat until convergence {* 
 >
