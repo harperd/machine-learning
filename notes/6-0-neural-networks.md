@@ -1,5 +1,7 @@
 # Neural Networks
 
+In neural networks, layer 1 is the input layer followed by a number of hidden layers and an output is layer.
+
 ![Neural Network](../images/neural-network.png)
 
 Below are the notations that are used going forward.
