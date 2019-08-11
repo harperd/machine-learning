@@ -1,6 +1,6 @@
 # Neural Networks
 
-In neural networks, layer 1 is the input layer followed by a number of hidden layers and an output is layer.
+In neural networks, layer 1 is the input layer followed by a number of hidden layers and an output is layer. Each layer is comprised of activation functions also called neurons. 
 
 ![Neural Network](../images/neural-network.png)
 
