@@ -1,0 +1,19 @@
+# Neural Networks
+
+![Neural Network](../images/neural-network.png)
+
+Below are the notations that are used going forward.
+
+## Activation
+
+> $a$ = activation function
+>
+> $a^{(j)}_i$ = activation function of the $i$th activation function (neuron) in the $j$th hidden layer.
+>
+> $a^{(2)}_1$ = activation function of the $1^{st}$ activation function (neuron) in the $2^{nd}$ hidden layer.
+
+## Weights
+
+> $\theta^{(j)}$ = matrix of weights controlling function mapping from layer $j$ to the next layer, $j+1$.
+>
+> $\theta^{(2)}$ = matrix of weights controlling function mapping from layer $2$ to layer $3$.
