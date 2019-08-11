@@ -22,7 +22,7 @@ The *Sigmoid Function* ($S$) takes our hypothesis ($z$) as a parameter and retur
 
 > $z = h_\theta(x) \therefore S(z) = \frac{1}{1+e^{-z}}$
 
-Using the *Sigmoid Function*, out hypothesis changes to the following:
+Using the *Sigmoid Function*, our hypothesis changes to the following:
 
 > $h_\theta(x) = S(\theta^Tx)$
 
