@@ -24,5 +24,7 @@ Input thetas to an activation function are superscripted with the index of the c
 
 ## Matrix Dimensions
 
-If network has $s_j$ activation functions in layer $j$ and $s_{j+1}$ in layer $j+1$, then $\theta^{(j)}$ will be of dimension $s_{j+1}$ x $(j_j+1)$.
+If a neural network has $s_j$ activation functions in layer $j$ and $s_{j+1}$ in layer $j+1$, then $\theta^{(j)}$ will be of dimension $s_{j+1}$ x $(j_j+1)$.
+
+![Neural Network](../images/neural-network-matrix-size.png)
 
