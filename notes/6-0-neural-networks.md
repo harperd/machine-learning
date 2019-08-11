@@ -21,3 +21,8 @@ Below are the notations that are used going forward.
 Input thetas to an activation function are superscripted with the index of the calling layer. For example:
 
 > $\theta^{(2)}$ matrix would be input to $a^{(3)}_i$ and output a $\theta^{(3)}$ matrix.
+
+## Matrix Dimensions
+
+If network has $s_j$ activation functions in layer $j$ and $s_{j+1}$ in layer $j+1$, then $\theta^{(j)}$ will be of dimension $s_{j+1}$ x $(j_j+1)$.
+
