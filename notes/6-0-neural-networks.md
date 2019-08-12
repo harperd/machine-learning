@@ -38,18 +38,16 @@ If a neural network has $s_j$ activation functions in layer $j$ and $s_{j+1}$ in
 >
 > then, the dimentions of the $\theta$ matrix would be $30$ x $21$.
 
-
-
 ## Activation Function Calculations
 
-Below is an example with three activation functions in the current layer each using a *Sigmoid* activation function $g$.
+In referencing the diagram above, below is an example with the three activation functions in layer $2$ each using a *Sigmoid* activation function $g$:
 
 > $a^{(2)}_1=g(\theta^{(1)}_{10}x_0+\theta^{(1)}_{11}x_1+\theta^{(1)}_{12}x_2+\theta^{(1)}_{13}x_3)$
 >
 > $a^{(2)}_2=g(\theta^{(1)}_{20}x_0+\theta^{(1)}_{21}x_1+\theta^{(1)}_{22}x_2+\theta^{(1)}_{23}x_3)$
 >
 > $a^{(2)}_3=g(\theta^{(1)}_{30}x_0+\theta^{(1)}_{31}x_1+\theta^{(1)}_{32}x_2+\theta^{(1)}_{33}x_3)$
->
-> 
->
-> ![Neural Network](../images/neural-network-calc.png)
+
+The hypotheis function in layer $3$ would be:
+
+> $h_\theta(x)=a^{(3)}_1=(\theta^{(2)}_{10}a^{(2)}_0+\theta^{(2)}_{11}a^{(2)}_1+\theta^{(2)}_{12}a^{(2)}_2+\theta^{(2)}_{13}a^{(2)}_3)$
