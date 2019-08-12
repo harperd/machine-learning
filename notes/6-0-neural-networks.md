@@ -22,9 +22,9 @@ Activation functions are typically denoted by $a$ where:
 
 The values passed between layers in a nerual network a represented as a matrix of values (or weights) as denoted by $\theta$ where:
 
-> $\theta^{(j)}$ is a matrix of values controlling function mapping from layer $j$ to the next layer, $j+1$.
+> $\theta^{(j)}_{mn}$ is a matrix of values controlling function mapping from layer $j$ to the next layer, $j+1$ and $m$ and $n$ are the row and column of the matrix value.
 >
-> $\theta^{(2)}$ is a matrix of values controlling function mapping from layer $2$ to layer $3$.
+> $\theta^{(2)}_{12}$ is a matrix of values controlling function mapping from layer $2$ to layer $3$ and the value at $1,2$.
 
 Input thetas to an activation function are superscripted with the index of the calling layer where:
 
@@ -42,4 +42,14 @@ If a neural network has $s_j$ activation functions in layer $j$ and $s_{j+1}$ in
 
 ## Activation Function Calculations
 
-![Neural Network](../images/neural-network-calc.png)
+Below is an example with three activation functions in the current layer each using a *Sigmoid* activation function $g$.
+
+> $a^{(2)}_1=g(\theta^{(1)}_{10}x_0+\theta^{(1)}_{11}x_1+\theta^{(1)}_{12}x_2+\theta^{(1)}_{13}x_3)$
+>
+> $a^{(2)}_2=g(\theta^{(1)}_{20}x_0+\theta^{(1)}_{21}x_1+\theta^{(1)}_{22}x_2+\theta^{(1)}_{23}x_3)$
+>
+> $a^{(2)}_3=g(\theta^{(1)}_{30}x_0+\theta^{(1)}_{31}x_1+\theta^{(1)}_{32}x_2+\theta^{(1)}_{33}x_3)$
+>
+> 
+>
+> ![Neural Network](../images/neural-network-calc.png)
