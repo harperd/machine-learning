@@ -75,14 +75,14 @@ The regularization term $1-\alpha\frac{\lambda}{m}$ will yield a number that is 
 
 ## Normal Equation (NEEDS FURTHER RESEARCH)
 
-The Normal Equation is shown below where $\beta$ is an $(n+1)$ x $(n+1)$ *identity matrix* where $n$ denotes the number features. Therefore, if the number of features is 2 then the matrix will be a $3$x$3$ identity matrix.
+The Normal Equation is shown below where $\beta$ is an $(n+1)$ x $(n+1)$ *identity matrix* where $n$ denotes the number features. Therefore, if the number of features is 2 then the matrix will be a $3$ x $3$ identity matrix.
 
 > $\theta=(X^TX+\lambda\cdot\beta)^{-1}\cdot X^Ty$
 
-### Non-Invertability
+### Non-Invertibility
 
-If we can multiply a matrix by itself transposed, then it is said to be *invertable*. This can be the case if the number of rows and columns are the same. However, if the rows and columns are different then it is said to be *non-invertable*, *singular* or *degenerate*.  In the case of the normal equations this will happend if the number of features is geater than the number of examples making the matrix $X$ a rectuangular matrix.
+If we can multiply a matrix by itself transposed, then it is said to be *invertible*. This can be the case if the number of rows and columns are the same. However, if the rows and columns are different then it is said to be *non-invertible*, *singular* or *degenerate*.  In the case of the normal equations this will happened if the number of features is greater than the number of examples making the matrix $X$ a rectangular matrix.
 
-> If $m < n$, then the matrix is *non-invertable*
+> If $m < n$, then the matrix is *non-invertible*
 >
-> If $m=n$, then the matrix is *inverable*
+> If $m=n$, then the matrix is *invertible*
