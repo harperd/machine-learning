@@ -8,7 +8,7 @@ In neural networks, *layer 1* is the input layer followed by a number of *hidden
 
 ## Activation Functions
 
-In artificial neural networks, the *activation* function (also referred to as a unit or neuron) of a node defines the output of that node given an input or set of inputs. A standard computer chip circuit can be seen as a digital network of activation functions that can be "ON" or "OFF", depending on input. The *Sigmoid* function is one of several popular activation functions.
+In artificial neural networks, the *activation* function (also referred to as a unit or neuron) defines the output of that node given an input or set of inputs. Every output from an activation function is the input to every activation function in the following layer. A standard computer chip circuit can be seen as a digital network of activation functions that can be "ON" or "OFF", depending on input. The *Sigmoid* function is one of several popular activation functions.
 
 ![Activation Functions](../images/activation-functions.png)
 
@@ -28,11 +28,18 @@ The values passed between layers in a nerual network a represented as a matrix o
 
 Input thetas to an activation function are superscripted with the index of the calling layer where:
 
-> $\theta^{(2)}$ matrix would be input to $a^{(3)}_i$ and output a $\theta^{(3)}$ matrix.
+> $\theta^{(2)}$ matrix would be input to activation function $a^{(3)}_i$ which would output a $\theta^{(3)}$ matrix.
 
 ### Matrix Dimensions
 
-If a neural network has $s_j$ activation functions in layer $j$ and $s_{j+1}$ in layer $j+1$, then $\theta^{(j)}$ will be of dimension $s_{j+1}$ x $(s_j+1)$. In other words, the number of columns ($m$) is the number of activation functions in the next layer and the number of rows ($n$) is the number of activation functions plus 1 from the current layer.
+If a neural network has $s_j$ activation functions in layer $j$ and $s_{j+1}$ in layer $j+1$, then $\theta^{(j)}$ will be of dimension $s_{j+1}$ x $(s_j+1)$.  We say $+1$ because we are adding a bias unit of $1$ in the same way that's done for linear and logistic regression. In other words, the number of rows ($m$) is the number of activation functions in the next layer and the number of columns ($n$) is the number of activation functions plus 1 from the current layer. For example:
 
-![Neural Network](../images/neural-network-matrix-size.png)
+> If layer $2$ contains $20$ activation functions and layer $3$ contains $30$ activation functions
+>
+> then, the dimentions of the $\theta$ matrix would be $30$ x $21$.
 
+
+
+## Activation Function Calculations
+
+![Neural Network](../images/neural-network-calc.png)
