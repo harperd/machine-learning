@@ -50,4 +50,4 @@ In referencing the diagram above, below is an example with the three activation 
 
 The hypotheis function in layer $3$ would be:
 
-> $h_\theta(x)=a^{(3)}_1=(\theta^{(2)}_{10}a^{(2)}_0+\theta^{(2)}_{11}a^{(2)}_1+\theta^{(2)}_{12}a^{(2)}_2+\theta^{(2)}_{13}a^{(2)}_3)$
+> $h_\theta(x)=a^{(3)}_1=g(\theta^{(2)}_{10}a^{(2)}_0+\theta^{(2)}_{11}a^{(2)}_1+\theta^{(2)}_{12}a^{(2)}_2+\theta^{(2)}_{13}a^{(2)}_3)$
