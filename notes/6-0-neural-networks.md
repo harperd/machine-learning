@@ -20,15 +20,15 @@ Activation functions are typically denoted by $a$ where:
 
 ## NN Matrix
 
-The values passed between layers in a nerual network a represented as a matrix of values (or weights) as denoted by $\theta$ where:
+The values passed between layers in a neural network a represented as a matrix of values (or weights) as denoted by $\Theta$ where:
 
-> $\theta^{(j)}_{mn}$ is a matrix of values controlling function mapping from layer $j$ to the next layer, $j+1$ and $m$ and $n$ are the row and column of the matrix value.
+> $\Theta^{(j)}_{mn}$ is a matrix of values controlling function mapping from layer $j$ to the next layer, $j+1$ and $m$ and $n$ are the row and column of the matrix value.
 >
-> $\theta^{(2)}_{12}$ is a matrix of values controlling function mapping from layer $2$ to layer $3$ and the value at $1,2$.
+> $\Theta^{(2)}_{12}$ is a matrix of values controlling function mapping from layer $2$ to layer $3$ and the value at $1,2$.
 
 Input thetas to an activation function are superscripted with the index of the calling layer where:
 
-> $\theta^{(2)}$ matrix would be input to activation function $a^{(3)}_i$ which would output a $\theta^{(3)}$ matrix.
+> $\Theta^{(2)}$ matrix would be input to activation function $a^{(3)}_i$ which would output a $\theta^{(3)}$ matrix.
 
 ### Matrix Dimensions
 
@@ -36,18 +36,48 @@ If a neural network has $s_j$ activation functions in layer $j$ and $s_{j+1}$ in
 
 > If layer $2$ contains $20$ activation functions and layer $3$ contains $30$ activation functions
 >
-> then, the dimentions of the $\theta$ matrix would be $30$ x $21$.
+> then, the dimensions of the $\Theta$ matrix would be $30$ x $21$.
 
 ## Activation Function Calculations
 
+![Neural Network](../images/neural-network.png)
+
 In referencing the diagram above, below is an example with the three activation functions in layer $2$ each using a *Sigmoid* activation function $g$:
 
-> $a^{(2)}_1=g(\theta^{(1)}_{10}x_0+\theta^{(1)}_{11}x_1+\theta^{(1)}_{12}x_2+\theta^{(1)}_{13}x_3)$
+> $a^{(2)}_1=g(\Theta^{(1)}_{10}x_0+\Theta^{(1)}_{11}x_1+\Theta^{(1)}_{12}x_2+\Theta^{(1)}_{13}x_3)=g(z^{(2)}_1)$
 >
-> $a^{(2)}_2=g(\theta^{(1)}_{20}x_0+\theta^{(1)}_{21}x_1+\theta^{(1)}_{22}x_2+\theta^{(1)}_{23}x_3)$
+> $a^{(2)}_2=g(\Theta^{(1)}_{20}x_0+\Theta^{(1)}_{21}x_1+\Theta^{(1)}_{22}x_2+\Theta^{(1)}_{23}x_3)=g(z^{(2)}_2)$
 >
-> $a^{(2)}_3=g(\theta^{(1)}_{30}x_0+\theta^{(1)}_{31}x_1+\theta^{(1)}_{32}x_2+\theta^{(1)}_{33}x_3)$
+> $a^{(2)}_3=g(\Theta^{(1)}_{30}x_0+\Theta^{(1)}_{31}x_1+\Theta^{(1)}_{32}x_2+\Theta^{(1)}_{33}x_3)=g(z^{(2)}_3)$
 
-The hypotheis function in layer $3$ would be:
+The hypothesis function in layer $3$ would be:
 
-> $h_\theta(x)=a^{(3)}_1=g(\theta^{(2)}_{10}a^{(2)}_0+\theta^{(2)}_{11}a^{(2)}_1+\theta^{(2)}_{12}a^{(2)}_2+\theta^{(2)}_{13}a^{(2)}_3)$
+> $h_\Theta(x)=a^{(3)}_1=g(\Theta^{(2)}_{10}a^{(2)}_0+\Theta^{(2)}_{11}a^{(2)}_1+\Theta^{(2)}_{12}a^{(2)}_2+\Theta^{(2)}_{13}a^{(2)}_3)$
+
+### Vectorized Calculations
+
+The following illustrates the input, vectorized computation for layer 2 and output in layer 3. This process is also called *forward propagation*.
+
+Layer 1 (input) is expressed as a 4 dimentional vector (matrix) in this case which includes a bias column (matrix values are abitrary). Note that layer 1 can also be reference as $a^{(1)}$:
+
+> $a^{(1)}=x=\begin{bmatrix}1&1&2&3\\1&4&5&6\\1&7&8&9\end{bmatrix}$
+
+Our theta values, used was weights for layer 2, would be expressed as a 4 dimentional vector which serves as the *mapping* between layer 1 and layer 2:
+
+> $\Theta^{(1)}=\begin{bmatrix}\Theta^{(1)}_{10}&\Theta^{(1)}_{11}&\Theta^{(1)}_{12}&\Theta^{(1)}_{13}\\\Theta^{(1)}_{20}&\Theta^{(1)}_{21}&\Theta^{(1)}_{22}&\Theta^{(1)}_{23}\\\Theta^{(1)}_{30}&\Theta^{(1)}_{31}&\Theta^{(1)}_{32}&\Theta^{(1)}_{33}\end{bmatrix}$
+
+In layer 2, we want to call our Sigmoid function with the input passed in to layer 1 where:
+
+> $z^{(2)}=\Theta^{(1)}x=\Theta^{(1)}a^{(1)}$
+
+Therefore our "new x values" used as input to layer 3 would be:,
+
+> $a^{(2)}=g(z^{(2)})=g(\Theta^{(1)}x)=g(\Theta^{(1)}a^{(1)})$
+
+In layer 3, we would have a different set of weghts and to compute our hypothesis, which service as the *mapping* between layer 2 and layer 3. We would our output for layer 2 as follows where $a^{(2)}_0$ is the bias unit of $1$ where:
+
+> $z^{(3)}=\Theta^{(2)}a^{(2)}$
+
+Expanded, would be:
+
+> $h_\Theta(x)=g(z^{(3)})=g(\Theta^{(2)}_{10}a^{(2)}_0+\Theta^{(2)}_{11}a^{(2)}_1+\Theta^{(2)}_{12}a^{(2)}_2+\Theta^{(2)}_{13}a^{(2)}_3)$
