@@ -6,6 +6,10 @@ In neural networks, *layer 1* is the input layer followed by a number of *hidden
 
 ![Neural Network](../images/neural-network.png)
 
+Neural networks can come in many different architectures such as below:
+
+![Neural Network](../images/neural-network-arch.png)
+
 ## Activation Functions
 
 In artificial neural networks, the *activation* function (also referred to as a unit or neuron) defines the output of that node given an input or set of inputs. Every output from an activation function is the input to every activation function in the following layer. A standard computer chip circuit can be seen as a digital network of activation functions that can be "ON" or "OFF", depending on input. The *Sigmoid* function is one of several popular activation functions.
