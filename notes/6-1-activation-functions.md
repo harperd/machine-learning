@@ -2,7 +2,7 @@
 
 In artificial neural networks, the *activation* function (also referred to as a unit or neuron) defines the output of that node given an input or set of inputs. Every output from an activation function is the input to every activation function in the following layer. A standard computer chip circuit can be seen as a digital network of activation functions that can be "ON" or "OFF", depending on input. The *Sigmoid* function is one of several popular activation functions.
 
-![Activation Functions](C:/Users/Ryan/repos/machine-learning/images/activation-functions.png)
+![Activation Functions](../images/activation-functions.png)
 
 Activation functions are typically denoted by $a$ where:
 
@@ -32,7 +32,7 @@ If a neural network has $s_j$ activation functions in layer $j$ and $s_{j+1}$ in
 
 ## Activation Function Calculations
 
-![Neural Network](C:/Users/Ryan/repos/machine-learning/images/neural-network.png)
+![Neural Network](../images/neural-network.png)
 
 In referencing the diagram above, below is an example with the three activation functions in layer $2$ each using a *Sigmoid* activation function $g$:
 
@@ -50,11 +50,11 @@ The hypothesis function in layer $3$ would be:
 
 The following illustrates the input, vectorized computation for layer 2 and output in layer 3. This process is also called *forward propagation*.
 
-Layer 1 (input) is expressed as a 4 dimentional vector (matrix) in this case which includes a bias column (matrix values are abitrary). Note that layer 1 can also be reference as $a^{(1)}$:
+Layer 1 (input) is expressed as a 4 dimensional vector (matrix) in this case which includes a bias column (matrix values are arbitrary). Note that layer 1 can also be reference as $a^{(1)}$:
 
 > $a^{(1)}=x=\begin{bmatrix}1&1&2&3\\1&4&5&6\\1&7&8&9\end{bmatrix}$
 
-Our theta values, used was weights for layer 2, would be expressed as a 4 dimentional vector which serves as the *mapping* between layer 1 and layer 2:
+Our theta values, used was weights for layer 2, would be expressed as a 4 dimensional vector which serves as the *mapping* between layer 1 and layer 2. The *mapping* happens in the black lines in the illusration above.
 
 > $\Theta^{(1)}=\begin{bmatrix}\Theta^{(1)}_{10}&\Theta^{(1)}_{11}&\Theta^{(1)}_{12}&\Theta^{(1)}_{13}\\\Theta^{(1)}_{20}&\Theta^{(1)}_{21}&\Theta^{(1)}_{22}&\Theta^{(1)}_{23}\\\Theta^{(1)}_{30}&\Theta^{(1)}_{31}&\Theta^{(1)}_{32}&\Theta^{(1)}_{33}\end{bmatrix}$
 
@@ -66,7 +66,7 @@ Therefore our "new x values" used as input to layer 3 would be:,
 
 > $a^{(2)}=g(z^{(2)})=g(\Theta^{(1)}x)=g(\Theta^{(1)}a^{(1)})$
 
-In layer 3, we would have a different set of weghts and to compute our hypothesis, which service as the *mapping* between layer 2 and layer 3. We would our output for layer 2 as follows where $a^{(2)}_0$ is the bias unit of $1$ where:
+In layer 3, we would have a different set of weights and to compute our hypothesis, which service as the *mapping* between layer 2 and layer 3. We would our output for layer 2 as follows where $a^{(2)}_0$ is the bias unit of $1$ where:
 
 > $z^{(3)}=\Theta^{(2)}a^{(2)}$
 
