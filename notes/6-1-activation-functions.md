@@ -62,7 +62,7 @@ In layer 2, we want to call our Sigmoid function with the input passed in to lay
 
 > $z^{(2)}=\Theta^{(1)}x=\Theta^{(1)}a^{(1)}$
 
-Therefore our "new x values" used as input to layer 3 would be:,
+Therefore our "new x values" used as input to layer 3 would be:
 
 > $a^{(2)}=g(z^{(2)})=g(\Theta^{(1)}x)=g(\Theta^{(1)}a^{(1)})$
 

@@ -2,9 +2,19 @@
 
 ## AND
 
-The AND gate is 1 only if all inputs are 1 else 0. Using the Sigmoid function as used in Logistic Regression where a value $\geq0.5$ is $1$ else $0$.
+The AND gate is 1 only if all inputs, $x$ values, are 1 else 0. Using the Sigmoid function as used in Logistic Regression where a value $\geq0.5$ is $1$ else $0$.
 
 ![Logic Gate AND](../images/logic-gate-and-ex.png)
+
+This can be broken down as follows:
+
+> $z^{(2)}_1=-30+(20\cdot0)+(20\cdot0)=-30\therefore g(z^{(2)}_1)\approx0$
+>
+> $z^{(2)}_2=-30+(20\cdot0)+(20\cdot1)=-10\therefore g(z^{(2)}_2)\approx0$
+>
+> $z^{(2)}_3=-30+(20\cdot1)+(20\cdot0)=-10\therefore g(z^{(2)}_3)\approx0$
+>
+> $z^{(2)}_4=-30+(20\cdot1)+(20\cdot1)=10\therefore g(z^{(2)}_4)\approx1$
 
 ## XNOR
 
