@@ -16,6 +16,10 @@ This can be broken down as follows:
 >
 > $z^{(2)}_4=-30+(20\cdot1)+(20\cdot1)=10\therefore g(z^{(2)}_4)\approx1$
 
+## OR
+
+The OR gate is 1 if any of the inputs, $x$ values, are 1 else 0. Using the Sigmoid function as used in Logistic Regression where a value $\geq0.5$ is $1$ else $0$.
+
 ## XNOR
 
 XNOR is a simpler way of saying NOT ( $x_1$ XOR $x_2$ )
