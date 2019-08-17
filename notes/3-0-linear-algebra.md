@@ -130,19 +130,5 @@ For example:
 
 > $A_{2,1} = A^T_{1,2} = 4$
 
-### Logarithms
-
-A logarithm is the inverse of taking an exponent and lets you undo exponential effects. For example:
-
-> $2^3 = 8 \therefore log_28 = 3$
-
-For this example, it $2$ to what power is $8$? In this case, $3$.
-
-Natural Logarithms use the natural log $e$ which is a constant value of $2.718,281,828$.
-
-> $log_ee=1$
-
-
-
 
 

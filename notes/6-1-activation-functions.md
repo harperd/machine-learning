@@ -33,7 +33,7 @@ In artificial neural networks, the *activation* function (also referred to as a 
 
 $g(z) = \frac{1}{1+e^{-z}}$
 
-The sigmoid function returns a value that is between $0$ and $1$. As such, it is a good candidate for output functions since it can return a probability as the output where a high positive probability would be closer to $1$. The Sigmoid function, as shown below, is steep and it's gradient is very close to zero before it asymptotes. Because of this, using it for an activation function makes learning slow and more difficult since most $y$ values will be very close to zero.
+The sigmoid function returns a value that is between $0$ and $1$. As such, it is a good candidate for output functions since it can return a probability as the output where a high positive probability would be closer to $1$. The Sigmoid function, as shown below, is steep and it's gradient is very close to zero before it starts to asymptote. Because of this, using it for an activation function makes learning slow and more difficult since most $y$ values will be very close to zero.
 
 ![Sigmoid Function](../images/sigmoid-function2.png)
 
