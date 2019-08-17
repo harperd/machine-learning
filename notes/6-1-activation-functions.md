@@ -1,8 +1,49 @@
+# Parameter Initialization
+
+One of the first things that you will want do is to initialize the weight matrices and bias vectors. Their initial values for the weight matrices should not be zero since the cost reduction gradients would be the same value for each iteration causing the learning algorithm to not learn. So, it's best to randomly choose the initial weight values that are between $0$ and $1$ and multiply them by a small scalar such as $0.01$ to <u>make the activation units active and be on the regions where activation functions' derivatives are not close to zero.</u>
+
+Below is a Python example that initializes the weight matrices $W$ for each node $W^i$ with a uniform distribution of random values. Bias vectors are initialized to zeros. It accepts an array or list which contains the dimensions for each layer and returns a matrix and bias vector for each layer.
+
+```python
+def initialize_parameters(layers_dims):
+    np.random.seed(1)               
+    parameters = {}
+    
+    # Get the number of layers
+    L = len(layers_dims)            
+    
+    # For each layer iniitlize the weights and bias vector
+    for l in range(1, L):
+        parameters["W" + str(l)] = np.random.randn(
+            layers_dims[l], layers_dims[l - 1]) * 0.01
+        parameters["b" + str(l)] = np.zeros((layers_dims[l], 1))
+
+        assert parameters["W" + str(l)].shape == (
+            layers_dims[l], layers_dims[l - 1])
+        assert parameters["b" + str(l)].shape == (layers_dims[l], 1)
+
+    return parameters
+```
+
 # Activation Functions
 
-In artificial neural networks, the *activation* function (also referred to as a unit or neuron) defines the output of that node given an input or set of inputs. Every output from an activation function is the input to every activation function in the following layer. A standard computer chip circuit can be seen as a digital network of activation functions that can be "ON" or "OFF", depending on input. The *Sigmoid* function is one of several popular activation functions.
+In artificial neural networks, the *activation* function (also referred to as a unit or neuron) defines the output of that node given an input or set of inputs. Every output from an activation function is the input to every activation function in the following layer. A standard computer chip circuit can be seen as a digital network of activation functions that can be "ON" or "OFF", depending on input. There is no definitive guide for which activation function works best on specific problems. It’s a trial and error process where one should try different set of functions and see which one works best on the problem at hand. The *Sigmoid* function is one of several popular activation functions.
 
-![Activation Functions](../images/activation-functions.png)
+## Sigmoid ($\large\sigma$)
+
+> $g(z) = \frac{1}{1+e^{-z}}$
+
+## Hyperbolic Tangent
+
+## ReLU - Rectified Linear Unit
+
+## Leaky ReLU - Leaky Rectified Linear Unit 
+
+## Maxout
+
+## tanh
+
+## ELU
 
 Activation functions are typically denoted by $a$ where:
 
@@ -10,9 +51,9 @@ Activation functions are typically denoted by $a$ where:
 >
 > $a^{(2)}_1$ is an activation function of the $1^{st}$ activation function (neuron) in the $2^{nd}$ hidden layer.
 
-## NN Matrix
+## Matrix Dimensions
 
-The values passed between layers in a neural network a represented as a matrix of values (or weights) as denoted by $\Theta$ where:
+The values passed between layers in a neural network a represented as a matrix of values (or weights) as denoted by $\Theta$ or $W$ where:
 
 > $\Theta^{(j)}_{mn}$ is a matrix of values controlling function mapping from layer $j$ to the next layer, $j+1$ and $m$ and $n$ are the row and column of the matrix value.
 >
@@ -24,7 +65,7 @@ Input thetas to an activation function are superscripted with the index of the c
 
 ### Matrix Dimensions
 
-If a neural network has $s_j$ activation functions in layer $j$ and $s_{j+1}$ in layer $j+1$, then $\theta^{(j)}$ will be of dimension $s_{j+1}$ x $(s_j+1)$.  We say $+1$ because we are adding a bias unit of $1$ in the same way that's done for linear and logistic regression. In other words, the number of rows ($m$) is the number of activation functions in the next layer and the number of columns ($n$) is the number of activation functions plus 1 from the current layer. For example:
+In neural networks, one of the major challenges is getting matrix dimensions right. If a neural network has $s_j$ activation functions in layer $j$ and $s_{j+1}$ in layer $j+1$, then $\theta^{(j)}$ will be of dimension $s_{j+1}$ x $(s_j+1)$.  We say $+1$ because we are adding a bias unit of $1$ in the same way that's done for linear and logistic regression. In other words, the number of rows ($m$) is the number of activation functions in the next layer and the number of columns ($n$) is the number of activation functions plus 1 from the current layer. For example:
 
 > If layer $2$ contains $20$ activation functions and layer $3$ contains $30$ activation functions
 >

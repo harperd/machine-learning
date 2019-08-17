@@ -10,4 +10,23 @@ Neural networks can come in many different architectures such as below where the
 
 ![Neural Network](../images/neural-network-arch.png)
 
+## Notations
+
+Below are common notations used with working with neural networks.
+
+| Notation            | Description                                                  |
+| ------------------- | ------------------------------------------------------------ |
+| $W^i$ or $\Theta^i$ | Weights matrix for the $i^{th}$ layer                        |
+| $b^i$               | Bias vector for the $i^{th}$ layer                           |
+| $Z^{i}$             | Linear (affine) transformations of the given inputs for the $i^{th}$ layer |
+| $g^i$               | Activation function applied to the $i^{th}$ layer            |
+| $A^i$               | Post-activation output for the $i^{th}$ layer                |
+| $dW^i$              | Derivative of the cost function with respect to $W^i(\frac{\partial J}{\partial W^i})$ |
+| $db^i$              | Derivative of the cost function with respect to $b^i(\frac{\partial J}{\partial b^i})$ |
+| $dZ^i$              | Derivative of the cost function with respect to $Z^i(\frac{\partial J}{\partial Z^i})$ |
+| $dA^i$              | Derivative of the cost function with respect to $A^i(\frac{\partial J}{\partial A^i})$ |
+| $n^i$               | Number of units (nodes) in the $i^{th}$ layer                |
+| $m$                 | Number of examples                                           |
+| $L$                 | Number of layers in the network (not including the input layer) |
+
 
