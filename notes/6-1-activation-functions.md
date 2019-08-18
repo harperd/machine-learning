@@ -29,9 +29,15 @@ def initialize_parameters(layers_dims):
 
 In artificial neural networks, the *activation* function (also referred to as a unit or neuron) defines the output of that node given an input or set of inputs. Every output from an activation function is the input to every activation function in the following layer. A standard computer chip circuit can be seen as a digital network of activation functions that can be "ON" or "OFF", depending on input. There is no definitive guide for which activation function works best on specific problems. It’s a trial and error process where one should try different set of functions and see which one works best on the problem at hand. The *Sigmoid* function is one of several popular activation functions.
 
+Activation functions are typically denoted by $a$ where:
+
+> $a^{(j)}_i$ is an activation function of the $i$th activation function (neuron) in the $j$th hidden layer.
+>
+> $a^{(2)}_1$ is an activation function of the $1^{st}$ activation function (neuron) in the $2^{nd}$ hidden layer.
+
 ## Sigmoid ($\large\sigma$)
 
-$g(z) = \frac{1}{1+e^{-z}}$
+$g(z)=\large\frac{1}{1+e^{-z}}$
 
 The Sigmoid function returns a value that is between $0$ and $1$ and is a good candidate for classifiation problems. Therefore, it works nicely as an output function since it can return a probability as the output where a high positive probability would be closer to $1$. The Sigmoid function, as shown below, only has a $y$ value range between $0$ and $1$. This means for every input $z$, no matter how large, will always result in a small change in $y$ value. As a result, when plotting the loss for Sigmoid, it's gradient (derivative) is very close to zero which gives rise to the problem of *vanishing gradients*. Because of this small gradient, using it for an activation function makes learning slow and more difficult. The network will stop learning or learning is drastically slow depending on use case and until gradient / computation gets hit by floating point value limits.
 
@@ -47,11 +53,11 @@ def sigmoid(z):
 
 ## Hyperbolic Tangent (Tanh)
 
-$g(z)=\frac{e^z-e^{-z}}{e^z+e^{-z}}$
+$g(z)=\large\frac{e^z-e^{-z}}{e^z+e^{-z}}$
 
-Hyperbolic Tagent is better than sigmoid in that the range of values don't center around $0.5$ but $0$. This makes learning faster since the range of values are small. But, like the Sigmoid, the gradient is small  making learning slow.
+Hyperbolic Tagent is better than sigmoid in that the range of values don't center around $0.5$ but $0$ so it is generally perferred over Sigmoid for learning. The gradient it more prominent that Sigmoid but, like the Sigmoid, the gradient is still small making learning slow.
 
-![Hyperbolic Tangent](../images/hyperbolic-tangent.png)
+![Hyperbolic Tangent](../images/tanh.png)
 
 ```python
 import numpy as np
@@ -61,25 +67,46 @@ def tanh(z):
     return a
 ```
 
-## ReLU - Rectified Linear Unit
+## Rectified Linear Unit (ReLU)
+
+$g(z)=max\{0,z\}$
+
+ReLU range is $0$ to $inf$, avoids the vanishing gradient problem and is less intensive computationally since the math is simpler. It's still non-linear in nature and is recommended to only be used in neural network hidden layers. It can result in dead neurons because some gradients can become fragile during training and cause a weight update that cause the actiation unit to never activate. More specifically, when training during back propogation if an $x$ value is less than $0$, the resulting gradient is $0$ and will stop responding to input variations (e.g. always outputing $0$). This scenario is often times called the *dying ReLU problem*. In an effort to overcome the dying ReLU problem, changing the way parameters are initialized using random asymetry can help (See also: [Dying ReLU and Initialization: Theory and Numerical
+Examples white paper](https://arxiv.org/pdf/1903.06733.pdf) by Lu Lu and Yeonjong Shin, et. al.)
 
 ![ReLU](../images/relu.png)
 
-## Leaky ReLU - Leaky Rectified Linear Unit 
+```python
+import numpy as np
+
+def relu(a):
+    a = np.maximum(0, z)
+    return a
+```
+
+
+
+## Leaky Rectified Linear Unit  (Leaky ReLU)
+
+$g(z)=max\{\alpha\cdot z,z\}$
+
+Leaky ReLU attempts to overcome the zero gradient issue of ReLU. It overcomes this by supplying a small, non-zero gradient, $\alpha$ value (usually 0.01) for $z$ values $\le0$. However, since it possesses liniarity using a constant gradient for values $\le0$ it really can't be used for complex classification problems like Sigmoid or Tanh.
 
 ![LReLU](../images/lrelu.png)
 
-## Maxout
+```python
+import numpy as np
 
-## tanh
+def leaky_relu(z):
+    a = np.maximum(0.1 * z, z)
+    return a
+```
+
+## Maxout
 
 ## ELU
 
-Activation functions are typically denoted by $a$ where:
-
-> $a^{(j)}_i$ is an activation function of the $i$th activation function (neuron) in the $j$th hidden layer.
->
-> $a^{(2)}_1$ is an activation function of the $1^{st}$ activation function (neuron) in the $2^{nd}$ hidden layer.
+![LReLU](../images/elu.png)
 
 ## Matrix Dimensions
 

@@ -22,7 +22,7 @@ If the result of the derivative, $\frac{\partial}{\partial\theta_{j}}J(\theta_{0
 
 > $\theta_{1} := \theta_{1} - \alpha(+\partial)$
 
-As Gradient Descent approaches the minimum, the rate of change will become increasingly smaller. Hence, the algorithm will slow as it approaches the local minimum and ultimately stop changing once it has reached the minimum so there is not need to decrease the value of alpha.
+As Gradient Descent approaches the minimum, the rate of change will become increasingly smaller. Hence, the algorithm will slow as it approaches the minimum and ultimately stop changing once it has reached the minimum point so there is no need to decrease the value of $\alpha$.
 
 ## Simultaneous Compute
 
