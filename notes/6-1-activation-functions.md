@@ -39,6 +39,8 @@ The sigmoid function returns a value that is between $0$ and $1$. As such, it is
 
 ## Hyperbolic Tangent
 
+$g(z)=\frac{e^z-e^{-z}}{e^z+e^{-z}}$
+
 ## ReLU - Rectified Linear Unit
 
 ## Leaky ReLU - Leaky Rectified Linear Unit 
