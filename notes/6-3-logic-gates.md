@@ -1,5 +1,7 @@
 # Neural Network Logic Gates
 
+Different networks and activation functions can be combinded to create even more complex networks creating a series of logic such as AND, NOT, OR, XNOR, etc.
+
 ## AND
 
 The AND gate is 1 only if all inputs, $x$ values, are 1 else 0. Using the Sigmoid function as used in Logistic Regression where a value $\geq0.5$ is $1$ else $0$.
@@ -15,6 +17,8 @@ This can be broken down as follows:
 > $z^{(2)}_3=-30+(20\cdot1)+(20\cdot0)=-10\therefore g(z^{(2)}_3)\approx0$
 >
 > $z^{(2)}_4=-30+(20\cdot1)+(20\cdot1)=10\therefore g(z^{(2)}_4)\approx1$
+
+Therefore, given the above example, the classification is positive ($1$) if and only if $x^1$ and $x^2$  equals $1$.
 
 ## OR
 
