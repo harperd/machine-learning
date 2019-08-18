@@ -27,7 +27,13 @@ def initialize_parameters(layers_dims):
 
 # Activation Functions
 
-In artificial neural networks, the *activation* function (also referred to as a unit or neuron) defines the output of that node given an input or set of inputs. Every output from an activation function is the input to every activation function in the following layer. A standard computer chip circuit can be seen as a digital network of activation functions that can be "ON" or "OFF", depending on input. There is no definitive guide for which activation function works best on specific problems. It’s a trial and error process where one should try different set of functions and see which one works best on the problem at hand. The *Sigmoid* function is one of several popular activation functions.
+In artificial neural networks, the *activation* function (also referred to as a unit or neuron) defines the output of that node given an input or set of inputs. Every output from an activation function is the input to every activation function in the following layer. A standard computer chip circuit can be seen as a digital network of activation functions that can be "ON" or "OFF", depending on input. 
+
+Activation functions serve as *threshold*, *classification*, or sometime even called a *partition*. Bengio et al. refers to this as [*Space Folding*](https://arxiv.org/pdf/1402.1869.pdf). What activation functions do is bascially create a partition thereby dividing the original space into two partitions (typically).
+
+![https://isaacchanghau.github.io/post/activation_functions/](../images/activation-function.png)
+
+There is no definitive guide for which activation function works best on specific problems. It’s a trial and error process where one should try different set of functions and see which one works best on the problem at hand.
 
 Activation functions are typically denoted by $a$ where:
 
