@@ -33,7 +33,7 @@ Activation functions serve as *threshold*, *classification*, or sometime even ca
 
 ![https://isaacchanghau.github.io/post/activation_functions/](../images/activation-function.png)
 
-There is no definitive guide for which activation function works best on specific problems. It’s a trial and error process where one should try different set of functions and see which one works best on the problem at hand.
+There have been over $640$ different variations of activation function proposals and there is no definitive guide for which activation function works best on specific problems. However, there are only a handfull of activation functions that ar recommended for use and of those, the most popular are described below. It’s a trial and error process where one should try different set of functions and see which one works best on the problem at hand.
 
 Activation functions are typically denoted by $a$ where:
 
@@ -77,7 +77,7 @@ def tanh(z):
 
 $g(z)=max\{0,z\}$
 
-ReLU range is $0$ to $inf$, avoids the vanishing gradient problem and is less intensive computationally since the math is simpler. It's still non-linear in nature and is recommended to only be used in neural network hidden layers. It can result in dead neurons because some gradients can become fragile during training and cause a weight update that cause the actiation unit to never activate. More specifically, when training during back propogation if an $x$ value is less than $0$, the resulting gradient is $0$ and will stop responding to input variations (e.g. always outputing $0$). This scenario is often times called the *dying ReLU problem*. In an effort to overcome the dying ReLU problem, changing the way parameters are initialized using random asymetry can help (See also: [Dying ReLU and Initialization: Theory and Numerical
+ReLU range is $0$ to $inf$, avoids the vanishing gradient problem and is less intensive computationally since the math is simpler. It's still non-linear in nature and is recommended to only be used in neural network hidden layers. If used in deep networks, the proabability of resulting in dead neurons increases because some gradients can become fragile during training and cause a weight update that cause the actiation unit to never activate. More specifically, when training during back propogation if an $x$ value is less than $0$, the resulting gradient is $0$ and will stop responding to input variations (e.g. always outputing $0$). This scenario is often times called the *dying ReLU problem*. In an effort to overcome the dying ReLU problem, changing the way parameters are initialized using random asymetry can help (See also: [Dying ReLU and Initialization: Theory and Numerical
 Examples white paper](https://arxiv.org/pdf/1903.06733.pdf) by Lu Lu and Yeonjong Shin, et. al.)
 
 ![ReLU](../images/relu.png)
@@ -108,7 +108,13 @@ def leaky_relu(z):
     return a
 ```
 
+## Randomized ReLU
+
+https://isaacchanghau.github.io/post/activation_functions/
+
 ## Maxout
+
+## Softmax
 
 ## ELU
 
