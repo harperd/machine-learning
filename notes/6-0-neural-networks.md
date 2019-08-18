@@ -27,7 +27,7 @@ Below are common notations used with working with neural networks.
 | $db^i$              | Derivative of the cost function with respect to $b^i(\frac{\partial J}{\partial b^i})$ |
 | $dZ^i$              | Derivative of the cost function with respect to $Z^i(\frac{\partial J}{\partial Z^i})$ |
 | $dA^i$              | Derivative of the cost function with respect to $A^i(\frac{\partial J}{\partial A^i})$ |
-| $n^i$               | Number of units (nodes) in the $i^{th}$ layer                |
+| $n^i$ or $s^i$      | Number of units (nodes) in the $i^{th}$ layer not including the bias unit $bi$. |
 | $m$                 | Number of examples                                           |
 | $L$                 | Number of layers in the network (not including the input layer) |
 
