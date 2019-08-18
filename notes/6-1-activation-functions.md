@@ -33,15 +33,33 @@ In artificial neural networks, the *activation* function (also referred to as a 
 
 $g(z) = \frac{1}{1+e^{-z}}$
 
-The sigmoid function returns a value that is between $0$ and $1$. As such, it is a good candidate for output functions since it can return a probability as the output where a high positive probability would be closer to $1$. The Sigmoid function, as shown below, is steep and it's gradient is very close to zero before it starts to asymptote. Because of this, using it for an activation function makes learning slow and more difficult since most returned values will be very close to zero.
+The Sigmoid function returns a value that is between $0$ and $1$ and is a good candidate for classifiation problems. Therefore, it works nicely as an output function since it can return a probability as the output where a high positive probability would be closer to $1$. The Sigmoid function, as shown below, only has a $y$ value range between $0$ and $1$. This means for every input $z$, no matter how large, will always result in a small change in $y$ value. As a result, when plotting the loss for Sigmoid, it's gradient (derivative) is very close to zero which gives rise to the problem of *vanishing gradients*. Because of this small gradient, using it for an activation function makes learning slow and more difficult. The network will stop learning or learning is drastically slow depending on use case and until gradient / computation gets hit by floating point value limits.
 
 ![Sigmoid](../images/sigmoid.png)
 
-## Hyperbolic Tangent
+```python
+import numpy as np
+
+def sigmoid(z):
+    a = 1 / (1 + np.exp(-z))
+    return a
+```
+
+## Hyperbolic Tangent (Tanh)
 
 $g(z)=\frac{e^z-e^{-z}}{e^z+e^{-z}}$
 
+Hyperbolic Tagent is better than sigmoid in that the range of values don't center around $0.5$ but $0$. This makes learning faster since the range of values are small. But, like the Sigmoid, the gradient is small  making learning slow.
+
 ![Hyperbolic Tangent](../images/hyperbolic-tangent.png)
+
+```python
+import numpy as np
+
+def tanh(z):
+    a = np.tanh(z)
+    return a
+```
 
 ## ReLU - Rectified Linear Unit
 
