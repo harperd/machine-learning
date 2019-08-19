@@ -1,6 +1,6 @@
 # Neural Network Logic Gates
 
-Different networks and activation functions can be combinded to create even more complex networks creating a series of logic such as AND, NOT, OR, XNOR, etc.
+Different networks and activation functions can be combined to create even more complex networks creating a series of logic such as AND, NOT, OR, XNOR, etc.
 
 ## AND
 
