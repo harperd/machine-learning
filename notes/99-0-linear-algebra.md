@@ -1,5 +1,35 @@
 # Linear Algebra for Machine Learning
 
+## Vectors
+
+A *vector* is defended as a line (or arrow) on the $xy$ coordinate plain that has both direction and length. For the most part vectors, in mathematics, will almost always be rooted at the origin $(0,0)$. Vectors are written simply a matrix with a single column (an $n$ x $1$ matrix). We would express the dimensionality of the below as simply a three dimensional vector, or $\R^3$ where $y_2 = 21$.
+
+> $\vec y =\begin{bmatrix}18\\21\\33\end{bmatrix}$
+
+Below is an example of a vector on a graph:
+
+![https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab](../images/linear-algebra/vector.png)
+
+The indexes of matrices can be *1-indexed* or *0-indexed*, meaning, the first element (row or column) starts at either *1* or *0*. Matrices are also, by convention, referenced with *uppercase* letters and numbers and vectors with *lowercase* letters.
+
+Most linear algebra topics tend to revolve around *adding* vectors and *scaling* vectors.
+
+### Adding Vectors
+
+When adding vectors you take the second vector and move the tail to the head of first vector. The distance between the origin and the head of the second vector is the sum. The illustration below shows visually how adding vectors works.  The distance of $\vec V$ and $\vec W$ is the same total distance as $\vec V + \vec W$.
+
+![https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab](../images/linear-algebra/vector-add.png)
+
+### Scaling
+
+*Scaling* a vector means changing it's size by multiplying by a *scalar*. For example take a vector and multiply it by a *scalar* of $2$ as shown below.
+
+![https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab](../images/linear-algebra/vector-scale.png)
+
+> $\vec v=\begin{bmatrix}3\\1\end{bmatrix}$
+>
+> $2\vec v=2\cdot\begin{bmatrix}3\\1\end{bmatrix}=\begin{bmatrix}6\\2\end{bmatrix}$
+
 ## Matrices
 
 A matrix is simply a rectangular array of numbers and the *dimension* of a matrix is written as *rows x columns*. For the example below, the dimension of the matrix would be *2x3*. Often times you will see the matrix dimensionality depicted as $\R^{2x3}$ where $\R$ simply denotes a *real number*.
@@ -9,14 +39,6 @@ A matrix is simply a rectangular array of numbers and the *dimension* of a matri
 To reference a specific element in a matrix we would specify the row and column. For the example below, matrix $A$, $A_{12}$ would give us the number in the $1^{st}$ row and $2^{nd}$ column which would be the number $2$.
 
 > $A = \begin{bmatrix}10&24&35\\34&15&76 \end{bmatrix}\therefore A_{12} = 24$
-
-## Vectors
-
-A *vector* is simply a matrix with a single column (an $n$ x $1$ matrix). We would express the dimensionality of the below as simply a three dimensional vector, or $\R^3$ where $y_2 = 21$.
-
-> $\vec y =\begin{bmatrix}18\\21\\33\end{bmatrix}$
-
-The indexes of matrices can be *1-indexed* or *0-indexed*, meaning, the first element (row or column) starts at either *1* or *0*. Matrices are also, by convention, referenced with *uppercase* letters and numbers and vectors with *lowercase* letters.
 
 ## Matrix Addition & Subtraction
 
