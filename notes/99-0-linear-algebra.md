@@ -6,11 +6,9 @@ A *vector* is defended as a line (or arrow) on the $xy$ coordinate plain that ha
 
 > $\vec y =\begin{bmatrix}18\\21\\33\end{bmatrix}$
 
-Below is an example of a vector on a graph:
+Below is a visual representation of a vector:
 
 ![https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab](../images/linear-algebra/vector.png)
-
-The indexes of matrices can be *1-indexed* or *0-indexed*, meaning, the first element (row or column) starts at either *1* or *0*. Matrices are also, by convention, referenced with *uppercase* letters and numbers and vectors with *lowercase* letters.
 
 Most linear algebra topics tend to revolve around *adding* vectors and *scaling* vectors.
 
@@ -36,7 +34,7 @@ A matrix is simply a rectangular array of numbers and the *dimension* of a matri
 
 > $\begin{bmatrix}1&2&3\\4&5&6 \end{bmatrix}$
 
-To reference a specific element in a matrix we would specify the row and column. For the example below, matrix $A$, $A_{12}$ would give us the number in the $1^{st}$ row and $2^{nd}$ column which would be the number $2$.
+To reference a specific element in a matrix we would specify the row and column. For the example below, matrix $A$, $A_{12}$ would give us the number in the $1^{st}$ row and $2^{nd}$ column which would be the number $2$. The indexes of matrices can be *1-indexed* or *0-indexed*, meaning, the first element (row or column) starts at either *1* or *0*. Matrices are also, by convention, referenced with *uppercase* letters and numbers and vectors with *lowercase* letters.
 
 > $A = \begin{bmatrix}10&24&35\\34&15&76 \end{bmatrix}\therefore A_{12} = 24$
 
