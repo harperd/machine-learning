@@ -2,7 +2,7 @@
 
 Back propagation is how neural networks *learn*. They take the final output at the output layer and work it's way back to layer 2.
 
-In back propagation we want to capture the error, for each unit, of how far off it was when computing the hypotheis during forward propagation. To find the error of each node in each layer we start at the last layer and progress to the the second layer (non-input layer) and capture the error for each unit in each layer. The error term is represented as $\delta^{(l)}_j$ (delta) and computed by simply subtracting the hypotheses at each unit $a^{(l)}_j$ by the correct value $y_j$ from our labeled training data.
+In back propagation we want to capture the error, for each unit, of how far off it was when computing the hypothesis during forward propagation. To find the error of each node in each layer we start at the last layer and progress to the the second layer (non-input layer) and capture the error for each unit in each layer. The error term is represented as $\delta^{(l)}_j$ (delta) and computed by simply subtracting the hypotheses at each unit $a^{(l)}_j$ by the correct value $y_j$ from our labeled training data.
 
 For and example with a 4 layer network ($L=4$), back propagation would start at layer 4 with the below where $j$ is the index of each output unit:
 
@@ -79,3 +79,5 @@ Below is the basic logic for forward and back propagation:
 Computing the derivative $D^{(l)}_{ij}$ can be simply expressed as:
 
 > $D^{(l)}_{ij}=\large\frac{\partial}{\partial\Theta^{(l)}_{ij}}J(\Theta)$
+
+These derivatives $D^{(l)}_{ij}$ can then be used in *Gradient Decent* or other more advanced algorithms for finding the minimum.
