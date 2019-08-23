@@ -52,5 +52,30 @@ We will initialize all values to zero:
 
 The $\Delta$ term will be used to compute the partial derivative with respect to:
 
-> $\frac{\partial}{\partial\Theta^{(l)}_{ij}}J(\Theta)$
+> $\large\frac{\partial}{\partial\Theta^{(l)}_{ij}}J(\Theta)$
 
+Below is the basic logic for forward and back propagation:
+
+> for ($i=1$ to $m$)
+>
+> ​    set $a^{(1)}=x^{(i)}$ // Set the activations of the input layer
+>
+> ​    $a^{(L)}=$ forward_prop()  // Perform forward propagation to compute the activations for all layers
+>
+> ​    $\delta^{(L)}=a^{(L)}-y^{(i)}$ // Compute the error term for the output layer
+>
+> ​    $[\delta^{(L-1)},\delta^{(L-2)},...,\delta^{(2)}]=$ back_prop() // Perform back propagation
+>
+> ​    $\Delta^{(l)}_{ij}:=\Delta^{(l)}_{ij}+a^{(l)}_j\delta^{(l+1)}_i$ // Accumulate all the partial derivatives
+>
+> ​    $\Delta^{(l)}:=\Delta^{(l)}+\delta^{(l+1)}(a^{(l)})^T$  // Or accumulate using a vectorized implementation
+>
+> // Compute the derivative with respect to each of the parameters
+>
+> $D^{(l)}_{ij}:=\frac{1}{m}\Delta^{(l)}_{ij}+\lambda\Theta^{(l)}_{ij}\mbox{ if }j\ne0$
+>
+> $D^{(l)}_{ij}:=\frac{1}{m}\Delta^{(l)}_{ij}\mbox{ if }j=0$
+
+Computing the derivative $D^{(l)}_{ij}$ can be simply expressed as:
+
+> $D^{(l)}_{ij}=\large\frac{\partial}{\partial\Theta^{(l)}_{ij}}J(\Theta)$
