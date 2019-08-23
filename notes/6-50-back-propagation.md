@@ -12,7 +12,7 @@ Which can also be written as:
 
 > $\delta^{(4)}_j=h_\Theta(x)_j-y_j$
 
-This can easily be vectorized as the following where $a$ and $y$ are vectors with dimentions equal to the number of output units in the network (in this instance $4$):
+This can easily be vectorized as the following where $a$ and $y$ are vectors with dimensions equal to the number of output units in the network (in this instance $4$):
 
 > $\delta^{(4)}=a^{(4)}_j-y$
 
@@ -39,3 +39,18 @@ What the derivative is actually giving us is the gradients for that layer with o
 If there is no regularization involved (ignoring $\lambda$ or $\lambda=0$) in back propagation then the partial derivative terms you want are exactly given by activations and delta terms:
 
 > $\frac{\partial}{\partial\Theta^{(l)}_{ij}}J(\Theta)=a^{(l)}_j\delta^{(l+1)}_1$
+
+# Back Propagation With a Large Training Set
+
+If we have a large training set such as:
+
+> $\{(x^{(1)},y^{(1)}),...,(x^{(m)},y^{(m)})\}$
+
+We will initialize all values to zero:
+
+> $\Delta^{(l)}_{ij}=0$ (for all $l, i, j$)
+
+The $\Delta$ term will be used to compute the partial derivative with respect to:
+
+> $\frac{\partial}{\partial\Theta^{(l)}_{ij}}J(\Theta)$
+
