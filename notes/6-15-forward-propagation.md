@@ -20,7 +20,7 @@ In neural networks, one of the major challenges is getting matrix dimensions rig
 
 ## Activation Function Calculations
 
-![Neural Network](C:/Users/Ryan/repos/machine-learning/images/neural-network.png)
+![Neural Network](../images/neural-network.png)
 
 For layer $1$, which are our $x$ values, we can reference as $a^{(1)}j$ just as if it were the results from any other activation function:
 
@@ -44,7 +44,11 @@ The hypothesis function in layer $3$ would be:
 >
 > $h_\Theta(x)=a^{(3)}_1=g(\Theta^{(2)}_{10}a^{(2)}_0+\Theta^{(2)}_{11}a^{(2)}_1+\Theta^{(2)}_{12}a^{(2)}_2+\Theta^{(2)}_{13}a^{(2)}_3)=g(z^{(3)})$
 
-In summary, for a 4 layer neural network it would be:
+### 4 Layer Example
+
+![Neural Network](../images/neural-network-4-layer-example.png)
+
+In summary, for a 4 layer neural network with a single $x$ value it would be:
 
 > $a^{(1)}=x$
 >
