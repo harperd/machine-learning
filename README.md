@@ -23,3 +23,10 @@ Below are notes on various topics as I learn all things AI. These notes updated 
 * [Linear Algebra](notes/pdf/99-0-linear-algebra.pdf)
 
 # Notebooks
+
+* [Univariate Linear Regression](notebooks/univariate-linear-regression.ipynb)
+* [Multivariate Linear Regression](notebooks/multivariate-linear-regression.ipynb)
+* [Binary Logistic Regression](notebooks/binary-logistic-regression.ipynb)
+* [Multiclass Logistic Regression](notebooks/multiclass-logistic-regression.ipynb)
+* [K-Means Clustering](notebooks/clustering-kmeans.ipynb)
+* [K-Means Cluster Distance](notebooks/cluster-distance.ipynb)
