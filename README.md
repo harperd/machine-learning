@@ -1,4 +1,4 @@
-# Machine Learning
+# AI and Machine Learning
 
 # Notes
 
@@ -24,6 +24,8 @@ Below are notes on various topics as I learn all things AI. These notes updated 
 
 # Notebooks
 
+As I study a topic I will create a notebook to apply concepts. Below are various notebooks on some of the topsic above.
+
 * [Univariate Linear Regression](notebooks/univariate-linear-regression.ipynb)
 * [Multivariate Linear Regression](notebooks/multivariate-linear-regression.ipynb)
 * [Binary Logistic Regression](notebooks/binary-logistic-regression.ipynb)
@@ -31,3 +33,10 @@ Below are notes on various topics as I learn all things AI. These notes updated 
 * [K-Means Clustering](notebooks/clustering-kmeans.ipynb)
 * [K-Means Cluster Distance](notebooks/cluster-distance.ipynb)
 * [Data Visualization](notebooks/data-visualization.ipynb)
+
+# K-Means Clustering from Scratch
+
+Source [here](/spyder)
+
+![Spyder](images/spyder.png)
+
