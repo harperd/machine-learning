@@ -1,5 +1,7 @@
 # AI and Machine Learning
 
+![Machine Learning](images/ml.png)
+
 # Notes
 
 Below are notes on various topics as I learn all things AI. These notes updated as I learn more on these and other topics. My raw notes are a mixture of markdown and LaTeX so will need an appropriate editor such as [Typora](https://typora.io/). I also have them exported into PDF format (below).
