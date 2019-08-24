@@ -18,3 +18,5 @@ Natural Logarithms use the natural log $e$ which is a constant value of $2.718,2
 
 A real-world use of the log function is to make small numbers larger and large number smaller. In machine learning, it can be useful to apply large penalties to low probabilities (ex. Cross-Entropy / Log Loss).
 
+
+
