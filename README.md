@@ -30,3 +30,4 @@ Below are notes on various topics as I learn all things AI. These notes updated 
 * [Multiclass Logistic Regression](notebooks/multiclass-logistic-regression.ipynb)
 * [K-Means Clustering](notebooks/clustering-kmeans.ipynb)
 * [K-Means Cluster Distance](notebooks/cluster-distance.ipynb)
+* [Data Visualization](notebooks/data-visualization.ipynb)
