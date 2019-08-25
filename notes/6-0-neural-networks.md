@@ -4,7 +4,7 @@
 
 ![https://isaacchanghau.github.io/post/activation_functions/](../images/nn-bio-logical.png)
 
-In neural networks, *layer 1* is the input layer followed by a number of *hidden layers* (layer 2 in the example below) and an *output layer* which produces the hypothesis result. Each layer is comprised of *activation functions* also called *neurons* which are connected by *synapses* which contain the weights that get applied to the values are each layer before the activation function is called. The graphic below depicts the most basic ANN with only a single hidden layer.
+In neural networks, *layer 1* is the input layer followed by a number of *hidden layers* (layer 2 in the example below) and an *output layer* which produces the hypothesis result. Each layer is comprised of *activation functions* also called *neurons* which are connected by *synapses* which contain the weights that get applied to the values are each layer before the activation functions are called. The graphic below depicts the most basic ANN with only a single hidden layer.
 
 ![Neural Network](../images/neural-network.png)
 
