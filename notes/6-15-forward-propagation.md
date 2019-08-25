@@ -1,5 +1,7 @@
 # Forward Propagation
 
+*Forward propagation* is the way neural networks make predictions given inputs because data is f*orward propagated* thought the network. As it makes it's way through the network is makes many small computations. These computations take place at each layer within the network and propagate their results forward to the next layer. This continues until the final layer, the output layer, produces the prediction. However, there are some basic principals that we need to understand first.
+
 ## Matrix Dimensions
 
 The values passed between layers in a neural network a represented as a matrix of values (or weights) as denoted by $\Theta$ or $W$ where:

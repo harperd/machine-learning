@@ -30,7 +30,7 @@ Therefore, we say the *derivative with respect to* $f(x)$ is $.\overline{33}$.
 
 > $\large\frac{\partial f(x)}{\partial x}=\small.\overline{33}$
 
-Or, more precisely, we would use the delta $\delta$ term:
+Or, more precisely, we would use the delta $\delta$ term which says: The delta (or rate of change), which is the derivative with respect to our function $f(x)$ is $.\overline{33}$.
 
 > $\delta=\large\frac{\partial f(x)}{\partial x}=\small.\overline{33}$
 
