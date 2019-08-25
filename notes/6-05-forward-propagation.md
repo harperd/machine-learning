@@ -28,6 +28,8 @@ In neural networks, one of the major challenges is getting matrix dimensions rig
 >
 > then, the dimensions of the $\Theta$ matrix would be $30$ x $21$.
 
+Bottom line is, the *rows* for the matrix must be equal to the number of activation functions in the previous layer and the number of *columns* must be equal to the number of activation functions in the next layer.
+
 ## Layer Computation: Activation Function Calculations
 
 ![Neural Network](../images/neural-network.png)

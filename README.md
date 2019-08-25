@@ -17,12 +17,16 @@ Below are notes on various topics as I learn all things AI. These notes updated 
 * [Logistic Regression Vectorization](notes/pdf/4-3-logistic-regression-vectorization.pdf)
 * [Regularization](notes/pdf/5-0-regularizaion.pdf)
 * [Nerual Networks](notes/pdf/6-0-neural-networks.pdf)
+* [Nerual Networks - Forward Propagation](notes/pdf/6-05-forward-propagation.pdf)
 * [Nerual Networks - Classification and Cost](notes/pdf/6-10-classification-and-cost.pdf)
-* [Nerual Networks - Parameters](notes/pdf/6-15-forward-propagation.pdf)
 * [Nerual Networks - Activation Functions](notes/pdf/6-30-activation-functions.pdf)
 * [Logic Gates](notes/pdf/6-40-logic-gates.pdf)
 * [Back Propagation](notes/pdf/6-50-back-propagation.pdf)
-* [Linear Algebra](notes/pdf/99-0-linear-algebra.pdf)
+
+# Math Refreshers
+
+* [Linear Algebra - Basics](notes/pdf/99-0-linear-algebra.pdf)
+* [Calculus - Derivatives](notes/pdf/99-2-calculus-derivative.pdf)
 
 # Notebooks
 
