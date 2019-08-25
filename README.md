@@ -23,12 +23,9 @@ Below are notes on various topics as I learn all things AI. These notes updated 
 * [Logic Gates](notes/pdf/6-40-logic-gates.pdf)
 * [Back Propagation](notes/pdf/6-50-back-propagation.pdf)
 
-# Math Refreshers
-
-* [Linear Algebra - Basics](notes/pdf/99-0-linear-algebra.pdf)
-* [Calculus - Derivatives](notes/pdf/99-2-calculus-derivative.pdf)
-
 # Notebooks
+
+![](https://jupyter.org/assets/nav_logo.svg)
 
 As I study a topic I will create a notebook to apply concepts. Below are various notebooks on some of the topsic above.
 
@@ -36,7 +33,7 @@ As I study a topic I will create a notebook to apply concepts. Below are various
 * [Multivariate Linear Regression](notebooks/multivariate-linear-regression.ipynb)
 * [Binary Logistic Regression](notebooks/binary-logistic-regression.ipynb)
 * [Multiclass Logistic Regression](notebooks/multiclass-logistic-regression.ipynb)
-* [Neural Networkn](notebooks/neural-network.ipynb)
+* [Neural Network](notebooks/neural-network.ipynb)
 * [K-Means Clustering](notebooks/clustering-kmeans.ipynb)
 * [K-Means Cluster Distance](notebooks/cluster-distance.ipynb)
 * [Data Visualization](notebooks/data-visualization.ipynb)
@@ -47,3 +44,7 @@ Source [here](/spyder)
 
 ![Spyder](images/spyder.png)
 
+# Math Refreshers
+
+* [Linear Algebra - Basics](notes/pdf/99-0-linear-algebra.pdf)
+* [Calculus - Derivatives](notes/pdf/99-2-calculus-derivative.pdf)
