@@ -1,8 +1,14 @@
 # Forward Propagation
 
-*Forward propagation* is the way neural networks make predictions given inputs because data is f*orward propagated* thought the network. As it makes it's way through the network is makes many small computations using activation units (X, H, and O below). These computations take place at each layer within the network and propagate their results forward to the next layer. Between each layer are *weights* (Wh and Wo below) that are multiplied against the propagated values before they are computed by the activation unit. This continues until the final layer, the output layer, produces the prediction.
+*Forward propagation* is the way neural networks make predictions given inputs because data is f*orward propagated* thought the network. As it makes it's way through the network is makes many small computations using activation functions (X, H, and O below). These computations take place at each layer within the network and propagate their results forward to the next layer. Between each layer are *weights* (Wh and Wo below) that are multiplied against the propagated values before they are computed by the activation unit. This continues until the final layer, the output layer, produces the prediction.
 
 ![Neural Network Basic](../images/neural-network-basic.png)
+
+Basic steps:
+
+> 1. Calculate the weighted input to the hidden layer by multiplying $X$ by the hidden weight Wh
+> 2. Apply the activation function and pass the result to the final layer
+> 3. Repeat step 2 except this time $X$ is replaced by the hidden layer’s output, H
 
 ## Matrix Dimensions: Passing Values Between Layers
 
