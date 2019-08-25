@@ -8,6 +8,12 @@ Activation functions serve as *threshold*, *classification*, or sometime even ca
 
 There have been over $640$ different variations of activation function proposals and there is no definitive guide for which activation function works best on specific problems. However, there are only a handfull of activation functions that are  recommended for use, and of those, the most popular are described below. It’s a trial and error process where one should try different set of functions and see which one works best on the problem at hand.
 
+Activation functions generally have similar characteristics:
+
+1. **Non-Linear** - Most data that neural networks process is non-linear in nature. Activation functions provide this non-linearity In order to model non-linear realationships.
+2. **Differentiable** - Potting many activation function typically result in a graph with a smooth, constantly chaning slope. This makes it easier to identify the direction of the tangent slope to know which direction to update the weights in order to reduce error (find the global minimum with respect to a cost function).
+3. **Fixed Range** - Activation functions typically transform the data into a fixed range such as Sigmoid which is between $0$ and $1$. These ranges are small typically between $0$ and $1$ or $-1$ and $1$. Having small ranges makes learning faster and more effecient.
+
 Activation functions are typically denoted by $a$ where:
 
 > $a^{(j)}_i$ is an activation function of the $i$th activation function (neuron) in the $j$th hidden layer.
