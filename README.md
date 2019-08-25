@@ -36,6 +36,7 @@ As I study a topic I will create a notebook to apply concepts. Below are various
 * [Multivariate Linear Regression](notebooks/multivariate-linear-regression.ipynb)
 * [Binary Logistic Regression](notebooks/binary-logistic-regression.ipynb)
 * [Multiclass Logistic Regression](notebooks/multiclass-logistic-regression.ipynb)
+* [Neural Networkn](notebooks/neural-network.ipynb)
 * [K-Means Clustering](notebooks/clustering-kmeans.ipynb)
 * [K-Means Cluster Distance](notebooks/cluster-distance.ipynb)
 * [Data Visualization](notebooks/data-visualization.ipynb)
