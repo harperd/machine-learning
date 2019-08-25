@@ -27,7 +27,7 @@ Below are notes on various topics as I learn all things AI. These notes are upda
 
 ![](https://jupyter.org/assets/nav_logo.svg)
 
-As I study a topic I will create a notebook to apply concepts. Below are various notebooks on some of the topsic above.
+As I study a topic I will create a notebook to apply concepts. Below are various notebooks on some of the topics above.
 
 * [Univariate Linear Regression](notebooks/univariate-linear-regression.ipynb)
 * [Multivariate Linear Regression](notebooks/multivariate-linear-regression.ipynb)
