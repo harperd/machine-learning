@@ -6,7 +6,7 @@ Activation functions serve as *threshold*, *classification*, or sometime even ca
 
 ![https://isaacchanghau.github.io/post/activation_functions/](../images/activation-function.png)
 
-There have been over $640$ different variations of activation function proposals and there is no definitive guide for which activation function works best on specific problems. However, there are only a handfull of activation functions that ar recommended for use and of those, the most popular are described below. It’s a trial and error process where one should try different set of functions and see which one works best on the problem at hand.
+There have been over $640$ different variations of activation function proposals and there is no definitive guide for which activation function works best on specific problems. However, there are only a handfull of activation functions that are  recommended for use, and of those, the most popular are described below. It’s a trial and error process where one should try different set of functions and see which one works best on the problem at hand.
 
 Activation functions are typically denoted by $a$ where:
 
