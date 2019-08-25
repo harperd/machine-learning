@@ -38,11 +38,13 @@ As I study a topic I will create a notebook to apply concepts. Below are various
 * [K-Means Cluster Distance](notebooks/cluster-distance.ipynb)
 * [Data Visualization](notebooks/data-visualization.ipynb)
 
-# K-Means Clustering from Scratch
+# Computational Thinking and Data Science
 
-This is based on the MIT [Introduction to Computational Thinking and Data Science](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0002-introduction-to-computational-thinking-and-data-science-fall-2016/) course.
+My notes from the MIT [Introduction to Computational Thinking and Data Science](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0002-introduction-to-computational-thinking-and-data-science-fall-2016/) course are [here](notes/pdf/99-2-comp-thinking-data-science.pdf).
 
-Source [here](/python/kmeans)
+## K-Means Clustering From Scratch
+
+This was part of the MIT course and the full source can be found [here](/python/kmeans).
 
 ![Spyder](images/spyder.png)
 
