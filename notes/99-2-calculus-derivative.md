@@ -26,16 +26,18 @@ If we want to know what the derivative is we take the change in $y$ and divide b
 
 > $\large\frac{\Delta y}{\Delta x}=\large\frac{6.001-2}{18.003-6}=\frac{4.001}{12.003}=\small.\overline{33}$
 
-Therefore, we say the *derivative with respect to* $f(x)$ is $.\overline{33}$.
+Therefore, we say the *derivative of our function $f(x)$ with respect to* $x$ is $.\overline{33}$.
 
-> $\large\frac{\partial f(x)}{\partial x}=\small.\overline{33}$
+> $\large\frac{df(x)}{dx}=\small.\overline{33}$
 
-Or, more precisely, we would use the delta $\delta$ term which says: The delta (or rate of change), which is the derivative with respect to our function $f(x)$ is $.\overline{33}$.
+Or, more precisely, we would use the delta $\delta$ term which says: The delta (or rate of change), which is the derivative for the function $f(x)$ with respect to $x$ is $.\overline{33}$.
 
-> $\delta=\large\frac{\partial f(x)}{\partial x}=\small.\overline{33}$
+> $\delta=\large\frac{df(x)}{dx}=\small.\overline{33}$
 
 # Derivatives and Quadratics
 
-For getting the derivative of a quadratic function we will need to calculate it with respect to the tangent line as shown below.
+For getting the derivative of a quadratic function we will need to calculate it with respect to the tangent line as shown below. Also, since quadratics are complex function and don't yield a simple straight line we only know the partial derivative $\partial$ at any given point since it is constantly changing.
+
+> $\large\frac{\partial f(x)}{\partial x}$
 
 ![Derivative of a Quadratic](../images/calculus/derivative_quadratic.png)
