@@ -30,6 +30,10 @@ Therefore, we say the *derivative with respect to* $f(x)$ is $.\overline{33}$.
 
 > $\large\frac{\partial f(x)}{\partial x}=\small.\overline{33}$
 
+Or, more precisely, we would use the delta $\delta$ term:
+
+> $\delta=\large\frac{\partial f(x)}{\partial x}=\small.\overline{33}$
+
 # Derivatives and Quadratics
 
 For getting the derivative of a quadratic function we will need to calculate it with respect to the tangent line as shown below.
