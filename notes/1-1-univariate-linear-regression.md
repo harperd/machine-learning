@@ -22,6 +22,8 @@ In the illustration below, our hypothesis function $h_{\theta }( x)$ is plotted 
 
 We can choose good theta values by using the *Cost Function* denoted as $J(\theta_{0}, \theta_{1})$ where  $\theta_{0}$, and $\theta_{1}$ points on the $x$,$y$ axis and $J(\theta_{0}, \theta_{1})$ is *z*. This is also called the *Squared Error Function* which is the most commonly used for linear regression problems. Here, we want to get the results of our cost function as close to zero as possible by trying different values for $\theta _{0}$ and $\theta _{1}$.
 
+Below is the *Mean Squared Error* (MSE), or L2 loss, loss function which is sensitive to outlier values. The L2 loss function squares the error term, $h_{\theta }\left( x^{( i)}\right) -y^{( i)}$,  which penalizes outliers (the more incorrect the higher the value).
+
 > $J( \theta _{0} ,\ \theta _{1}) =\frac{1}{2m}\sum\limits ^{m}_{i=1}\left( h_{\theta }\left( x^{( i)}\right) -y^{( i)}\right)^{2}$
 
 > **Note:** Multiplying the result by $\frac{1}{2m}$ is purely for aesthetics.
