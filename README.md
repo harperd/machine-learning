@@ -40,7 +40,7 @@ As I study a topic I will create a notebook to apply concepts. Below are various
 
 # Computational Thinking and Data Science
 
-![](https://ocw.mit.edu/images/ocw_mast.png)
+![MIT Open CourseWare](https://yt3.ggpht.com/a/AGF-l7_1vM3tKSxqf-zamxyqGlIY9VqMuQ7FjxD5Qg=s288-c-k-c0xffffffff-no-rj-mo)
 
 My notes from the MIT [Introduction to Computational Thinking and Data Science](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0002-introduction-to-computational-thinking-and-data-science-fall-2016/) course are [here](notes/pdf/99-2-comp-thinking-data-science.pdf).
 
