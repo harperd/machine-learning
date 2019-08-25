@@ -40,6 +40,8 @@ As I study a topic I will create a notebook to apply concepts. Below are various
 
 # Computational Thinking and Data Science
 
+![](https://ocw.mit.edu/images/ocw_mast.png)
+
 My notes from the MIT [Introduction to Computational Thinking and Data Science](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0002-introduction-to-computational-thinking-and-data-science-fall-2016/) course are [here](notes/pdf/99-2-comp-thinking-data-science.pdf).
 
 ## K-Means Clustering From Scratch
