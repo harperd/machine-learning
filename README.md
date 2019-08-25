@@ -4,7 +4,7 @@
 
 # Notes
 
-Below are notes on various topics as I learn all things AI. These notes updated as I learn more on these and other topics. My raw notes are a mixture of markdown and LaTeX so will need an appropriate editor such as [Typora](https://typora.io/). I also have them exported into PDF format (below).
+Below are notes on various topics as I learn all things AI. These notes are updated as I learn more on various topics around machine learning and AI in general. My raw notes are a mixture of markdown and LaTeX so will need an editor such as [Typora](https://typora.io/). Below are the same notes in PDF format.
 
 * [Univariate Linear Regression](notes/pdf/1-1-univariate-linear-regression.pdf)
 * [Gradient Descent](notes/pdf/1-1-univariate-linear-regression.pdf)
