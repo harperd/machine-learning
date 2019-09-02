@@ -8,47 +8,19 @@ If we want to find the derivative of the a linear function like below:
 
 Then, given the definition of slope is the change in $y$ divided by the change in $x$, we have the below where $h$ represents an extremely small number like $.00001$:
 
-> $\large d=\frac{\Delta y}{\Delta x}=\frac{f(x+h)-f(x)}{h}=\frac{3(x+h)^2-3x^2}{h}$
+> $\large \partial=\frac{\Delta y}{\Delta x}=\lim\limits_{x\to0}\frac{f(x+h)-f(x)}{h}=\frac{3(x+h)^2-3x^2}{h}$
 
 Apply the slope formula:
 
-> $\large d=\frac{(3x+2xh+3h^2)-3x^2}{h}$
+> $\large \partial=\frac{(3x^2+2xh+3h^2)-3x^2}{h}$
 
 Simplify:
 
-> $\large d=\frac{2xh+3h}{h}=\small 2x+3$
+> $\large \partial=\frac{(3x^2+2xh+3h^2)-3x^2}{h}=\frac{2xh+3h^2}{h}=\small 2x+3h$
 
 Next, set $h$ to $0$ (the limit of $h$ approaches $0$):
 
-> $d=
-
-If we have a point where $x=2$ then $y=6$
-
-> $f(2)=3\cdot2=6$ 
-
-Therefore, our first point is at:
-
-> $(2,6)$
-
-If we say $x=6.001$, then:
-
-> $f(6.001)=3\cdot6.001=18.003$
-
-Therefore, our second point is at:
-
-> $(6.001,18.003)$
-
-If we want to know what the derivative is we take the change in $y$ and divide by the change in $x$:
-
-> $\large\frac{\Delta y}{\Delta x}=\large\frac{6.001-2}{18.003-6}=\frac{4.001}{12.003}=\small.\overline{33}$
-
-Therefore, we say the *derivative of our function $f(x)$ with respect to* $x$ is $.\overline{33}$.
-
-> $\large\frac{df(x)}{dx}=\small.\overline{33}$
-
-Or, more precisely, we would use the delta $\delta$ term which says: The delta (or rate of change), which is the derivative for the function $f(x)$ with respect to $x$ is $.\overline{33}$.
-
-> $\delta=\large\frac{df(x)}{dx}=\small.\overline{33}$
+> $\partial=2x+(3\cdot0)=2x$
 
 # Derivatives and Quadratics
 
