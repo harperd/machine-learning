@@ -1,10 +1,14 @@
 # Derivatives
 
-A *derivative* (slope of a line) is measuring the sensitivity of a function's output with respect to it's input. In other words, it measures the *steepness* of the graph of a function.
+A *derivative* (slope of a line) is measuring the sensitivity of a function's output with respect to a very small change in  input. In other words, it measures the *steepness* of the graph of a function.
 
-If we have a linear function like below where for every input $x$ it returns a $y$ value of $3$ times the value of $x$:
+If we want to find the derivative of the a linear function like below:
 
 > $f(x)=3x$
+
+Then, given the definition of slope is the change in $x$ divided by the change in $y$, we have the below where $h$ represents an extremely small number like $.00001$:
+
+> $\large d=\frac{f(x+h)-f(x)}{h}$
 
 If we have a point where $x=2$ then $y=6$
 
