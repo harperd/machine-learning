@@ -58,6 +58,12 @@ For example:
 
 [Video](https://youtu.be/k7RM-ot2NWY?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&t=120)
 
+## Span
+
+The *span* of any two vectors is the set of all of their linear combinations where scalars $a$ and $b$ can vary. If we were to stretch and pull each vector to exactly every point possible for their linear combination in 2 dimensions the span would be every possible point on the 2D plane. However, if the vectors are inline as below, their *span* would just be a straight line.
+
+![](../images/linear-algebra/inline_vectors.png)
+
 ## Matrices
 
 A matrix is simply a rectangular array of numbers and the *dimension* of a matrix is written as *rows x columns*. For the example below, the dimension of the matrix would be *2x3*. Often times you will see the matrix dimensionality depicted as $\R^{2x3}$ where $\R$ simply denotes a *real number*.
