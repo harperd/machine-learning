@@ -12,7 +12,7 @@ Then, given the definition of slope is the change in $x$ divided by the change i
 
 If we have a point where $x=2$ then $y=6$
 
-> $f(2)=3\cdot2=6$
+> $f(2)=3\cdot2=6$ 
 
 Therefore, our first point is at:
 
