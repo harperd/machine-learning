@@ -22,6 +22,8 @@ Next, set $h$ to $0$ (the limit of $h$ approaches $0$):
 
 > $\partial=2x+(3\cdot0)=2x$
 
+Therefore the slope at any point is $2x$ for the function $f(x)=3x^2$.
+
 # Derivatives and Quadratics
 
 For getting the derivative of a quadratic function we will need to calculate it with respect to the tangent line as shown below. Also, since quadratics are complex function and don't yield a simple straight line we only know the partial derivative $\partial$ at any given point since it is constantly changing.
