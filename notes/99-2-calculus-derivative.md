@@ -4,11 +4,23 @@ A *derivative* (slope of a line) is measuring the sensitivity of a function's ou
 
 If we want to find the derivative of the a linear function like below:
 
-> $f(x)=3x$
+> $f(x)=3x^2$
 
-Then, given the definition of slope is the change in $x$ divided by the change in $y$, we have the below where $h$ represents an extremely small number like $.00001$:
+Then, given the definition of slope is the change in $y$ divided by the change in $x$, we have the below where $h$ represents an extremely small number like $.00001$:
 
-> $\large d=\frac{f(x+h)-f(x)}{h}$
+> $\large d=\frac{\Delta y}{\Delta x}=\frac{f(x+h)-f(x)}{h}=\frac{3(x+h)^2-3x^2}{h}$
+
+Apply the slope formula:
+
+> $\large d=\frac{(3x+2xh+3h^2)-3x^2}{h}$
+
+Simplify:
+
+> $\large d=\frac{2xh+3h}{h}=\small 2x+3$
+
+Next, set $h$ to $0$ (the limit of $h$ approaches $0$):
+
+> $d=
 
 If we have a point where $x=2$ then $y=6$
 
