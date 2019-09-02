@@ -28,9 +28,9 @@ When adding vectors you take the second vector and move the tail to the head of 
 >
 > $2\vec v=2\cdot\begin{bmatrix}3\\1\end{bmatrix}=\begin{bmatrix}6\\2\end{bmatrix}$
 
-## Unit Vectors
+## Basis Vectors
 
-Unit vectors (basis vectors) have a length of $1$ in a normed vector space. Here, there are two important vectors, $\hat{i}$ and $\hat{j}$, each with a length of $1$. The hat symbol $\hat{}$ is called a circumflex but pronounced "hat". In a 3D space we would also use $\hat{z}$. These are call *basis vectors* which are the *basis of a coordinate system*. It is worth noting that $\hat{i}$, $\hat{j}$ and $\hat{z}$ represent vectors where $x$, $y$ and $z$ represents points and axes.
+Basis vectors (unit vectors) have a length of $1$ in a normed vector space. Below show two important vectors, $\hat{i}$ and $\hat{j}$, each with a length of $1$. In a 3D space we would also use $\hat{z}$. The hat symbol $\hat{}$ is called a *circumflex* but pronounced "hat". It is also worth noting that $\hat{i}$, $\hat{j}$ and $\hat{z}$ represent vectors where $x$, $y$ and $z$ represents points and axes. These are call *basis vectors* because they are the *basis of a coordinate system*. By basis we mean, when describing vectors numerically, it depends on which type of basis vectors you are using. In this case, $\hat{i}$ and $\hat{j}$  which each have a length of $1$.
 
 ![https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab](../images/linear-algebra/i_hat_j_hat.png)
 
@@ -38,7 +38,9 @@ When we think of a vector like the below:
 
 > $\vec v=\begin{bmatrix}3\\1\end{bmatrix}$
 
-We can think of it as *scaling*  $\hat{i}$ and $\hat{j}$ by $3$ and $1$ respectively. There are other types of unit vectors.
+With basis vectors, we think of it as *scaling*  $\hat{i}$ and $\hat{j}$ by $3$ and $1$ respectively:
+
+> $\vec v=\begin{bmatrix}3\hat{i}\\1\hat{j}\end{bmatrix}$
 
 [Video](https://youtu.be/k7RM-ot2NWY?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&t=32)
 
