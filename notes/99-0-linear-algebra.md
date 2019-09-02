@@ -28,6 +28,20 @@ When adding vectors you take the second vector and move the tail to the head of 
 >
 > $2\vec v=2\cdot\begin{bmatrix}3\\1\end{bmatrix}=\begin{bmatrix}6\\2\end{bmatrix}$
 
+## Basis Vectors
+
+There are two important vectors, $\hat{i}$ and $\hat{j}$, each with a length of $1$. These are call the *Basis Vectors* which are the *basis of a coordinate system*.
+
+![https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab](../images/linear-algebra/i_hat_j_hat.png)
+
+When we think of a vector like the below:
+
+> $\vec v=\begin{bmatrix}3\\1\end{bmatrix}$
+
+We can think of it as *scaling*  $\hat{i}$ and $\hat{j}$ by $3$ and $1$ respectively.
+
+[Video](https://youtu.be/k7RM-ot2NWY?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&t=32)
+
 ## Matrices
 
 A matrix is simply a rectangular array of numbers and the *dimension* of a matrix is written as *rows x columns*. For the example below, the dimension of the matrix would be *2x3*. Often times you will see the matrix dimensionality depicted as $\R^{2x3}$ where $\R$ simply denotes a *real number*.
