@@ -28,9 +28,9 @@ When adding vectors you take the second vector and move the tail to the head of 
 >
 > $2\vec v=2\cdot\begin{bmatrix}3\\1\end{bmatrix}=\begin{bmatrix}6\\2\end{bmatrix}$
 
-## Basis Vectors
+## Unit Vectors
 
-There are two important vectors, $\hat{i}$ and $\hat{j}$, each with a length of $1$. These are call the *Basis Vectors* which are the *basis of a coordinate system*.
+Unit vectors (basis vectors) have a length of $1$ in a normed vector space. Here, there are two important vectors, $\hat{i}$ and $\hat{j}$, each with a length of $1$. The hat symbol $\hat{}$ is called a circumflex but pronounced "hat". In a 3D space we would also use $\hat{z}$. These are call *basis vectors* which are the *basis of a coordinate system*. It is worth noting that $\hat{i}$, $\hat{j}$ and $\hat{z}$ represent vectors where $x$, $y$ and $z$ represents points and axes.
 
 ![https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab](../images/linear-algebra/i_hat_j_hat.png)
 
@@ -41,6 +41,10 @@ When we think of a vector like the below:
 We can think of it as *scaling*  $\hat{i}$ and $\hat{j}$ by $3$ and $1$ respectively.
 
 [Video](https://youtu.be/k7RM-ot2NWY?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&t=32)
+
+## Span
+
+[Video](https://youtu.be/k7RM-ot2NWY?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&t=120)
 
 ## Matrices
 
