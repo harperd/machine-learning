@@ -10,7 +10,7 @@ Then, given the definition of slope is the change in $x$ divided by the change i
 
 > $\large d=\frac{f(x+h)-f(x)}{h}$
 
-If we have a point where $x=2$ then $y=6$
+If we have a point where $x=2$ then $y=6$ 
 
 > $f(2)=3\cdot2=6$ 
 
