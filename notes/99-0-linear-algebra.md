@@ -30,9 +30,15 @@ When adding vectors you take the second vector and move the tail to the head of 
 
 ## Basis Vectors
 
-Basis vectors (unit vectors) have a length of $1$ in a normed vector space. Below show two important vectors, $\hat{i}$ and $\hat{j}$, each with a length of $1$. In a 3D space we would also use $\hat{z}$. The hat symbol $\hat{}$ is called a *circumflex* but pronounced "hat". It is also worth noting that $\hat{i}$, $\hat{j}$ and $\hat{z}$ represent vectors where $x$, $y$ and $z$ represents points and axes. These are call *basis vectors* because they are the *basis of a coordinate system*. By *basis* we mean, when describing vectors numerically, it directly depends on which type of basis vectors you are using. In this case, $\hat{i}$ and $\hat{j}$  which each have a length of $1$.
+The *basis* of a vector space is a set of *linearly independent* vectors that *span* the full space. The following sections outline this concept in more detail.
+
+There are different types of basis vectors. Basis vectors (unit vectors) can have a length of $1$ in a normed vector space as shown below. In this case, these two important vectors are $\hat{i}$ and $\hat{j}$, each with a length of $1$ (In a 3D space we would also use $\hat{z}$). These are call *basis vectors* because they are the *basis of a coordinate system*. By *basis* we mean, when describing vectors numerically, it directly depends on which type of basis vectors you are using. In this case, $\hat{i}$ and $\hat{j}$  which each have a length of $1$. From these basis vectors we can add and scale them.
 
 ![](../images/linear-algebra/i_hat_j_hat.png)
+
+> **NOTE:** The hat symbol $\hat{}$ is called a *circumflex* but pronounced "hat"
+>
+> **NOTE:**  It is also worth noting that $\hat{i}$, $\hat{j}$ and $\hat{z}$ represent vectors where $x$, $y$ and $z$ represents *points* and *axes*.
 
 When we think of a vector like the below:
 
@@ -42,9 +48,7 @@ With basis vectors, we think of it as *scaling*  $\hat{i}$ and $\hat{j}$ by $3$ 
 
 > $\vec v=\begin{bmatrix}3\hat{i}\\1\hat{j}\end{bmatrix}$
 
-[Video](https://youtu.be/k7RM-ot2NWY?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&t=32)
-
-## Linear Combinations
+### Linear Combinations
 
 Any time you add *and* scale two vectors, it is called a *linear combination*. The below shows a linear combination where $a$ and $b$ are <u>scalars</u> that scale the two vectors $\vec v$ and $\vec w$.
 
@@ -56,19 +60,33 @@ For example:
 
 ![](../images/linear-algebra/linear_combination.png)
 
-[Video](https://youtu.be/k7RM-ot2NWY?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&t=181)
+For a linear combination with three vectors we simply add the third vectors and scalar:
 
-## Span
+>$a\vec v + b\vec w + c\vec u$
 
-The *span* of any two vectors is the set of all of their linear combinations where scalars $a$ and $b$ can vary. If we were to stretch and pull the resulting vector (magenta in this case) to exactly every point possible for their linear combination in 2 dimensions the *span* would be every possible point on the 2D plane. However, if the vectors are inline as below, their *span* would just be a straight line.
+### Span
+
+The *span* of any two vectors is the set of all of their linear combinations where scalars $a$ and $b$ can vary. If we were to stretch and pull the resulting vector (magenta in this case) to exactly every point possible for their linear combination in 2 dimensions the *span* would be every possible point on the 2D plane.
+
+However, if the vectors are inline as below, their *span* would just be a straight line. In this case, we would say the two vectors are *linearly dependent* since second vector does not really change the span of the linear combination.
 
 ![](../images/linear-algebra/inline_vectors.png)
+
+Therefore, we could say that one of the vectors can be expressed as a linear combination of the other two vectors since it lies in the same span as the other two vectors:
+
+> $\vec u=a\vec v + b\vec w$
+
+If the second vector does add another dimension to the span they are said to be *linearly independent*:
+
+> $\vec u\neq a\vec v + b\vec w$
 
 In 3D space, if we were to stretch and pull the resulting vector to exactly every point possible for their linear combination the *span* would resemble a flat sheet.
 
 ![](../images/linear-algebra/vector_span_3d.png)
 
-[Video](https://youtu.be/k7RM-ot2NWY?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&t=240)
+For a linear combination with three vectors, we would have access to every 3 dimensional point just as with a linear combat ion of 2 vectors gives us access to every point on the 2D plane. Here, the tip of the third vector "moves the sheet" in 3 dimensions giving access to all possible points in the 3D space.
+
+![](../images/linear-algebra/vector_span_3d2.png)
 
 ## Matrices
 
