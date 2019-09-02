@@ -38,7 +38,7 @@ When we think of a vector like the below:
 
 > $\vec v=\begin{bmatrix}3\\1\end{bmatrix}$
 
-We can think of it as *scaling*  $\hat{i}$ and $\hat{j}$ by $3$ and $1$ respectively.
+We can think of it as *scaling*  $\hat{i}$ and $\hat{j}$ by $3$ and $1$ respectively. There are other types of unit vectors.
 
 [Video](https://youtu.be/k7RM-ot2NWY?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&t=32)
 
