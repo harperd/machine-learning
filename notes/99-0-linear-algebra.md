@@ -56,13 +56,19 @@ For example:
 
 ![](../images/linear-algebra/linear_combination.png)
 
-[Video](https://youtu.be/k7RM-ot2NWY?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&t=120)
+[Video](https://youtu.be/k7RM-ot2NWY?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&t=181)
 
 ## Span
 
-The *span* of any two vectors is the set of all of their linear combinations where scalars $a$ and $b$ can vary. If we were to stretch and pull each vector to exactly every point possible for their linear combination in 2 dimensions the span would be every possible point on the 2D plane. However, if the vectors are inline as below, their *span* would just be a straight line.
+The *span* of any two vectors is the set of all of their linear combinations where scalars $a$ and $b$ can vary. If we were to stretch and pull the resulting vector (magenta in this case) to exactly every point possible for their linear combination in 2 dimensions the *span* would be every possible point on the 2D plane. However, if the vectors are inline as below, their *span* would just be a straight line.
 
 ![](../images/linear-algebra/inline_vectors.png)
+
+In 3D space, if we were to stretch and pull the resulting vector to exactly every point possible for their linear combination the *span* would resemble a flat sheet.
+
+![](../images/linear-algebra/vector_span_3d.png)
+
+[Video](https://youtu.be/k7RM-ot2NWY?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&t=240)
 
 ## Matrices
 
