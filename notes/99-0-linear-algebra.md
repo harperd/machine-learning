@@ -12,13 +12,13 @@ Below is a visual representation of a vector:
 
 Most linear algebra topics tend to revolve around *adding* vectors and *scaling* vectors.
 
-### Adding Vectors
+## Adding Vectors
 
 When adding vectors you take the second vector and move the tail to the head of first vector. The distance between the origin and the head of the second vector is the sum. The illustration below shows visually how adding vectors works.  The distance of $\vec V$ and $\vec W$ is the same total distance as $\vec V + \vec W$.
 
 ![https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab](../images/linear-algebra/vector-add.png)
 
-### Scaling
+## Scaling Vectors
 
 *Scaling* a vector means changing it's size by multiplying by a *scalar*. For example take a vector and multiply it by a *scalar* of $2$ as shown below.
 
@@ -30,9 +30,9 @@ When adding vectors you take the second vector and move the tail to the head of 
 
 ## Basis Vectors
 
-Basis vectors (unit vectors) have a length of $1$ in a normed vector space. Below show two important vectors, $\hat{i}$ and $\hat{j}$, each with a length of $1$. In a 3D space we would also use $\hat{z}$. The hat symbol $\hat{}$ is called a *circumflex* but pronounced "hat". It is also worth noting that $\hat{i}$, $\hat{j}$ and $\hat{z}$ represent vectors where $x$, $y$ and $z$ represents points and axes. These are call *basis vectors* because they are the *basis of a coordinate system*. By basis we mean, when describing vectors numerically, it depends on which type of basis vectors you are using. In this case, $\hat{i}$ and $\hat{j}$  which each have a length of $1$.
+Basis vectors (unit vectors) have a length of $1$ in a normed vector space. Below show two important vectors, $\hat{i}$ and $\hat{j}$, each with a length of $1$. In a 3D space we would also use $\hat{z}$. The hat symbol $\hat{}$ is called a *circumflex* but pronounced "hat". It is also worth noting that $\hat{i}$, $\hat{j}$ and $\hat{z}$ represent vectors where $x$, $y$ and $z$ represents points and axes. These are call *basis vectors* because they are the *basis of a coordinate system*. By *basis* we mean, when describing vectors numerically, it directly depends on which type of basis vectors you are using. In this case, $\hat{i}$ and $\hat{j}$  which each have a length of $1$.
 
-![https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab](../images/linear-algebra/i_hat_j_hat.png)
+![](../images/linear-algebra/i_hat_j_hat.png)
 
 When we think of a vector like the below:
 
@@ -44,7 +44,17 @@ With basis vectors, we think of it as *scaling*  $\hat{i}$ and $\hat{j}$ by $3$ 
 
 [Video](https://youtu.be/k7RM-ot2NWY?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&t=32)
 
-## Span
+## Linear Combinations
+
+Any time you add *and* scale two vectors, it is called a *linear combination*. The below shows a linear combination where $a$ and $b$ are <u>scalars</u> that scale the two vectors $\vec v$ and $\vec w$.
+
+> $a\vec v + b\vec w$
+
+For example:
+
+> $0.88\vec v + 1.30\vec w$
+
+![](../images/linear-algebra/linear_combination.png)
 
 [Video](https://youtu.be/k7RM-ot2NWY?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&t=120)
 
