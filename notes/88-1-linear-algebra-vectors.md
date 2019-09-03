@@ -22,9 +22,9 @@ When adding vectors you take the second vector and move the tail to the head of 
 
 ![https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab](C:/Users/Ryan/repos/machine-learning/images/linear-algebra/vector-scale.png)
 
-> $\vec v=\begin{bmatrix}3\\1\end{bmatrix}$
+> $\vec V=\begin{bmatrix}3\\1\end{bmatrix}$
 >
-> $2\vec v=2\cdot\begin{bmatrix}3\\1\end{bmatrix}=\begin{bmatrix}6\\2\end{bmatrix}$
+> $2\vec V=2\cdot\begin{bmatrix}3\\1\end{bmatrix}=\begin{bmatrix}6\\2\end{bmatrix}$
 
 ## Basis Vectors
 
@@ -40,27 +40,27 @@ There are different types of basis vectors. Basis vectors (unit vectors) can hav
 
 When we think of a vector like the below:
 
-> $\vec v=\begin{bmatrix}3\\1\end{bmatrix}$
+> $\vec V=\begin{bmatrix}3\\1\end{bmatrix}$
 
 With basis vectors, we think of it as *scaling*  $\hat{i}$ and $\hat{j}$ by $3$ and $1$ respectively:
 
-> $\vec v=\begin{bmatrix}3\hat{i}\\1\hat{j}\end{bmatrix}$
+> $\vec V=\begin{bmatrix}3\hat{i}\\1\hat{j}\end{bmatrix}$
 
 ### Linear Combinations
 
 Any time you add *and* scale two vectors, it is called a *linear combination*. The below shows a linear combination where $a$ and $b$ are <u>scalars</u> that scale the two vectors $\vec v$ and $\vec w$.
 
-> $a\vec v + b\vec w$
+> $a\vec V + b\vec W$
 
 For example:
 
-> $0.88\vec v + 1.30\vec w$
+> $0.88\vec V+1.30\vec W$
 
 ![](C:/Users/Ryan/repos/machine-learning/images/linear-algebra/linear_combination.png)
 
 For a linear combination with three vectors we simply add the third vectors and scalar:
 
-> $a\vec v + b\vec w + c\vec u$
+> $a\vec V + b\vec W + c\vec U$
 
 ### Span
 
@@ -78,14 +78,14 @@ If the vectors are inline as below, their *span* would just be a straight line. 
 
 ![](C:/Users/Ryan/repos/machine-learning/images/linear-algebra/inline_vectors.png)
 
-Therefore, we could say that one of the vectors can be expressed as a linear combination of the other two vectors since it lies in the same span as the other two vectors. Here, vector $\vec u$ is said to be *linearly dependent* on the linear combination of the other two vectors  $\vec v$ and $\vec w$:
+Therefore, we could say that one of the vectors can be expressed as a linear combination of the other two vectors since it lies in the same span as the other two vectors. Here, vector $\vec u$ is said to be *linearly dependent* on the linear combination of the other two vectors  $\vec V$ and $\vec W$:
 
-> $\vec u=a\vec v + b\vec w$
+> $\vec U=a\vec V + b\vec W$
 
 If the second vector does add another dimension to the span they are said to be *linearly independent*:
 
-> $\vec u\neq a\vec v + b\vec w$
+> $\vec U\neq a\vec V + b\vec W$
 
-In mathematics it is generally noted that vectors $\vec v$, $\vec w$ and $\vec u$ are said to be l*inearly independent* if the only solution to the linear combintation is a zero length vector $\vec 0$ such that:
+In mathematics it is generally noted that vectors $\vec V$, $\vec W$ and $\vec U$ are said to be l*inearly independent* if the only solution to the linear combintation is a zero length vector $\vec 0$ such that:
 
-> $a\vec v + b\vec w + c\vec u=\vec 0$
+> $a\vec V + b\vec W + c\vec U=\vec 0$
