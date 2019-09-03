@@ -85,3 +85,7 @@ Therefore, we could say that one of the vectors can be expressed as a linear com
 If the second vector does add another dimension to the span they are said to be *linearly independent*:
 
 > $\vec u\neq a\vec v + b\vec w$
+
+In mathematics it is generally noted that vectors $\vec v$, $\vec w$ and $\vec u$ are said to be l*inearly independent* if the only solution to the linear combintation is a zero length vector $\vec 0$ such that:
+
+> $a\vec v + b\vec w + c\vec u=\vec 0$
