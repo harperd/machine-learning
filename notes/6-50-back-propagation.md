@@ -16,7 +16,7 @@ This can easily be vectorized as the following where $a$ and $y$ are vectors wit
 
 > $\delta^{(4)}=a^{(4)}_j-y$
 
->  **NOTE:** $\delta^{(i)}_j$ is actually the partial derivative with respect to $z^{(l)}_j$ of the cost function $J(i)$ where $J(i)=$
+>  **NOTE:** $\delta^{(i)}_j$ is actually the partial derivative with respect to $z^{(l)}_j$ of the cost function $J(i)$ where $J(i)= y^{(i)}_k\cdot log(h_\Theta(x^{(i)}))_k + (1-y^{(i)}_k)\cdot log(1-h_\Theta(x^{(i)}))_k)$ which is the NN cost function.
 
 For the remainder of the layers, the computation is a little different. In using vectors for each layer, we take the error from the previous layer and multiply that by the $\Theta$ values for that current layer. Then, perform *element wise multiplication* $\odot$ by the *prime* of the activation units for that layer:
 
@@ -27,6 +27,8 @@ For the remainder of the layers, the computation is a little different. In using
 > **Layer 2**
 >
 > $\delta^{(2)}=(\Theta^{(2)})^T\delta^{(3)}\odot g\prime(z^{(2)})$
+
+
 
 Here $g\prime$ ($g$ prime) is the *derivative* of the specific activation function which can be derived by using Calculus. For example, if we were using *Sigmoid* functions for each unit in a particular layer:
 
