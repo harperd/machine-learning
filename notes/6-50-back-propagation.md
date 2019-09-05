@@ -28,9 +28,7 @@ For the remainder of the layers, the computation is a little different. In using
 >
 > $\delta^{(2)}=(\Theta^{(2)})^T\delta^{(3)}\odot g\prime(z^{(2)})$
 
-
-
-Elementwise multiplication of matrices is called the *Hadamard product* or *Schur product*.
+>  **NOTE:** Elementwise multiplication of matrices is called the *Hadamard product* or *Schur product*.
 
 Here $g\prime$ ($g$ prime) is the *derivative* of the specific activation function which can be derived by using Calculus. For example, if we were using *Sigmoid* functions for each unit in a particular layer:
 
