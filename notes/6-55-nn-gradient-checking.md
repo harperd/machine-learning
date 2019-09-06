@@ -30,6 +30,6 @@ We will then check it to make sure it is close to the back propagation computed 
 
 ## Numerical Estimation of Gradients and Vectors
 
-When computing the estimated gradient of a vector or matrix its the same process as above just with respect to each prameter $\Theta$ value. Below is an illustration where we add and subract each parameter $\Theta$ and compute the partial derivative with respect to each $\Theta$ value:
+When computing the estimated gradient of a vector or matrix its the same process as above just with respect to each parameter $\Theta$ value. Below is an illustration where we add and subtract each parameter $\Theta$ and compute the partial derivative with respect to each $\Theta$ value:
 
 ![](../images/2-sided-diff-gradient-vector.png)
