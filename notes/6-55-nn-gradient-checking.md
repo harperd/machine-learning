@@ -10,7 +10,7 @@ There are two ways to get the estimated gradient at a particular point on a grap
 
 ![](../images/1-sided-diff-gradient.png)
 
-Relative to our cost function $J(\Theta)$ the right-hand form would look like the below:
+Relative to our cost function $J(\Theta)$ and $\Theta$ just being a single real number, the right-hand form would look like the below:
 
 > $\large\frac{J(\Theta + h) - J(\Theta)}{h}$
 
@@ -18,7 +18,7 @@ The other way to get the estimated gradient is to use the *two-sided difference*
 
 ![](../images/2-sided-diff-gradient.png)
 
-Relative to our cost function $J(\Theta)$ the two-sided form would look like the below:
+Relative to our cost function $J(\Theta)$ and $\Theta$ just being a single real number, the two-sided form would look like the below:
 
 > $\large\frac{J(\Theta + h) - J(\Theta - h)}{2h}$
 
@@ -27,3 +27,9 @@ For $h$ you need to choose a small value like $10^{-4}$ but not too small since 
 We will then check it to make sure it is close to the back propagation computed derivative with respect to $\Theta$ for our cost function $J$:
 
 > $\large\frac{\partial}{\partial \Theta}J(\Theta)\approx\large\frac{J(\Theta + h) - J(\Theta - h)}{2h}$
+
+## Numerical Estimation of Gradients and Vectors
+
+When computing the estimated gradient of a vector or matrix its the same process as above just with respect to each prameter $\Theta$ value. Below is an illustration where we add and subract each parameter $\Theta$ and compute the partial derivative with respect to each $\Theta$ value:
+
+![](../images/2-sided-diff-gradient-vector.png)

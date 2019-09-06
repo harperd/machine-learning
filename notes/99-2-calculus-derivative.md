@@ -30,7 +30,7 @@ More formally, we say that *the  derivative of* $f(x)$ *with respect to* $x$ *is
 
 Other ways of writing this would be:
 
-> $\frac{\partial}{\partial x}f(x)$ or $\frac{\partial f}{\partial x}(x)$
+> $\frac{\partial}{\partial x}f(x)$ or $\frac{\partial f}{\partial x}(x)$ or $\nabla_xf(x)$
 
 # Derivatives and Quadratics
 
