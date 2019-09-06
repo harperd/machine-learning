@@ -24,7 +24,7 @@ Relative to our cost function $J(\Theta)$ and $\Theta$ just being a single real 
 
 For $h$ you need to choose a small value like $10^{-4}$ but not too small since you could run into numerical problems such as divide by zero.
 
-We will then check it to make sure it is close to the back propagation computed derivative with respect to $\Theta$ for our cost function $J$:
+We will then check it to make sure it is close to the back propagation computed derivative with respect to $\Theta$ for our cost function $J$, say a difference of no more than $10^{-7}$:
 
 > $\large\frac{\partial}{\partial \Theta}J(\Theta)\approx\large\frac{J(\Theta + h) - J(\Theta - h)}{2h}$
 
