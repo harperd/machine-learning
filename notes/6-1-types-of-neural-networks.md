@@ -12,7 +12,7 @@ This is the simplest type of neural network where data passes through each layer
 
 ## Radial Basis Function Neural Network
 
-![](..\images\nn-type-radial-basis-function.gif)
+![](..\images\nn-type-radial-basis-function.png)
 
 ## Multilayer Perceptron
 
