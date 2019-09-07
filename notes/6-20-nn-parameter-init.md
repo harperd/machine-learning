@@ -12,9 +12,15 @@ When weights are large and $\gt0$ and small activation functions like *sigmoid* 
 
 ## Best Practices to Avoid Vanishing and Exploding Gradients
 
+### Using ReLU
+
 Consider using *ReLU* or *Leaky ReLU* for activation functions where you have deep networks prone to vanishing gradients. Leaky ReLU overcomes vanishing gradients entirely by supplying a small, non-zero gradient, $\alpha$ value (usually 0.01) for $z$ values $\le0$.
 
+### Weight Initialization with Heuristics
+
 For deep networks using heuristics (logic) to initialize wieghts can help mitigate gradient issues. We create out weight values based on the types of non-linear activation functions that are used.
+
+#### ReLU
 
 For ReLU we multiply our randomly generated weights by:
 
@@ -26,7 +32,9 @@ Implementation in Python:
 W = np.random.randn(size_l, size_l - 1) * np.sqrt(2 / size_l - 1)
 ```
 
+#### Tanh
 
+This is also called *Xavier Initalization*.
 
 ## Python Implementation
 
