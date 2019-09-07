@@ -69,6 +69,7 @@ def initialize_parameters(layers_dims):
     
     # For each layer initalize the weights and bias vector
     for l in range(1, L):
+        # np.random.randn - Returns a sample (or samples) from the "standard normal" or Gaussian distribution of mean 0 and variance 1.
         parameters["W" + str(l)] = np.random.randn(
             layers_dims[l], layers_dims[l - 1]) * xavier(layers_dims[l - 1])
         parameters["b" + str(l)] = np.zeros((layers_dims[l], 1))
