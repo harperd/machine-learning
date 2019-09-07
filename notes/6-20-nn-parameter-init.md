@@ -10,10 +10,25 @@ However, when initializing weights randomly, you can run into two main issues (w
 
 When weights are large and $\gt0$ and small activation functions like *sigmoid* are used, the change in cost $J(\Theta)$ will be quite large and result in *exploding gradients* during back propagation. **Exploding gradients may result in oscillating around the minima or even overshooting the optimum again and again causing the model to not learn.** Exploding gradients can get so large they **can also cause overflows and result in NaN**.
 
-Best practices to avoid vanishing and exploding gradients:
+## Best Practices to Avoid Vanishing and Exploding Gradients
 
-1. Consider using *ReLU* or *Leaky ReLU* for activation functions where you have deep networks prone to vanishing gradients. Leaky ReLU overcomes vanishing gradients entirely by supplying a small, non-zero gradient, $\alpha$ value (usually 0.01) for $z$ values $\le0$.
-2. For deep networks using heuristics (logic) to initialize wieghts can help mitigate gradient issues. We create out weight values based on the types of non-linear activation functions that are used.
+Consider using *ReLU* or *Leaky ReLU* for activation functions where you have deep networks prone to vanishing gradients. Leaky ReLU overcomes vanishing gradients entirely by supplying a small, non-zero gradient, $\alpha$ value (usually 0.01) for $z$ values $\le0$.
+
+For deep networks using heuristics (logic) to initialize wieghts can help mitigate gradient issues. We create out weight values based on the types of non-linear activation functions that are used.
+
+For ReLU we multiply our randomly generated weights by:
+
+> $\large\sqrt{\frac{2}{size^{[l-1]}}}$
+
+Implementation in Python:
+
+```python
+W = np.random.randn(size_l, size_l - 1) * np.sqrt(2 / size_l - 1)
+```
+
+
+
+## Python Implementation
 
 Below is a Python example that initializes the weight matrices $W$ for each node $W^i$ with a uniform distribution of random values. Bias vectors are initialized to zeros. It accepts an array or list which contains the dimensions for each layer and returns a matrix and bias vector for each layer.
 
