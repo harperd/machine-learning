@@ -23,13 +23,15 @@ Below are notes on various topics as I learn all things AI. These notes are upda
 
 ## Neural Networks
 
-* [Nerual Networks](notes/pdf/6-0-neural-networks.pdf)
-* [Nerual Networks - Forward Propagation](notes/pdf/6-05-nn-forward-propagation.pdf)
-* [Nerual Networks - Classification and Cost](notes/pdf/6-10-nn-classification-and-cost.pdf)
-* [Nerual Networks - Activation Functions](notes/pdf/6-30-nn-activation-functions.pdf)
+* [Introduction](notes/pdf/6-0-neural-networks.pdf)
+* [Forward Propagation](notes/pdf/6-05-nn-forward-propagation.pdf)
+* [Classification and Cost](notes/pdf/6-10-nn-classification-and-cost.pdf)
+* [Activation Functions](notes/pdf/6-30-nn-activation-functions.pdf)
 * [Logic Gates](notes/pdf/6-40-nn-logic-gates.pdf)
 * [Back Propagation](notes/pdf/6-50-nn-back-propagation.pdf)
 * [Gradient Checking](notes/pdf/6-50-nn-gradient-checking.pdf)
+* [Parameter Initialization](notes/pdf/6-20-nn-parameter-init.pdf)
+* [Unrolling Parameters](notes/pdf/6-25-nn-unrolling-parameters.pdf)
 
 ## Other
 
