@@ -4,11 +4,11 @@ One of the first things that you will want do is to initialize the weight matric
 
 > **NOTE:** Bias weights can still be initialized to $0$. This is because the gradients with respect to bias depend only on the linear activation of that layer, and not on the gradients of the deeper layers.
 
-Mathematically, we want to initialize each $\Theta^{(l)}_{ij}$ weight to a random value in $\large[-\epsilon,\epsilon]$:
+Mathematically, we want to initialize each $\Theta^{(l)}_{ij}$ weight to a random value in $\large[-\epsilon,\epsilon]$ typically $[-1,1]$:
 
 > $\large-\epsilon\le\Theta^{(l)}_{ij}\le\epsilon$
 
-However, when initializing weights randomly, you can run into two main issues (with deep networks): The problem of *vanishing gradients* or *exploding gradients*. During back propagation the gradients get smaller and smaller it approaches the global minimum as it should. However, you can run into the *problem of vanishing gradients* especially with *sigmoid* or *tanh* activation functions. This will prevent weights from changing their value. **ReLU overcomes the problem of vanishing gradients since the gradient is $0$ for numbers $\le0$ and $1$ for positive numbers.**
+However, when initializing weights randomly with deep networks, you can run into two main issues: The problems of *vanishing gradients* and *exploding gradients*. During back propagation the gradients get smaller and smaller it approaches the global minimum as it should. However, you can run into the *problem of vanishing gradients* especially with *sigmoid* or *tanh* activation functions. This will prevent weights from changing their value. **ReLU overcomes the problem of vanishing gradients since the gradient is $0$ for numbers $\le0$ and $1$ for positive numbers.**
 
 When weights are large and $\gt0$ and small activation functions like *sigmoid* are used, the change in cost $J(\Theta)$ will be quite large and result in *exploding gradients* during back propagation. **Exploding gradients may result in oscillating around the minima or even overshooting the optimum again and again causing the model to not learn.** Exploding gradients can get so large they **can also cause overflows and result in NaN**.
 
@@ -20,31 +20,31 @@ Consider using *ReLU* or *Leaky ReLU* for activation functions where you have de
 
 ### Weight Initialization with Heuristics
 
-For deep networks using heuristics (logic) to initialize wieghts can help mitigate gradient issues. We create out weight values based on the types of non-linear activation functions that are used.
+For deep networks using heuristics (logic) to initialize weights can help mitigate gradient issues. We create out weight values based on the types of non-linear activation functions that are used. The heuristics outlined below are better since they take the size of the network into consideration.
 
-#### ReLU
+#### When Using ReLU and Leaky ReLU
 
-For ReLU we multiply our randomly generated weights by the variance $\sqrt{\frac{k}{n}}$ where $k$ is dependent on the activation function used and $n$ are the number over layers $-1$.
+This is also called *He Initialization*. For ReLU we multiply our randomly generated weights by the variance $\sqrt{\frac{k}{n}}$ where $k$ is dependent on the activation function used and $n$ is the size (number of activation units or neurons) in the previous layer. This makes the weights  inversely proportional to the square root of the number of neurons in the previous layer. One common problem when using ReLU activation functions is that it has the common problem of *dying neurons*. Up to $50\%$ of the neurons can die (stop learning) during training that's why the factor is multiplied by $2$.
 
-> $\large W^{[l]}=\sqrt{\frac{2}{size^{[l-1]}}}$
+> $\large W^{[l]}=W^{[l]}\sqrt{\frac{2}{size^{[l-1]}}}$
 
 Implementation in Python:
 
 ```python
-W[l] = np.random.randn(size_l, size_l - 1) * np.sqrt(2 / size_l - 1)
+W[l] = np.random.randn(size[l], size[l - 1]) * np.sqrt(2 / size[l - 1])
 ```
 
-#### Tanh
+#### When Using Sigmoid and Tanh
 
-This is also called *Xavier Initalization* and is the same as ReLU except $k=1$ instead of $2$.
+This is also called *Xavier Initialization* and is similar to *He* except $k=1$ instead of $2$.
 
-> $\large W^{[l]}=\sqrt{\frac{1}{size^{[l-1]}}}$
+> $\large W^{[l]}=W^{[l]}\sqrt{\frac{1}{size^{[l-1]}}}$
 
 #### Other
 
-Another common heuristic is:
+Another common heuristic similar to *Xavier* and *He* is:
 
-> $\large W^{[l]}=\sqrt{\frac{2}{size^{[l-1]}+size^{[l]}}}$
+> $\large W^{[l]}=W^{[l]}\sqrt{\frac{2}{size^{[l-1]}+size^{[l]}}}$
 
 ### Gradient Clipping
 
@@ -82,5 +82,7 @@ def initialize_parameters(layers_dims):
 ##### Sources
 
 https://medium.com/usf-msds/deep-learning-best-practices-1-weight-initialization-14e5c0295b94
+
+https://towardsdatascience.com/why-better-weight-initialization-is-important-in-neural-networks-ff9acf01026d
 
 https://www.youtube.com/watch?v=OF8ocg5mgx0&list=PLLssT5z_DsK-h9vYZkQkYNWcItqhlRJLN&index=55
