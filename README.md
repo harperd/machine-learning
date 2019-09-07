@@ -36,6 +36,7 @@ Below are notes on various topics as I learn all things AI. These notes are upda
 ## Other
 
 * [Feature Scaling](notes/pdf/2-0-feature-scaling.pdf)
+* [Important People in the Field of AI](notes/pdf/100-important-people.pdf)
 
 # Notebooks
 

@@ -1,0 +1,9 @@
+# Important People in the Field of AI
+
+| Name            | Accomplishment                                               |
+| --------------- | ------------------------------------------------------------ |
+| Geoffrey Hinton | He is most noted for his work on artificial neural networks. Since 2013 he divides his time working for Google (Google Brain) and the University of Toronto. With David E. Rumelhart and Ronald J. Williams, Hinton was co-author of a highly cited paper published in 1986 that popularized the **backpropagation algorithm for training multi-layer neural networks**. |
+| Andrew Ng       | He **formed Google’s Brain AI research division** and his work has focused on deep learning. At Stanford he has led projects including the development of the Stanford Artificial Intelligence Robot (STAIR) as well as algorithms to build 3D digital models from a single flat photographic image. He is also the **founder of the online training resource Coursera** and associate professor at Stanford University’s computer science department. |
+| Yoshua Bengio   | Bengio is **noted for his research into artificial neural networks and deep learning**. He has stated that the overriding ambition behind his research is to understand “principles of learning that yield intelligence.” **Much of his published work concerns auto-encoders** which are used for encoding or formatting unstructured data, to make it understandable by computers via unsupervised machine learning. |
+| Yann LeCunn     | He was the **director of AI research at Facebook since 2013**. LeCunn has received recognition for **pioneering work in the field of computer vision**. He is also **considered one of the founders of the convolutional neural network** (which aims to create algorithms which ingest and interpret information in the same way as a biological organism like an eye or a brain). He is a **founding director NYU Center for Data Science**. |
+
