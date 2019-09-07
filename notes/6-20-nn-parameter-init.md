@@ -57,6 +57,14 @@ Gradient clipping is another method to help mitigate exploding gradients were th
 Below is a Python example that initializes the weight matrices $W$ for each node $W^i$ with a uniform distribution of random values using *Xavier Initialization*. Bias vectors are initialized to zeros. It accepts an array or list which contains the dimensions for each layer and returns a matrix and bias vector for each layer.
 
 ```python
+from scipy.stats import truncnorm
+
+# We like to create random numbers with a normal (Gaussian) distribution, but the numbers have to be bounded
+# which is why the use of truncnorm.
+def truncated_normal(mean=0, sd=2, low=-1, upp=1):
+    return truncnorm(
+        (low - mean) / sd, (upp - mean) / sd, loc=mean, scale=sd)
+
 def xavier(prev_layer_size):
     return np.sqrt(1 / prev_layer_size)
 
@@ -68,8 +76,7 @@ def initialize_parameters(layers_dims):
     L = len(layers_dims)            
     
     # For each layer initalize the weights and bias vector
-    for l in range(1, L):
-        # np.random.randn - Returns a sample (or samples) from the "standard normal" or Gaussian distribution of mean 0 and variance 1.
+    for l in range(1, L): 
         parameters["W" + str(l)] = np.random.randn(
             layers_dims[l], layers_dims[l - 1]) * xavier(layers_dims[l - 1])
         parameters["b" + str(l)] = np.zeros((layers_dims[l], 1))
@@ -90,3 +97,5 @@ https://medium.com/usf-msds/deep-learning-best-practices-1-weight-initialization
 https://towardsdatascience.com/why-better-weight-initialization-is-important-in-neural-networks-ff9acf01026d
 
 https://www.youtube.com/watch?v=OF8ocg5mgx0&list=PLLssT5z_DsK-h9vYZkQkYNWcItqhlRJLN&index=55
+
+https://www.python-course.eu/neural_networks_with_python_numpy.php
