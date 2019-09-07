@@ -87,3 +87,7 @@ Computing the derivative $D^{(l)}_{ij}$ can be simply expressed as:
 > $D^{(l)}_{ij}=\large\frac{\partial}{\partial\Theta^{(l)}_{ij}}J(\Theta)$
 
 These derivatives $D^{(l)}_{ij}$ can then be used in *Gradient Decent* or other more advanced algorithms for finding the minimum.
+
+##### Sources
+
+https://medium.com/usf-msds/deep-learning-best-practices-1-weight-initialization-14e5c0295b94
