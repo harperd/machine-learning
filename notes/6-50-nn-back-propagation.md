@@ -4,6 +4,8 @@ Back propagation is how neural networks *learn*. They take the final output at t
 
 In back propagation we want to capture the error, for each unit, of how far off it was when computing the hypothesis during forward propagation. To find the error of each node in each layer we start at the last layer and progress to the the second layer (non-input layer) and capture the error for each unit in each layer. The error term is represented as $\delta^{(l)}_j$ (delta) and computed by simply subtracting the hypotheses at each unit $a^{(l)}_j$ by the correct value $y_j$ from our labeled training data.
 
+![](..\images\nn-back-propagation.png)
+
 For and example with a 4 layer network ($L=4$), back propagation would start at layer 4 with the below where $j$ is the index of each output unit:
 
 > $\delta^{(4)}_j=a^{(4)}_j-y_j$

@@ -24,7 +24,7 @@ This is the simplest type of neural network where data passes through each layer
 
 ## Recurrent Neural Network (RNN) – Long Short Term Memory
 
-![](..\images\nn-type-rnn.gif)
+![](..\images\nn-type-rnn.png)
 
 ## Modular Neural Network
 
