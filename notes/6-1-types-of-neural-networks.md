@@ -6,6 +6,8 @@ Below are descriptions of some of the most implemented types of networks.
 
 ## Feedforward Neural Network
 
+This is the simplest type of neural network where data passes through each layer until it gets to the output layer. Unlike more complicated neural networks, three is no back propagation. However, they work well with noisy data and are simple to maintain. The **primary application for feedforward neural networks is face recognition and computer vision**.
+
 ![](..\images\nn-type-feedforward.png)
 
 ## Radial Basis Function Neural Network
@@ -29,3 +31,10 @@ Below are descriptions of some of the most implemented types of networks.
 ![](..\images\nn-type-modular.gif)
 
 ## Sequence-To-Sequence Models
+
+##### Sources
+
+https://www.digitalvidya.com/blog/types-of-neural-networks/
+
+https://youtu.be/l0foB9mUrc4
+
