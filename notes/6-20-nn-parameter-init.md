@@ -90,4 +90,6 @@ https://towardsdatascience.com/why-better-weight-initialization-is-important-in-
 
 https://www.youtube.com/watch?v=OF8ocg5mgx0&list=PLLssT5z_DsK-h9vYZkQkYNWcItqhlRJLN&index=55
 
+https://towardsdatascience.com/weight-initialization-in-neural-networks-a-journey-from-the-basics-to-kaiming-954fb9b47c79
+
 https://www.python-course.eu/neural_networks_with_python_numpy.php
