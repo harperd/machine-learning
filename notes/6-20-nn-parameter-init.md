@@ -57,14 +57,6 @@ Gradient clipping is another method to help mitigate exploding gradients were th
 Below is a Python example that initializes the weight matrices $W$ for each node $W^i$ with a uniform distribution of random values using *Xavier Initialization*. Bias vectors are initialized to zeros. It accepts an array or list which contains the dimensions for each layer and returns a matrix and bias vector for each layer.
 
 ```python
-from scipy.stats import truncnorm
-
-# We like to create random numbers with a normal (Gaussian) distribution,
-# but the numbers have to be bounded which is why the use of truncnorm.
-def truncated_normal(mean=0, sd=2, low=-1, upp=1):
-    return truncnorm(
-        (low - mean) / sd, (upp - mean) / sd, loc=mean, scale=sd)
-
 def xavier(prev_layer_size):
     return np.sqrt(1 / prev_layer_size)
 
