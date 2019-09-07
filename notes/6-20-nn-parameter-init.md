@@ -59,8 +59,8 @@ Below is a Python example that initializes the weight matrices $W$ for each node
 ```python
 from scipy.stats import truncnorm
 
-# We like to create random numbers with a normal (Gaussian) distribution, but the numbers have to be bounded
-# which is why the use of truncnorm.
+# We like to create random numbers with a normal (Gaussian) distribution,
+# but the numbers have to be bounded which is why the use of truncnorm.
 def truncated_normal(mean=0, sd=2, low=-1, upp=1):
     return truncnorm(
         (low - mean) / sd, (upp - mean) / sd, loc=mean, scale=sd)
