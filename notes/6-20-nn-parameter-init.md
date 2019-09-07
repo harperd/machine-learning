@@ -54,9 +54,12 @@ Gradient clipping is another method to help mitigate exploding gradients were th
 
 ## Python Implementation
 
-Below is a Python example that initializes the weight matrices $W$ for each node $W^i$ with a uniform distribution of random values. Bias vectors are initialized to zeros. It accepts an array or list which contains the dimensions for each layer and returns a matrix and bias vector for each layer.
+Below is a Python example that initializes the weight matrices $W$ for each node $W^i$ with a uniform distribution of random values using *Xavier Initialization*. Bias vectors are initialized to zeros. It accepts an array or list which contains the dimensions for each layer and returns a matrix and bias vector for each layer.
 
 ```python
+def xavier(prev_layer_size):
+    return np.sqrt(1 / prev_layer_size)
+
 def initialize_parameters(layers_dims):
     np.random.seed(1)               
     parameters = {}
@@ -67,7 +70,7 @@ def initialize_parameters(layers_dims):
     # For each layer initalize the weights and bias vector
     for l in range(1, L):
         parameters["W" + str(l)] = np.random.randn(
-            layers_dims[l], layers_dims[l - 1]) * 0.01
+            layers_dims[l], layers_dims[l - 1]) * xavier(layers_dims[l - 1])
         parameters["b" + str(l)] = np.zeros((layers_dims[l], 1))
 
         assert parameters["W" + str(l)].shape == (
