@@ -39,7 +39,7 @@ Below are notes on various topics as I learn all things AI. These notes are upda
 * [Gradient Checking](notes/pdf/6-50-nn-gradient-checking.pdf)
 * [Parameter Initialization](notes/pdf/6-20-nn-parameter-init.pdf)
 * [Unrolling Parameters](notes/pdf/6-25-nn-unrolling-parameters.pdf)
-* [Architecting a Neural Network](notes/pdf/6-60-nn-architect-neural-network.pdf)
+* [Architecting a Basic Neural Network](notes/pdf/6-60-nn-architect-neural-network.pdf)
 
 ## Other
 
