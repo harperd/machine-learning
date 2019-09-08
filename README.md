@@ -8,12 +8,16 @@ Below are notes on various topics as I learn all things AI. These notes are upda
 
 ## Linear Regression
 
+![Linear Regression](images/linear-regression.png)
+
 * [Univariate Linear Regression](notes/pdf/1-1-univariate-linear-regression.pdf)
 * [Gradient Descent](notes/pdf/1-1-univariate-linear-regression.pdf)
 * [Pseudo Inverse](notes/pdf/1-3-pseudo-inverse.pdf)
 * [Multivariate Linear Regression](notes/pdf/1-4-multivariate-linear-regression.pdf)
 
 ## Logistic Regression
+
+![Logistic Regression](images/logistic-regression.png)
 
 * [Logistic Regression](notes/pdf/4-0-logistic-regrsssion.pdf)
 * [Binary Logistic Regression](notes/pdf/4-1-logistic-regression-binary.pdf)
@@ -33,6 +37,7 @@ Below are notes on various topics as I learn all things AI. These notes are upda
 * [Gradient Checking](notes/pdf/6-50-nn-gradient-checking.pdf)
 * [Parameter Initialization](notes/pdf/6-20-nn-parameter-init.pdf)
 * [Unrolling Parameters](notes/pdf/6-25-nn-unrolling-parameters.pdf)
+* [Creating a Neural Network](notes/pdf/6-60-nn-create-neural-network.pdf)
 
 ## Other
 
