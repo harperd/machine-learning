@@ -53,14 +53,14 @@ Below are notes on various topics as I learn all things AI. These notes are upda
 
 As I study a topic I will create a notebook to apply concepts. Below are various notebooks on some of the topics above.
 
-* [Univariate Linear Regression](notebooks/univariate-linear-regression.ipynb)
-* [Multivariate Linear Regression](notebooks/multivariate-linear-regression.ipynb)
-* [Binary Logistic Regression](notebooks/binary-logistic-regression.ipynb)
-* [Multiclass Logistic Regression](notebooks/multiclass-logistic-regression.ipynb)
-* [Neural Network](notebooks/neural-network.ipynb)
-* [K-Means Clustering](notebooks/clustering-kmeans.ipynb)
-* [K-Means Cluster Distance](notebooks/cluster-distance.ipynb)
-* [Data Visualization](notebooks/data-visualization.ipynb)
+* [Univariate Linear Regression](https://nbviewer.jupyter.org/github/harperd/machine-learning/blob/master/notebooks/univariate-linear-regression.ipynb)
+* [Multivariate Linear Regression](https://nbviewer.jupyter.org/github/harperd/machine-learning/blob/master/notebooks/multivariate-linear-regression.ipynb)
+* [Binary Logistic Regression](https://nbviewer.jupyter.org/github/harperd/machine-learning/blob/master/notebooks/binary-logistic-regression.ipynb)
+* [Multiclass Logistic Regression](https://nbviewer.jupyter.org/github/harperd/machine-learning/blob/master/notebooks/multiclass-logistic-regression.ipynb)
+* [Neural Network](https://nbviewer.jupyter.org/github/harperd/machine-learning/blob/master/notebooks/neural-network.ipynb)
+* [K-Means Clustering](https://nbviewer.jupyter.org/github/harperd/machine-learning/blob/master/notebooks/clustering-kmeans.ipynb)
+* [K-Means Cluster Distance](https://nbviewer.jupyter.org/github/harperd/machine-learning/blob/master/notebooks/cluster-distance.ipynb)
+* [Data Visualization](https://nbviewer.jupyter.org/github/harperd/machine-learning/blob/master/notebooks/data-visualization.ipynb)
 
 # Computational Thinking and Data Science
 
