@@ -27,6 +27,8 @@ Below are notes on various topics as I learn all things AI. These notes are upda
 
 ## Neural Networks
 
+![Neural Network](images/activation-function.png)
+
 * [Introduction](notes/pdf/6-0-neural-networks.pdf)
 * [Types of Neural Networks](notes/pdf/6-1-types-of-neural-networks.pdf)
 * [Forward Propagation](notes/pdf/6-05-nn-forward-propagation.pdf)
