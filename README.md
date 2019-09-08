@@ -40,6 +40,7 @@ Below are notes on various topics as I learn all things AI. These notes are upda
 * [Parameter Initialization](notes/pdf/6-20-nn-parameter-init.pdf)
 * [Unrolling Parameters](notes/pdf/6-25-nn-unrolling-parameters.pdf)
 * [Architecting a Basic Neural Network](notes/pdf/6-60-nn-architect-neural-network.pdf)
+* [Training a Neural Network](notes/pdf/6-65-training-nn.pdf)
 
 ## Other
 
