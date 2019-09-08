@@ -12,10 +12,6 @@ Neural networks can come in many different architectures such as below where the
 
 ![Neural Network](../images/neural-network-arch.png)
 
-# Types of Neural Networks
-
-
-
 # Notations
 
 Below are common notations used with working with neural networks.
