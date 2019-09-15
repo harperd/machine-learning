@@ -11,7 +11,7 @@ When deciding how to design a basic neural network you will need to start by ans
 
 ## Input Units
 
-The number of input units are decided by the dimentions of your features $x^{(i)}$. So, if you have $5$ features, you would have $5$ input units.
+The number of input units are decided by the dimensions of your features $x^{(i)}$. So, if you have $5$ features, you would have $5$ input units.
 
 ## Hidden Layers
 
