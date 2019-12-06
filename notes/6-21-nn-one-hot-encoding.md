@@ -1,10 +1,10 @@
 # Encoding
 
-*One Hot Encoding* is part of pre-preprocessing when it comes to AI. Encoding is a way to change data to a format that makes it easier to process. There are different ways of encoding data with more formal methods like *Label Encoding* or *One Hot Encoding*. 
+*Encoding* is part of pre-preprocessing when it comes to AI. Encoding is a way to change data to a format that makes it easier to process. There are different ways of encoding data with more formal methods like *Label Encoding* and *One Hot Encoding*. 
 
 ## Label Encoding
 
-Label Encoding is basically just changeing a text field to numeric. For example, different categories such as type of car or breed of animal where each distinct category is given a numeric value.
+*Label Encoding* is basically just changing a text field to numeric. For example, different categories such as type of car or breed of animal where each distinct category is given a numeric value.
 
 The problem with Label Encoding is that the numerical categories that are assigned to each class are ordered. Computers naturally treat higher order numbers as higher numbers. That is to say, it will give higher numbers more weight.
 
