@@ -11,7 +11,7 @@ Below are notes on various topics as I learn all things AI. These notes are upda
 ![Linear Regression](images/linear-regression.png)
 
 * [Univariate Linear Regression](notes/pdf/1-1-univariate-linear-regression.pdf)
-* [Gradient Descent](notes/pdf/1-1-univariate-linear-regression.pdf)
+* [Gradient Descent](notes/pdf/1-2-gradient-descent.pdf)
 * [Pseudo Inverse](notes/pdf/1-3-pseudo-inverse.pdf)
 * [Multivariate Linear Regression](notes/pdf/1-4-multivariate-linear-regression.pdf)
 
