@@ -44,8 +44,8 @@ Below are notes on various topics as I learn all things AI. These notes are upda
 ## Feature Engineering
 
 * [Feature Scaling](notes/pdf/2-0-fe-feature-scaling.pdf)
-* [Regularization](notes/pdf/5-0-fe-regularizaion.pdf)
-* [Encoding](notes/pdf/6-21-nn-encoding.pdf)
+* [Encoding](notes/pdf/2-1-fe-encoding.pdf)
+* [Regularization](notes/pdf/2-2-fe-regularizaion.pdf)
 
 ## Other
 
