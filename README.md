@@ -42,9 +42,13 @@ Below are notes on various topics as I learn all things AI. These notes are upda
 * [Architecting a Basic Neural Network](notes/pdf/6-60-nn-architect-neural-network.pdf)
 * [Training a Neural Network](notes/pdf/6-65-training-nn.pdf)
 
-## Other
+## Feature Engineering
 
 * [Feature Scaling](notes/pdf/2-0-feature-scaling.pdf)
+* [Encoding](notes/pdf/6-21-nn-encoding.pdf)
+
+## Other
+
 * [Important People in the Field of AI](notes/pdf/100-important-people.pdf)
 
 # Notebooks
