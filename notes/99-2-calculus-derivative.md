@@ -1,4 +1,4 @@
-# Derivatives
+# Calculus: Derivatives
 
 A *derivative* (slope of a line) is measuring the sensitivity of a function's output with respect to a very small change in  input. In other words, it measures the *steepness* of the graph of a function. In functions with 2 or more variables, the partial derivative is the derivative of one variable with respect to the others.
 

@@ -1,4 +1,4 @@
-# Encoding
+# Feature Engineering: Encoding
 
 *Encoding* is part of pre-preprocessing when it comes to AI. Encoding is a way to change data to a format that makes it easier to process. There are different ways of encoding data with more formal methods like *Label Encoding* and *One Hot Encoding*. 
 

@@ -1,4 +1,4 @@
-# Forward Propagation
+# Neural Networks: Forward Propagation
 
 *Forward propagation* is the way neural networks make predictions given inputs because data is f*orward propagated* thought the network. This is then fed to the output. As it makes it's way through the network is makes many small computations using activation functions (X, H, and O below). These computations take place at each layer within the network and propagate their results forward to the next layer. Between each layer are *weights* ($Wh$ and $Wo$ below) that are multiplied against the propagated values before they are computed by the activation unit. This continues until the final layer, the output layer, produces the prediction.
 

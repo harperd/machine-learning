@@ -1,4 +1,4 @@
-# Univariate Linear Regression
+# Linear Regression: Univariate Linear Regression
 
 Unlike *multivariate* linear regression, *univariate* is when we are only working with a single feature. This is the simplest form of supervised machine learning where we only have a single *feature*, or $x$ value. Linear regression is about finding a line that best intersects a set of data (features). 
 

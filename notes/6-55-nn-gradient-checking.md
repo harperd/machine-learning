@@ -1,4 +1,4 @@
-# Gradient Checking
+# Neural Networks: Gradient Checking
 
 When writing code to perform back propagation you could have a subtle bug that may give the appearance that $J(\Theta)$ is decreasing when in fact it is not or not as much as it should be. This is where *gradient checking* comes into play.
 

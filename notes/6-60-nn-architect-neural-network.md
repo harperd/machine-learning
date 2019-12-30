@@ -1,4 +1,4 @@
-# Architecting a Basic Neural Network
+# Neural Networks: Architecting a Basic Neural Network
 
 ![](../images/nn-design.png)
 

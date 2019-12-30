@@ -1,4 +1,4 @@
-# Multiclass Classification
+# Logistic Regression: Multiclass Classification
 
 *Multiclass Classification* is *Logistic Regression* with more than two classes or outcomes. For example, classifying a type of car: van, truck, sports car, etc.  For example, possible $y$ values could be:
 

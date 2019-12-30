@@ -1,4 +1,4 @@
-# Training a Neural Network
+# Neural Networks: Training
 
 Below is the basic code that's needed for training a neural network:
 

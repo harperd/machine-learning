@@ -1,4 +1,4 @@
-# Neural Network Logic Gates
+# Neural Networks: Logic Gates
 
 Different networks and activation functions can be combined to create even more complex networks creating a series of logic such as AND, NOT, OR, XNOR, etc.
 

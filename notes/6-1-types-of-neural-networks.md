@@ -1,4 +1,4 @@
-# Types of Neural Networks
+# Neural Networks: Types of Neural Networks
 
 ![](..\images\nn-types.png)
 

@@ -1,4 +1,4 @@
-# Multivariate Linear Regression
+# Linear Regression: Multivariate Linear Regression
 
 ## Hypothesis
 

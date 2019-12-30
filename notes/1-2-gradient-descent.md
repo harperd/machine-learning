@@ -1,4 +1,4 @@
-# Gradient Descent: Automating the Cost Function
+# Linear Regression: Gradient Descent - Automating the Cost Function
 
 *Gradient Descent* is an algorithm used to find the optimal or minimized $J(\theta_{0}, \theta_{1})$. Sometimes it is referred to as *Batch Gradient Descent* because it is iterating over all training examples.
 

@@ -1,4 +1,4 @@
-# Back Propagation
+# Neural Networks: Back Propagation
 
 Back propagation is how neural networks *learn*. They take the final output at the output layer and work it's way back to layer 2.
 

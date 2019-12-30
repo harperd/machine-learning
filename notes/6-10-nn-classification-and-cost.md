@@ -1,4 +1,4 @@
-# Classification
+# Neural Networks: Classification
 
 In *binary classification* there is only one $K$ output unit where output $y\in\{0,1\}$. In *multi-class classification* there are two or more $K$ output units that are $K$ dimensional where $y\in\R^K$. For example if there are two classes $A$ and $B$ then the results of the output units would be:
 

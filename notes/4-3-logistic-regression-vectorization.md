@@ -1,4 +1,4 @@
-# Vectorizing Logistic Regression
+# Logistic Regression: Vectorizing Logistic Regression
 
 The *Sigmoid Function* of $\frac{1}{1+e^{-z}}$ is used when computing the hypothesis for logistic regression which means that the normal vectorized compute of $\theta^TX$ is not going to work in this case since the *Sigmoid Function* would not be applied. Using victor math this can be achieved using the following:
 

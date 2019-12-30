@@ -1,4 +1,4 @@
-# Logistic Regression - Binary Classification
+# Logistic Regression: Binary Classification
 
 *Binary Classification*, as it's name suggests, solves classification problems with only two classes. For example, trying to determine if email *is spam* or *not spam*. Below describes this more formally using a mathematic expression which says $y$ is an *element* of $0$ or $1$:
 

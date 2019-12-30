@@ -1,4 +1,4 @@
-# Pseudo Inverse: Gradient Descent Alternative
+# Linear Regression: Pseudo Inverse - Gradient Descent Alternative
 
 If you are familiar with the concept of *Pseudo Inverse* in Linear Algebra, the parameters $\theta$ can be obtained by this formula:
 

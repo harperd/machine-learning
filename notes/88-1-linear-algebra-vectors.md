@@ -1,4 +1,4 @@
-# Vectors
+# Linear Algebra: Vectors
 
 A *vector* is defended as a line (or arrow) on the $xy$ coordinate plane hat has both direction and length. For the most part vectors, in mathematics, will almost always be rooted at the origin $(0,0)$. Vectors are written simply a matrix with a single column (an $n$ x $1$ matrix). We would express the dimensionality of the below as simply a three dimensional vector, or $\R^3$ where $y_2 = 21$.
 
