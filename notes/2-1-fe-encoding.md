@@ -14,7 +14,7 @@ The problem with Label Encoding is that the numerical categories that are assign
 
 ## One Hot Encoding
 
-*One Hot Encoding* Uses a binary style of categorization.  This basic principal is that the categories are now columns instead of rows. One Hot Encoding is not necessarily *better* than Label Encoding it's just a different tool for a different job and addresses the label encoding issue outlined above.
+*One Hot Encoding* Uses a binary style of categorization.  This basic principal is that the categories are now columns instead of rows. One Hot Encoding is not necessarily *better* than Label Encoding it's just a different tool for a different job and addresses the label encoding issue outlined above. In the example below for calories of 95 the Apple category is *hot*. 231 calories the Chicken category is *hot*.
 
 ![](..\images\nn-one-hot-encoding.png)
 
