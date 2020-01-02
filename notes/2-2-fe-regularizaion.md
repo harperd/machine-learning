@@ -24,7 +24,7 @@ Ways to address overfitting:
 
 There are two main types of regularization that can be used with each having their own tradeoffs.
 
-*L1 Regularization*, also called *Lasso Regression* (Least Absolute Shrinkage and Selection Operator) adds an  *absolute value of magnitude* of coefficient as penalty term to the loss function. Lasso shrinks the less important feature’s coefficient to zero thereby removing some feature altogether. This works well for feature selection in case there is a huge number of features.
+*L1 Regularization*, also called *Lasso Regression* (Least Absolute Shrinkage and Selection Operator) adds an *absolute value of magnitude* of coefficient as penalty term to the loss function. Lasso shrinks the less important feature’s coefficient to zero thereby removing some feature altogether. This works well for feature selection in case there is a huge number of features.
 
 > $\lambda\sum\limits^{n}_{j=1}|\theta_j|$
 
