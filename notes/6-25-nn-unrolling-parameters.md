@@ -28,7 +28,7 @@ array([[ 1,  2,  3,  4,  5],
        [21, 22, 23, 24, 25]])
 ```
 
-## Unravel Into a Vector
+## Unroll Into a Vector
 
 ```python
 vector = matrix.flatten()

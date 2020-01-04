@@ -90,4 +90,4 @@ These derivatives $D^{(l)}_{ij}$ can then be used in *Gradient Decent* or other 
 
 ##### Sources
 
-https://medium.com/usf-msds/deep-learning-best-practices-1-weight-initialization-14e5c0295b94
+##### https://medium.com/usf-msds/deep-learning-best-practices-1-weight-initialization-14e5c0295b94

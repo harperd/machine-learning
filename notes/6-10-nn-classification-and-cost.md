@@ -10,11 +10,11 @@ In *binary classification* there is only one $K$ output unit where output $y\in\
 
 Where there are three or more output units for classification then *one-vs-all* will be used.
 
-# Cost Function
+# Cross Entropy Loss Function
 
 The cost function for neural networks with regularization is shown below. Instead of having a single output unit we now have $K$ units where $h_\Theta(x)_i$ refers to the $i^{th}$ value in the output vector. $\sum\limits^{K}_{k=1}$ is summing the normal logistic cost function over each of the $K$ output units and $y_k$ is the $i^{th}$ output such as $\begin{bmatrix}1\\0\end{bmatrix}$ (see *Classification*). Including the bias units in the cost is not a big deal but you generally want to omit them hence below we are not regularizing the bias units so our limits will start at $1$.
 
-> $J(\Theta)=-\frac{1}{m}[\sum\limits^{m}_{i=1}\sum\limits^{K}_{k=1}(y^{(i)}_k\cdot log(h_\Theta(x^{(i)}))_k + (1-y^{(i)}_k)\cdot log(1-h_\Theta(x^{(i)}))_k)]+\frac{\lambda}{2m}\sum\limits^{L-1}_{l=1}\sum\limits^{s_i}_{i=1}\sum\limits^{s_l+1}_{j=1}(\Theta^{(l)}_{ji})^2$
+> $J(\Theta)=-\frac{1}{m}[\sum\limits^{m}_{i=1}\sum\limits^{K}_{k=1}(-y^{(i)}_k\cdot log(h_\Theta(x^{(i)}))_k + (1-y^{(i)}_k)\cdot log(1-h_\Theta(x^{(i)}))_k)]+\frac{\lambda}{2m}\sum\limits^{L-1}_{l=1}\sum\limits^{s_i}_{i=1}\sum\limits^{s_l+1}_{j=1}(\Theta^{(l)}_{ji})^2$
 
 For the regularization term (also called a *Weight Decay*) it is doing the following:
 
